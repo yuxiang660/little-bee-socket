@@ -53,5 +53,10 @@
         "streambuf": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 3,
+    },
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Microsoft, PointerAlignment: Left, IndentWidth: 3, AccessModifierOffset: -3, SortIncludes: false}"
 }
