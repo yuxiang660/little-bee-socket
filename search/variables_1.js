@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['connectedfunc',['connectedFunc',['../d9/dba/classcbee_1_1Server.html#ae389db525e17743beacf1ae6e6cf3805',1,'cbee::Server']]]
+  ['brief',['brief',['../d3/deb/namespaceel_1_1base_1_1consts.html#a4f2c476d5b8958d5e3e7bb9d1935dea1',1,'el::base::consts']]]
 ];

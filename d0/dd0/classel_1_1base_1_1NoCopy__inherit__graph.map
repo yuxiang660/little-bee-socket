@@ -1,0 +1,12 @@
+<map id="el::base::NoCopy" name="el::base::NoCopy">
+<area shape="rect" id="node2" href="$d5/dce/classel_1_1base_1_1LogDispatcher.html" title="Dispatches log messages. " alt="" coords="182,5,342,32"/>
+<area shape="rect" id="node3" href="$dc/d20/classel_1_1base_1_1NullWriter.html" title="Writes nothing &#45; Used when certain log is disabled. " alt="" coords="195,56,329,83"/>
+<area shape="rect" id="node4" href="$d0/da4/classel_1_1base_1_1Storage.html" title="Easylogging++ management storage. " alt="" coords="201,107,323,133"/>
+<area shape="rect" id="node5" href="$d0/db3/classel_1_1base_1_1threading_1_1internal_1_1NoMutex.html" title="Mutex wrapper used when multi&#45;threading is disabled. " alt="" coords="195,158,329,199"/>
+<area shape="rect" id="node6" href="$d5/d27/classel_1_1base_1_1threading_1_1internal_1_1NoScopedLock.html" title="Lock guard wrapper used when multi&#45;threading is disabled. " alt="" coords="177,224,347,280"/>
+<area shape="rect" id="node7" href="$de/d00/classel_1_1base_1_1VRegistry.html" title="Represents registries for verbose logging. " alt="" coords="195,304,329,331"/>
+<area shape="rect" id="node8" href="$d8/dea/classel_1_1base_1_1Writer.html" title="Main entry point of each logging. " alt="" coords="207,355,317,381"/>
+<area shape="rect" id="node10" href="$dc/dc4/classel_1_1LogBuilder.html" title="el::LogBuilder" alt="" coords="211,405,313,432"/>
+<area shape="rect" id="node9" href="$d6/d55/classel_1_1base_1_1PErrorWriter.html" title="el::base::PErrorWriter" alt="" coords="410,355,558,381"/>
+<area shape="rect" id="node11" href="$d2/de2/classel_1_1base_1_1DefaultLogBuilder.html" title="el::base::DefaultLogBuilder" alt="" coords="395,405,573,432"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="el::base::RegisteredLoggers" name="el::base::RegisteredLoggers">
+<area shape="rect" id="node2" href="$dc/de0/classel_1_1base_1_1utils_1_1Registry.html" title="el::base::utils::Registry\l\&lt; Logger, std::string \&gt;" alt="" coords="1240,21,1397,63"/>
+<area shape="rect" id="node3" href="$df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html" title="el::base::utils::Abstract\lRegistry\&lt; Logger, std::\lunordered_map\&lt; std::string,\l Logger *\&gt; \&gt;" alt="" coords="828,5,1013,76"/>
+<area shape="rect" id="node4" href="$d9/d2e/classel_1_1base_1_1threading_1_1ThreadSafe.html" title="Base of thread safe class, this class is inheritable&#45;only. " alt="" coords="419,53,548,95"/>
+<area shape="rect" id="node9" href="$df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html" title="el::base::utils::Abstract\lRegistry\&lt; Configuration,\l std::vector\&lt; Configuration *\&gt; \&gt;" alt="" coords="597,78,804,134"/>
+<area shape="rect" id="node5" href="$d0/db3/classel_1_1base_1_1threading_1_1internal_1_1NoMutex.html" title="Mutex wrapper used when multi&#45;threading is disabled. " alt="" coords="179,53,312,95"/>
+<area shape="rect" id="node6" href="$db/d41/classel_1_1base_1_1NoCopy.html" title="Internal helper class that prevent copy constructor for class. " alt="" coords="5,61,129,87"/>
+<area shape="rect" id="node7" href="$d0/d64/classel_1_1Configurations.html" title="Thread&#45;safe Configuration repository. " alt="" coords="1421,82,1545,109"/>
+<area shape="rect" id="node8" href="$d7/d3a/classel_1_1base_1_1utils_1_1RegistryWithPred.html" title="el::base::utils::Registry\lWithPred\&lt; Configuration,\l Configuration::Predicate \&gt;" alt="" coords="1037,78,1216,134"/>
+</map>

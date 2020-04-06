@@ -1,0 +1,8 @@
+<map id="el::base::TypedConfigurations" name="el::base::TypedConfigurations">
+<area shape="rect" id="node2" href="$d9/d2e/classel_1_1base_1_1threading_1_1ThreadSafe.html" title="Base of thread safe class, this class is inheritable&#45;only. " alt="" coords="419,18,548,59"/>
+<area shape="rect" id="node7" href="$df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html" title="el::base::utils::Abstract\lRegistry\&lt; Configuration,\l std::vector\&lt; Configuration *\&gt; \&gt;" alt="" coords="597,43,804,99"/>
+<area shape="rect" id="node3" href="$d0/db3/classel_1_1base_1_1threading_1_1internal_1_1NoMutex.html" title="Mutex wrapper used when multi&#45;threading is disabled. " alt="" coords="179,18,312,59"/>
+<area shape="rect" id="node4" href="$db/d41/classel_1_1base_1_1NoCopy.html" title="Internal helper class that prevent copy constructor for class. " alt="" coords="5,25,129,52"/>
+<area shape="rect" id="node5" href="$d0/d64/classel_1_1Configurations.html" title="Thread&#45;safe Configuration repository. " alt="" coords="1081,47,1205,73"/>
+<area shape="rect" id="node6" href="$d7/d3a/classel_1_1base_1_1utils_1_1RegistryWithPred.html" title="el::base::utils::Registry\lWithPred\&lt; Configuration,\l Configuration::Predicate \&gt;" alt="" coords="853,43,1032,99"/>
+</map>

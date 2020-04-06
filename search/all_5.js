@@ -1,6 +1,25 @@
 var searchData=
 [
-  ['inetaddress',['InetAddress',['../d9/da3/classcbee_1_1InetAddress.html',1,'cbee::InetAddress'],['../d9/da3/classcbee_1_1InetAddress.html#a10a78122a8402576484fbbf691f72ba8',1,'cbee::InetAddress::InetAddress(uint16_t port, bool loopbackOnly=false)'],['../d9/da3/classcbee_1_1InetAddress.html#a4c8212c3abbe2ae70399b4952e41ee50',1,'cbee::InetAddress::InetAddress(const char *ip, uint16_t port)'],['../d9/da3/classcbee_1_1InetAddress.html#a6c24f6aff04fb0aec68dc7ece73c0892',1,'cbee::InetAddress::InetAddress(const InetAddress &amp;)=delete']]],
-  ['inetaddress_2ecpp',['InetAddress.cpp',['../d4/d7c/InetAddress_8cpp.html',1,'']]],
-  ['inetaddress_2eh',['InetAddress.h',['../d3/d6b/InetAddress_8h.html',1,'']]]
+  ['fatal',['Fatal',['../da/d7e/namespaceel.html#ab0ac6091262344c52dd2d3ad099e8e36a882384ec38ce8d9582b57e70861730e4',1,'el']]],
+  ['file',['File',['../dc/d5c/classel_1_1base_1_1utils_1_1File.html',1,'el::base::utils::File'],['../d9/dd3/classel_1_1LogMessage.html#adcced1cf014f9dde378c58e0f993640e',1,'el::LogMessage::file()'],['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00a0b27918290ff5323bea1e3b78a9cf04e',1,'el::base::File()']]],
+  ['filebase',['FileBase',['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00a363d6c255447a7ca6ef9c06b73a8a87d',1,'el::base']]],
+  ['filehandle',['fileHandle',['../d2/d17/classel_1_1LogDispatchCallback.html#a6d501ca4bc6082c4c021a929d72badb7',1,'el::LogDispatchCallback']]],
+  ['filename',['filename',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a6e989a8496b9e08e6e8c9ac4d3fe5b1e',1,'el::base::TypedConfigurations::filename()'],['../dd/dbd/classel_1_1base_1_1HitCounter.html#a47876995665d4f6389ac150ac8a80b89',1,'el::base::HitCounter::filename()'],['../da/d7e/namespaceel.html#a281f5db6d6163678bc68a8b23b59e124a1351017ac6423911223bc19a8cb7c653',1,'el::Filename()']]],
+  ['filestream',['fileStream',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#af39c020c90e67b5f817f318fcb11e611',1,'el::base::TypedConfigurations']]],
+  ['filestreamptr',['FileStreamPtr',['../d4/d7f/namespaceel_1_1base.html#a8b10bcfd674533f8340cd8c39fbf5233',1,'el::base']]],
+  ['fixedtimeformat',['FixedTimeFormat',['../da/d7e/namespaceel.html#a2784aacd04cb7816ac1c0b20fcbf83cbaebbb601e28e0cf821dfe13b4a7cf409e',1,'el']]],
+  ['flags',['flags',['../db/df7/classel_1_1base_1_1LogFormat.html#ae4fc4ce8c79267d8e50161e0f5f27e46',1,'el::base::LogFormat::flags()'],['../d0/da4/classel_1_1base_1_1Storage.html#aef58f703540d1cd21942d487ba56a686',1,'el::base::Storage::flags()']]],
+  ['flush',['flush',['../d3/d2c/classel_1_1Logger.html#a9a89d454008b1ee1a197eec4b92ce22a',1,'el::Logger::flush(void)'],['../d3/d2c/classel_1_1Logger.html#a83c85278ebeeef6a24cc112e56c344dd',1,'el::Logger::flush(Level level, base::type::fstream_t *fs)']]],
+  ['flushall',['flushAll',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#abe6fdac67d9d4c35fb48c9fd88a49c2e',1,'el::base::RegisteredLoggers::flushAll()'],['../d7/d00/classel_1_1Loggers.html#a47e5eca4ee2f6cfbdccb2efabd2c4f12',1,'el::Loggers::flushAll()']]],
+  ['foreachconfigtype',['forEachConfigType',['../d8/d56/classel_1_1ConfigurationTypeHelper.html#a0b91c3c00c57483cbddca2748f477582',1,'el::ConfigurationTypeHelper']]],
+  ['foreachlevel',['forEachLevel',['../d2/d13/classel_1_1LevelHelper.html#a7f0dbfceb2354a72c2802d02c300430d',1,'el::LevelHelper']]],
+  ['format',['format',['../db/df7/classel_1_1base_1_1LogFormat.html#a303f2232c995032146d6e820c6018a4e',1,'el::base::LogFormat::format()'],['../da/d7e/namespaceel.html#a281f5db6d6163678bc68a8b23b59e124a520d0db389f362bf79ef56ca0af3dcab',1,'el::Format()']]],
+  ['formatflags',['FormatFlags',['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00',1,'el::base']]],
+  ['formatspecifier',['formatSpecifier',['../d1/d0d/classel_1_1CustomFormatSpecifier.html#a471026e281855795db7df0193e43fa5a',1,'el::CustomFormatSpecifier']]],
+  ['formatspecifiervalueresolver',['FormatSpecifierValueResolver',['../da/d7e/namespaceel.html#a7127f2de2769e2a199a3665f42028a16',1,'el']]],
+  ['formattime',['formatTime',['../db/d87/classel_1_1base_1_1utils_1_1DateTime.html#a9f19da20362c685d32be922a06faf586',1,'el::base::utils::DateTime']]],
+  ['fstream_5ft',['fstream_t',['../da/d71/namespaceel_1_1base_1_1type.html#a620c830ead75d26b45c060c211ee2685',1,'el::base::type']]],
+  ['func',['func',['../d9/dd3/classel_1_1LogMessage.html#a6b77bd14c0f79ab8a9157a3be6a414af',1,'el::LogMessage']]],
+  ['function',['Function',['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00a86408593c34af77fdd90df932f8b5261',1,'el::base']]],
+  ['functions_2eh',['Functions.h',['../d8/db9/Functions_8h.html',1,'']]]
 ];
