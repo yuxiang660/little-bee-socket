@@ -44,7 +44,7 @@ void Sockaddr::setPort(uint16_t port)
 std::string Sockaddr::getIp() const
 {
    char buf[INET_ADDRSTRLEN];
-   auto ret = ::inet_ntop(AF_INET, &address.sin_addr, buf, INET_ADDRSTRLEN);
+   __attribute__((unused)) auto ret = ::inet_ntop(AF_INET, &address.sin_addr, buf, INET_ADDRSTRLEN);
    assert(ret != nullptr);
    return std::string(buf);
 }

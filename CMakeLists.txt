@@ -45,7 +45,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 
 set(CXX_FLAGS
     -g
-    # -DVALGRIND
+    -DVALGRIND
     -DCHECK_PTHREAD_RETURN_VALUE
     -D_FILE_OFFSET_BITS=64
     -Wall
@@ -59,7 +59,7 @@ set(CXX_FLAGS
     -Wshadow
     -Wwrite-strings
     -march=native
-    # -MMD
+    -MMD
     -std=c++17
     -rdynamic
 )

@@ -3,6 +3,7 @@
     "files.associations": {
         "*.tpl": "html",
         "*.gtpl": "html",
+        "*.json": "jsonc",
         "cctype": "cpp",
         "clocale": "cpp",
         "cmath": "cpp",
@@ -52,7 +53,16 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "cinttypes": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "csignal": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "codecvt": "cpp",
+        "condition_variable": "cpp",
+        "filesystem": "cpp",
+        "ratio": "cpp",
+        "mutex": "cpp",
+        "thread": "cpp"
     },
     "[cpp]": {
         "editor.formatOnSave": true,
