@@ -27,11 +27,12 @@ add_doxygen(${LIB_NAME})
 install(TARGETS ${LIB_NAME} DESTINATION lib)
 
 # export public headers
-set(HEADERS
-    Break.h
-    BreakFactory.h
-)
-install(FILES ${HEADERS} DESTINATION include)
+file(GLOB_RECURSE HEADERS RELATIVE ${CMAKE_CURRENT_LIST_DIR} "*.h")
+list(FILTER HEADERS EXCLUDE REGEX "internal/+")
+foreach (header ${HEADERS})
+    get_filename_component(dir ${header} DIRECTORY)
+    install(FILES ${header} DESTINATION include/${dir})
+endforeach()
 
 # set test name
 set(TEST_NAME unit_test)
