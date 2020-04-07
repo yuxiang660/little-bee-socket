@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-   cout << "Little Bee Socket System Test" << endl;
+   cout << "Little Bee Logger System Test" << endl;
    LOG(WARNING) << "Logger WARNING";
    LOG(TRACE) << "Logger TRACE";
    LOG(DEBUG) << "Logger DEBUG";

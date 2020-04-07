@@ -28,7 +28,6 @@ install(TARGETS ${LIB_NAME} DESTINATION lib)
 
 # export public headers
 file(GLOB_RECURSE HEADERS RELATIVE ${CMAKE_CURRENT_LIST_DIR} "*.h")
-list(FILTER HEADERS EXCLUDE REGEX "internal/+")
 foreach (header ${HEADERS})
     get_filename_component(dir ${header} DIRECTORY)
     install(FILES ${header} DESTINATION include/${dir})

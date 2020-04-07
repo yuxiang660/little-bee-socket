@@ -9,7 +9,7 @@ struct Initializer
    Initializer()
    {
       // Loading the library
-      configLogger();
+      Logger::config();
    }
 
    ~Initializer()

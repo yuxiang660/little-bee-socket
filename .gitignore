@@ -33,3 +33,9 @@
 
 # build foler
 build/
+
+# excutable main
+main
+
+# log file
+*.log
