@@ -18,6 +18,7 @@ var searchData=
   ['configure',['configure',['../d3/d2c/classel_1_1Logger.html#ad9db621dbf8977bf814dc7baea8dcee4',1,'el::Logger']]],
   ['configurefromarg',['configureFromArg',['../d7/d00/classel_1_1Loggers.html#a44f58d08d3ccb502e639db1c61893194',1,'el::Loggers']]],
   ['configurefromglobal',['configureFromGlobal',['../d7/d00/classel_1_1Loggers.html#adedfcc17831fe3d3f14026c91e8df88c',1,'el::Loggers']]],
+  ['connect',['connect',['../da/df5/classcbee_1_1Socket.html#a14b1b0c425ad39e829d6166ea4cc093d',1,'cbee::Socket']]],
   ['construct',['construct',['../d8/dea/classel_1_1base_1_1Writer.html#ab1678300b6c7144041e09be423821682',1,'el::base::Writer::construct(Logger *logger, bool needLock=true)'],['../d8/dea/classel_1_1base_1_1Writer.html#a0662aa19522d77df6e1105f35c8c367a',1,'el::base::Writer::construct(int count, const char *loggerIds,...)']]],
   ['contains',['contains',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a1b4b61f9018c964cdf581e641c464947',1,'el::base::utils::Str']]],
   ['convertandaddtobuff',['convertAndAddToBuff',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a42c64659443d9e4144d5382007315896',1,'el::base::utils::Str']]],
