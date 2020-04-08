@@ -43,6 +43,7 @@ var searchData=
   ['elpp_5flogging_5fenabled',['ELPP_LOGGING_ENABLED',['../d8/d1b/easylogging_09_09_8h.html#a0d01a905059a6617fc0d93ae3ce973f0',1,'easylogging++.h']]],
   ['elpp_5fmin_5funit',['ELPP_MIN_UNIT',['../d8/d1b/easylogging_09_09_8h.html#ab0430832b9398ff2e8988c1c49aad35d',1,'easylogging++.h']]],
   ['elpp_5fmingw',['ELPP_MINGW',['../d8/d1b/easylogging_09_09_8h.html#a5d71bf527d5039a580768a70aa06a2d3',1,'easylogging++.h']]],
+  ['elpp_5fno_5fdefault_5flog_5ffile',['ELPP_NO_DEFAULT_LOG_FILE',['../d8/d1b/easylogging_09_09_8h.html#a5dca5cbbbd18c88445f7c80133daa9f1',1,'easylogging++.h']]],
   ['elpp_5fos_5faix',['ELPP_OS_AIX',['../d8/d1b/easylogging_09_09_8h.html#a59179b7e53ddd99b7df6ce5117bb1233',1,'easylogging++.h']]],
   ['elpp_5fos_5fandroid',['ELPP_OS_ANDROID',['../d8/d1b/easylogging_09_09_8h.html#af7bf1b734c14c1360bb15cc989761c52',1,'easylogging++.h']]],
   ['elpp_5fos_5femscripten',['ELPP_OS_EMSCRIPTEN',['../d8/d1b/easylogging_09_09_8h.html#aeaaa18136fb70c64089a57ba9c06c37b',1,'easylogging++.h']]],

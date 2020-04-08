@@ -17,7 +17,6 @@ var searchData=
   ['kdebuglevelshortlogvalue',['kDebugLevelShortLogValue',['../d3/deb/namespaceel_1_1base_1_1consts.html#a10cb30a446d053bb0c4929e494111748',1,'el::base::consts']]],
   ['kdefaultdatetimeformat',['kDefaultDateTimeFormat',['../d3/deb/namespaceel_1_1base_1_1consts.html#aa280e15035697d1099e92e6f8abac209',1,'el::base::consts']]],
   ['kdefaultdatetimeformatinfilename',['kDefaultDateTimeFormatInFilename',['../d3/deb/namespaceel_1_1base_1_1consts.html#a4f337f1f2926fbf574befb99f7b21400',1,'el::base::consts']]],
-  ['kdefaultlogfile',['kDefaultLogFile',['../d3/deb/namespaceel_1_1base_1_1consts.html#a692d523e5ed680cf56aa267cc1de4fcb',1,'el::base::consts']]],
   ['kdefaultlogfileparam',['kDefaultLogFileParam',['../d3/deb/namespaceel_1_1base_1_1consts.html#a998c4ac3fc1d1790ed04d03fae93348c',1,'el::base::consts']]],
   ['kdefaultloggerid',['kDefaultLoggerId',['../d3/deb/namespaceel_1_1base_1_1consts.html#a579f4199db76c46a4f814e0b5507cc59',1,'el::base::consts']]],
   ['kdefaultsubsecondprecision',['kDefaultSubsecondPrecision',['../d3/deb/namespaceel_1_1base_1_1consts.html#a6f2ac27cf28def8cdaa95fb5e745f902',1,'el::base::consts']]],
