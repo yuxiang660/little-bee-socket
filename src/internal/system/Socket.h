@@ -14,10 +14,10 @@ public:
    Socket();
    Socket(const int socketFd);
 
-   void bind(const Sockaddr* serverAddr);
+   void bind(const Sockaddr& serverAddr);
    void listen();
    Socket accept(Sockaddr* connectAddr);
-   void connect(const Sockaddr* serverAddr);
+   void connect(const Sockaddr& serverAddr);
 
 private:
    struct sockaddr* sockaddrCast(Sockaddr* addr);

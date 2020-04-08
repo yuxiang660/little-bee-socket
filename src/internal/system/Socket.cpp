@@ -16,9 +16,9 @@ Socket::Socket(const int socketFd) : fd(socketFd)
    assert(fd >= 0);
 }
 
-void Socket::bind(const Sockaddr* serverAddr)
+void Socket::bind(const Sockaddr& serverAddr)
 {
-   if (::bind(fd, sockaddrCast(serverAddr), sizeof(Sockaddr)) < 0)
+   if (::bind(fd, sockaddrCast(&serverAddr), sizeof(Sockaddr)) < 0)
    {
       perror("bind failure");
       exit(EXIT_FAILURE);
@@ -46,9 +46,9 @@ Socket Socket::accept(Sockaddr* connectAddr)
    return connfd;
 }
 
-void Socket::connect(const Sockaddr* serverAddr)
+void Socket::connect(const Sockaddr& serverAddr)
 {
-   if (::connect(fd, sockaddrCast(serverAddr), static_cast<socklen_t>(sizeof(Sockaddr))) < 0)
+   if (::connect(fd, sockaddrCast(&serverAddr), static_cast<socklen_t>(sizeof(Sockaddr))) < 0)
    {
       perror("connect failure");
       exit(EXIT_FAILURE);

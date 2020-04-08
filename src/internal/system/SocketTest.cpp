@@ -20,14 +20,14 @@ public:
 
    void serve()
    {
-      serverSocket.bind(&serverAddr);
+      serverSocket.bind(serverAddr);
       serverSocket.listen();
       serverSocket.accept(&connectAddr);
    }
 
    void connect()
    {
-      clientSocket.connect(&serverAddr);
+      clientSocket.connect(serverAddr);
    }
 
    cbee::Socket serverSocket;
