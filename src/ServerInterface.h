@@ -8,7 +8,7 @@ namespace cbee
 class ServerInterface
 {
 public:
-   virtual ~ServerInterface() = 0;
+   virtual ~ServerInterface() = default;
    virtual void start() = 0;
    // Server Process:
    // 1. Connect
