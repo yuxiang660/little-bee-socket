@@ -36,6 +36,7 @@ void Socket::listen()
 
 Socket Socket::accept(Sockaddr* connectAddr)
 {
+   assert(connectAddr != nullptr);
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
    int connfd = ::accept(fd, sockaddrCast(connectAddr), &addrlen);
    if (connfd < 0)
