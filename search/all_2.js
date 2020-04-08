@@ -80,7 +80,7 @@ var searchData=
   ['configure',['configure',['../d3/d2c/classel_1_1Logger.html#ad9db621dbf8977bf814dc7baea8dcee4',1,'el::Logger']]],
   ['configurefromarg',['configureFromArg',['../d7/d00/classel_1_1Loggers.html#a44f58d08d3ccb502e639db1c61893194',1,'el::Loggers']]],
   ['configurefromglobal',['configureFromGlobal',['../d7/d00/classel_1_1Loggers.html#adedfcc17831fe3d3f14026c91e8df88c',1,'el::Loggers']]],
-  ['connect',['connect',['../da/df5/classcbee_1_1Socket.html#a14b1b0c425ad39e829d6166ea4cc093d',1,'cbee::Socket']]],
+  ['connect',['connect',['../da/df5/classcbee_1_1Socket.html#aa3464b720689807549fe1b02f426bc3f',1,'cbee::Socket']]],
   ['connectedfunc',['connectedFunc',['../d9/dba/classcbee_1_1Server.html#ae389db525e17743beacf1ae6e6cf3805',1,'cbee::Server::connectedFunc()'],['../d1/dd4/namespacecbee.html#ae3c3b51144d820840945bff6d4920eef',1,'cbee::ConnectedFunc()']]],
   ['const_5fiterator',['const_iterator',['../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html#a3bbf19b112c067cb1a02a82b003cc7e2',1,'el::base::utils::AbstractRegistry::const_iterator()'],['../dc/de0/classel_1_1base_1_1utils_1_1Registry.html#a955e62adc74c60d0205b52a3fc430cef',1,'el::base::utils::Registry::const_iterator()'],['../d7/d3a/classel_1_1base_1_1utils_1_1RegistryWithPred.html#ad9af7a8eeedd58a75eb70bccb334f6dc',1,'el::base::utils::RegistryWithPred::const_iterator()']]],
   ['construct',['construct',['../d8/dea/classel_1_1base_1_1Writer.html#ab1678300b6c7144041e09be423821682',1,'el::base::Writer::construct(Logger *logger, bool needLock=true)'],['../d8/dea/classel_1_1base_1_1Writer.html#a0662aa19522d77df6e1105f35c8c367a',1,'el::base::Writer::construct(int count, const char *loggerIds,...)']]],
