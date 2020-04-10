@@ -13,13 +13,22 @@ class SocketTest : public testing::Test
 public:
    SocketTest()
    {
-      serverAddr.setInetFamily();
-      serverAddr.setIp(false);
-      serverAddr.setPort(8080);
+      serverSocket.open();
+      clientSocket.open();
+   }
+
+   ~SocketTest()
+   {
+      serverSocket.close();
+      clientSocket.close();
    }
 
    void serve()
    {
+      serverAddr.setInetFamily();
+      serverAddr.setIp(false);
+      serverAddr.setPort(8080);
+
       serverSocket.bind(serverAddr);
       serverSocket.listen();
       serverSocket.accept(&connectAddr);
