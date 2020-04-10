@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unit',['unit',['../d3/deb/namespaceel_1_1base_1_1consts.html#a0c99046e04195e209e09f90ea71dd5fd',1,'el::base::consts']]]
+  ['stringtolevelmap',['stringToLevelMap',['../da/d7e/namespaceel.html#a56f975c71aeea7c310c7bb409721c624',1,'el']]]
 ];

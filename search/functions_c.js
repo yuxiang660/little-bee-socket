@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['open',['open',['../da/df5/classcbee_1_1Socket.html#af2aa6644200ea3c1ed3640d1c81ecbca',1,'cbee::Socket']]],
   ['operator_20bool',['operator bool',['../dc/d20/classel_1_1base_1_1NullWriter.html#a0d1313fd900f548bb67bc1a1785a4048',1,'el::base::NullWriter::operator bool()'],['../d8/dea/classel_1_1base_1_1Writer.html#ac518e6b23327127f63c6d26ee83ecbf9',1,'el::base::Writer::operator bool()']]],
   ['operator_21_3d',['operator!=',['../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html#a35de8807521651c85acb26532a2623e1',1,'el::base::utils::AbstractRegistry']]],
   ['operator_28_29',['operator()',['../d9/d53/structstd_1_1hash_3_01el_1_1Level_01_4.html#a361c2463725cf37d3ac782d853d8c68b',1,'std::hash&lt; el::Level &gt;::operator()()'],['../d5/d63/classel_1_1Configuration_1_1Predicate.html#a961e7b14fc7541eefb04cbdcbc074e6e',1,'el::Configuration::Predicate::operator()()'],['../dc/d65/classel_1_1base_1_1HitCounter_1_1Predicate.html#ae07b1562a3c0ed38457401e60b80b0c5',1,'el::base::HitCounter::Predicate::operator()()']]],

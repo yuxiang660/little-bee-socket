@@ -1,15 +1,10 @@
 var searchData=
 [
-  ['scopedaddflag',['ScopedAddFlag',['../de/db6/classel_1_1Loggers_1_1ScopedAddFlag.html',1,'el::Loggers']]],
-  ['scopedremoveflag',['ScopedRemoveFlag',['../d0/d6b/classel_1_1Loggers_1_1ScopedRemoveFlag.html',1,'el::Loggers']]],
-  ['server',['Server',['../d9/dba/classcbee_1_1Server.html',1,'cbee']]],
-  ['serverinterface',['ServerInterface',['../de/d4d/classcbee_1_1ServerInterface.html',1,'cbee']]],
-  ['sockaddr',['Sockaddr',['../d0/da4/classcbee_1_1Sockaddr.html',1,'cbee']]],
-  ['socket',['Socket',['../da/df5/classcbee_1_1Socket.html',1,'cbee']]],
-  ['staticclass',['StaticClass',['../d6/d99/classel_1_1base_1_1StaticClass.html',1,'el::base']]],
-  ['storage',['Storage',['../d0/da4/classel_1_1base_1_1Storage.html',1,'el::base']]],
-  ['str',['Str',['../da/df8/classel_1_1base_1_1utils_1_1Str.html',1,'el::base::utils']]],
-  ['stringtolevelitem',['StringToLevelItem',['../dc/d75/structel_1_1StringToLevelItem.html',1,'el']]],
-  ['subsecondprecision',['SubsecondPrecision',['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html',1,'el::base']]],
-  ['sysloginitializer',['SysLogInitializer',['../d2/d9e/classel_1_1SysLogInitializer.html',1,'el']]]
+  ['registeredhitcounters',['RegisteredHitCounters',['../db/dc6/classel_1_1base_1_1RegisteredHitCounters.html',1,'el::base']]],
+  ['registeredloggers',['RegisteredLoggers',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html',1,'el::base']]],
+  ['registry',['Registry',['../dc/de0/classel_1_1base_1_1utils_1_1Registry.html',1,'el::base::utils']]],
+  ['registry_3c_20logger_2c_20std_3a_3astring_20_3e',['Registry&lt; Logger, std::string &gt;',['../dc/de0/classel_1_1base_1_1utils_1_1Registry.html',1,'el::base::utils']]],
+  ['registrywithpred',['RegistryWithPred',['../d7/d3a/classel_1_1base_1_1utils_1_1RegistryWithPred.html',1,'el::base::utils']]],
+  ['registrywithpred_3c_20base_3a_3ahitcounter_2c_20base_3a_3ahitcounter_3a_3apredicate_20_3e',['RegistryWithPred&lt; base::HitCounter, base::HitCounter::Predicate &gt;',['../d7/d3a/classel_1_1base_1_1utils_1_1RegistryWithPred.html',1,'el::base::utils']]],
+  ['registrywithpred_3c_20configuration_2c_20configuration_3a_3apredicate_20_3e',['RegistryWithPred&lt; Configuration, Configuration::Predicate &gt;',['../d7/d3a/classel_1_1base_1_1utils_1_1RegistryWithPred.html',1,'el::base::utils']]]
 ];

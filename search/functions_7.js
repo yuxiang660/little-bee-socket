@@ -1,6 +1,7 @@
 var searchData=
 [
   ['handle',['handle',['../d6/d00/classel_1_1Callback.html#a8997c7971d65062c374ef24e653061be',1,'el::Callback::handle()'],['../d2/d17/classel_1_1LogDispatchCallback.html#ae6665785add9325f7b30512534ea1e9d',1,'el::LogDispatchCallback::handle()'],['../d0/dda/classel_1_1base_1_1DefaultLogDispatchCallback.html#acdac30f202c245500e6d94c55eee6d95',1,'el::base::DefaultLogDispatchCallback::handle()']]],
+  ['handleevent',['handleEvent',['../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a',1,'cbee::Event']]],
   ['has',['has',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#a85916925e2c53d1ebf9865625132a0be',1,'el::base::RegisteredLoggers']]],
   ['hasconfiguration',['hasConfiguration',['../d0/d64/classel_1_1Configurations.html#a1e812370f896b6429bf46b31fcd4e3e0',1,'el::Configurations::hasConfiguration(ConfigurationType configurationType)'],['../d0/d64/classel_1_1Configurations.html#a5313557efac3b0c78f973a5a1d685277',1,'el::Configurations::hasConfiguration(Level level, ConfigurationType configurationType)']]],
   ['hascustomformatspecifier',['hasCustomFormatSpecifier',['../d0/da4/classel_1_1base_1_1Storage.html#ae953cb6e8acafa96c5c1ab2f4826a4a5',1,'el::base::Storage::hasCustomFormatSpecifier()'],['../d0/df2/classel_1_1Helpers.html#a154ce041890564d1ae5f87184e24f13d',1,'el::Helpers::hasCustomFormatSpecifier()']]],
