@@ -1,4 +1,4 @@
-#include "Event.h"
+#include "SocketEvent.h"
 #include "log/Logger.h"
 
 #include <assert.h>
@@ -6,7 +6,7 @@
 namespace cbee
 {
 
-Event::Event
+SocketEvent::SocketEvent
 (
    const Socket& socket,
    ReadFunc read,
@@ -25,47 +25,47 @@ Event::Event
    assert(bindedSocket.getFd() >= 0);
 }
 
-int Event::getAllEvents() const
+int SocketEvent::getAllEvents() const
 {
    return allEvents;
 }
 
-int Event::getActiveEvents() const
+int SocketEvent::getActiveEvents() const
 {
    return activeEvents;
 }
 
-void Event::setActiveEvents(int events)
+void SocketEvent::setActiveEvents(int events)
 {
    activeEvents = events;
 }
 
-void Event::enableReadEvent()
+void SocketEvent::enableReadEvent()
 {
    allEvents |= kConnectedOrReadableOrCloseEvent;
 }
 
-void Event::disableReadEvent()
+void SocketEvent::disableReadEvent()
 {
    allEvents &= ~kConnectedOrReadableOrCloseEvent;
 }
 
-void Event::enableWriteEvent()
+void SocketEvent::enableWriteEvent()
 {
    allEvents |= kWritableEvent;
 }
 
-void Event::disableWriteEvent()
+void SocketEvent::disableWriteEvent()
 {
    allEvents &= kWritableEvent;
 }
 
-void Event::disableAllEvents()
+void SocketEvent::disableAllEvents()
 {
    allEvents = kNoneEvent;
 }
 
-void Event::handleEvent() const
+void SocketEvent::handleEvent() const
 {
    if (activeEvents & kErrorEvent)
    {

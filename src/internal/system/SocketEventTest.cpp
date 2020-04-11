@@ -1,4 +1,4 @@
-#include "Event.h"
+#include "SocketEvent.h"
 #include "Socket.h"
 
 #include <gtest/gtest.h>
@@ -7,10 +7,10 @@
 namespace
 {
 
-class EventTest : public ::testing::Test
+class SocketEventTest : public ::testing::Test
 {
 public:
-   EventTest() :
+   SocketEventTest() :
       socket(),
       event
       (
@@ -28,12 +28,8 @@ public:
    {
    }
 
-   ~EventTest()
-   {
-   }
-
    cbee::Socket socket;
-   cbee::Event event;
+   cbee::SocketEvent event;
    bool readDone;
    bool writeDone;
    bool removeDone;
@@ -41,9 +37,9 @@ public:
    int removedFd;
 };
 
-TEST_F(EventTest, readEvent_expectedCallBack)
+TEST_F(SocketEventTest, readEvent_expectedCallBack)
 {
-   event.setActiveEvents(cbee::Event::kConnectedOrReadableOrCloseEvent);
+   event.setActiveEvents(cbee::SocketEvent::kConnectedOrReadableOrCloseEvent);
    event.handleEvent();
    EXPECT_EQ(false, writeDone);
    EXPECT_EQ(true, readDone);
@@ -51,9 +47,9 @@ TEST_F(EventTest, readEvent_expectedCallBack)
    EXPECT_EQ(false, errorDone);
 }
 
-TEST_F(EventTest, writeEvent_expectedCallBack)
+TEST_F(SocketEventTest, writeEvent_expectedCallBack)
 {
-   event.setActiveEvents(cbee::Event::kWritableEvent);
+   event.setActiveEvents(cbee::SocketEvent::kWritableEvent);
    event.handleEvent();
    EXPECT_EQ(true, writeDone);
    EXPECT_EQ(false, readDone);
@@ -61,9 +57,9 @@ TEST_F(EventTest, writeEvent_expectedCallBack)
    EXPECT_EQ(false, errorDone);
 }
 
-TEST_F(EventTest, errorEvent_expectedCallBack)
+TEST_F(SocketEventTest, errorEvent_expectedCallBack)
 {
-   event.setActiveEvents(cbee::Event::kErrorEvent);
+   event.setActiveEvents(cbee::SocketEvent::kErrorEvent);
    event.handleEvent();
    EXPECT_EQ(false, writeDone);
    EXPECT_EQ(false, readDone);
@@ -71,9 +67,9 @@ TEST_F(EventTest, errorEvent_expectedCallBack)
    EXPECT_EQ(true, errorDone);
 }
 
-TEST_F(EventTest, removeEvent_expectedCallBack)
+TEST_F(SocketEventTest, removeEvent_expectedCallBack)
 {
-   event.setActiveEvents(cbee::Event::kRemoveEvent);
+   event.setActiveEvents(cbee::SocketEvent::kRemoveEvent);
    event.handleEvent();
    EXPECT_EQ(false, writeDone);
    EXPECT_EQ(false, readDone);

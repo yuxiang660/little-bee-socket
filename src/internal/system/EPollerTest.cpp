@@ -1,5 +1,5 @@
 #include "EPoller.h"
-#include "Event.h"
+#include "SocketEvent.h"
 #include "Sockaddr.h"
 #include "Socket.h"
 
@@ -19,7 +19,7 @@ public:
    (
       const cbee::EPoller& e,
       const int fd,
-      cbee::Event::RemoveFunc remove
+      cbee::SocketEvent::RemoveFunc remove
    ) :
       epoll(e),
       socket(fd),
@@ -37,14 +37,14 @@ public:
       event.enableReadEvent();
    }
 
-   void updateEvent()
+   void updateSocketEvent()
    {
-      epoll.updateEvent(socket, &event);
+      epoll.updateSocketEvent(socket, &event);
    }
 
-   void deleteEvent()
+   void deleteSocketEvent()
    {
-      epoll.deleteEvent(socket);
+      epoll.deleteSocketEvent(socket);
    }
 
    const cbee::Socket& getSocket() const
@@ -73,8 +73,8 @@ private:
 private:
    const cbee::EPoller& epoll;
    cbee::Socket socket;
-   cbee::Event::RemoveFunc handleRemove;
-   cbee::Event event;
+   cbee::SocketEvent::RemoveFunc handleRemove;
+   cbee::SocketEvent event;
 };
 
 class EPollerTest : public ::testing::Test
@@ -102,7 +102,7 @@ public:
 
       serverSocket.bind(serverAddr);
       serverSocket.listen();
-      epoll.updateEvent(serverSocket, &serverEvent);
+      epoll.updateSocketEvent(serverSocket, &serverEvent);
 
       auto connenctEvent = epoll.poll(-1).front();
       EXPECT_EQ(EPOLLIN, connenctEvent->getActiveEvents());
@@ -121,7 +121,7 @@ public:
 
    cbee::EPoller epoll;
    cbee::Socket serverSocket;
-   cbee::Event serverEvent;
+   cbee::SocketEvent serverEvent;
 
    cbee::Sockaddr serverAddr;
    std::unique_ptr<Connection> connection;
@@ -134,13 +134,13 @@ private:
       EXPECT_STREQ("127.0.0.1", connectAddr.getIp().c_str());
 
       connection = std::make_unique<Connection>(epoll, connectionFd, [this](int fdKey){removeConnection(fdKey);});
-      connection->updateEvent();
+      connection->updateSocketEvent();
    }
 
    void removeConnection(int fdKey)
    {
       EXPECT_EQ(fdKey, connection->getSocket().getFd());
-      connection->deleteEvent();
+      connection->deleteSocketEvent();
       connection.reset();
    }
 };
