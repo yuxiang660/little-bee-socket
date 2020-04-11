@@ -19,7 +19,7 @@ var searchData=
   ['_7escopedaddflag',['~ScopedAddFlag',['../de/db6/classel_1_1Loggers_1_1ScopedAddFlag.html#a81902a30dc450a8f9b154ae72e0250d7',1,'el::Loggers::ScopedAddFlag']]],
   ['_7escopedremoveflag',['~ScopedRemoveFlag',['../d0/d6b/classel_1_1Loggers_1_1ScopedRemoveFlag.html#a594658e9dbe13ecbdfa136decb89645c',1,'el::Loggers::ScopedRemoveFlag']]],
   ['_7eserverinterface',['~ServerInterface',['../de/d4d/classcbee_1_1ServerInterface.html#af9bbb972b386d381a67584bb9856c81e',1,'cbee::ServerInterface']]],
-  ['_7esocket',['~Socket',['../da/df5/classcbee_1_1Socket.html#ab6fe397cfad69bc2ee52252f60750c82',1,'cbee::Socket']]],
+  ['_7esocketfd',['~SocketFd',['../dd/ddc/classcbee_1_1SocketFd.html#a2e73f5f9bc9062fb072336a255abfecc',1,'cbee::SocketFd']]],
   ['_7estorage',['~Storage',['../d0/da4/classel_1_1base_1_1Storage.html#a0c635c0a87812a340fa725f8db8474c3',1,'el::base::Storage']]],
   ['_7esysloginitializer',['~SysLogInitializer',['../d2/d9e/classel_1_1SysLogInitializer.html#ade55d170ff1f11b55fb1bd6a6b940894',1,'el::SysLogInitializer']]],
   ['_7ethreadsafe',['~ThreadSafe',['../d9/d2e/classel_1_1base_1_1threading_1_1ThreadSafe.html#a97efb9503004202402178a4d3f5940f0',1,'el::base::threading::ThreadSafe']]],

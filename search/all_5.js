@@ -1,7 +1,7 @@
 var searchData=
 [
   ['fatal',['Fatal',['../da/d7e/namespaceel.html#ab0ac6091262344c52dd2d3ad099e8e36a882384ec38ce8d9582b57e70861730e4',1,'el']]],
-  ['fd',['fd',['../da/df5/classcbee_1_1Socket.html#aee56ecc9d373e0f9a173020200287d2e',1,'cbee::Socket']]],
+  ['fd',['fd',['../dd/ddc/classcbee_1_1SocketFd.html#a3a90625bf98d23775a211f4bf08692ec',1,'cbee::SocketFd']]],
   ['file',['File',['../dc/d5c/classel_1_1base_1_1utils_1_1File.html',1,'el::base::utils::File'],['../d9/dd3/classel_1_1LogMessage.html#adcced1cf014f9dde378c58e0f993640e',1,'el::LogMessage::file()'],['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00a0b27918290ff5323bea1e3b78a9cf04e',1,'el::base::File()']]],
   ['filebase',['FileBase',['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00a363d6c255447a7ca6ef9c06b73a8a87d',1,'el::base']]],
   ['filehandle',['fileHandle',['../d2/d17/classel_1_1LogDispatchCallback.html#a6d501ca4bc6082c4c021a929d72badb7',1,'el::LogDispatchCallback']]],

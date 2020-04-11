@@ -80,10 +80,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a34fad2764693925b722b77089fe54b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afada10c028cdf8fb564894d9dadec955"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#afada10c028cdf8fb564894d9dadec955">~EPoller</a> ()</td></tr>
 <tr class="separator:afada10c028cdf8fb564894d9dadec955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b3ac8115f459285045f009585b37ccb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a4b3ac8115f459285045f009585b37ccb">updateSocketEvent</a> (const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;socket, <a class="el" href="../../d1/dd4/namespacecbee.html#a22ecc44194a8e09b1b663b5fee6c2c3f">SocketEventHandler</a> event) const</td></tr>
-<tr class="separator:a4b3ac8115f459285045f009585b37ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a2c784b617959da288ba4ff1efd6704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a8a2c784b617959da288ba4ff1efd6704">deleteSocketEvent</a> (const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;socket) const</td></tr>
-<tr class="separator:a8a2c784b617959da288ba4ff1efd6704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a940abd2247104e167ba2063a3d0ec73b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a940abd2247104e167ba2063a3d0ec73b">updateSocketEvent</a> (const <a class="el" href="../../dd/ddc/classcbee_1_1SocketFd.html">SocketFd</a> &amp;socket, <a class="el" href="../../d1/dd4/namespacecbee.html#a22ecc44194a8e09b1b663b5fee6c2c3f">SocketEventHandler</a> event) const</td></tr>
+<tr class="separator:a940abd2247104e167ba2063a3d0ec73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93b5322523e35685eb796efa83c509b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#aa93b5322523e35685eb796efa83c509b">deleteSocketEvent</a> (const <a class="el" href="../../dd/ddc/classcbee_1_1SocketFd.html">SocketFd</a> &amp;socket) const</td></tr>
+<tr class="separator:aa93b5322523e35685eb796efa83c509b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f6e5c94bc89e0b371719153b32eaf0d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d1/dd4/namespacecbee.html#a22ecc44194a8e09b1b663b5fee6c2c3f">SocketEventHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a1f6e5c94bc89e0b371719153b32eaf0d">poll</a> (int timeoutMs)</td></tr>
 <tr class="separator:a1f6e5c94bc89e0b371719153b32eaf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -167,8 +167,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8a2c784b617959da288ba4ff1efd6704"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a2c784b617959da288ba4ff1efd6704">&#9670;&nbsp;</a></span>deleteSocketEvent()</h2>
+<a id="aa93b5322523e35685eb796efa83c509b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa93b5322523e35685eb796efa83c509b">&#9670;&nbsp;</a></span>deleteSocketEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,14 +176,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void cbee::EPoller::deleteSocketEvent </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../dd/ddc/classcbee_1_1SocketFd.html">SocketFd</a> &amp;&#160;</td>
           <td class="paramname"><em>socket</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#ad475c2659ab437705ef4b057b2e406c6">epollFd</a>, and <a class="el" href="../../da/df5/classcbee_1_1Socket.html#aeed856b706ad8dbc1ef1b1454bac8f30">cbee::Socket::getFd()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#ad475c2659ab437705ef4b057b2e406c6">epollFd</a>, and <a class="el" href="../../dd/ddc/classcbee_1_1SocketFd.html#ab02a89a091affa712ca32df5df00e05f">cbee::SocketFd::getFd()</a>.</p>
 
 </div>
 </div>
@@ -233,8 +233,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b3ac8115f459285045f009585b37ccb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b3ac8115f459285045f009585b37ccb">&#9670;&nbsp;</a></span>updateSocketEvent()</h2>
+<a id="a940abd2247104e167ba2063a3d0ec73b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a940abd2247104e167ba2063a3d0ec73b">&#9670;&nbsp;</a></span>updateSocketEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void cbee::EPoller::updateSocketEvent </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../dd/ddc/classcbee_1_1SocketFd.html">SocketFd</a> &amp;&#160;</td>
           <td class="paramname"><em>socket</em>, </td>
         </tr>
         <tr>
@@ -259,7 +259,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#ad475c2659ab437705ef4b057b2e406c6">epollFd</a>, and <a class="el" href="../../da/df5/classcbee_1_1Socket.html#aeed856b706ad8dbc1ef1b1454bac8f30">cbee::Socket::getFd()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#ad475c2659ab437705ef4b057b2e406c6">epollFd</a>, and <a class="el" href="../../dd/ddc/classcbee_1_1SocketFd.html#ab02a89a091affa712ca32df5df00e05f">cbee::SocketFd::getFd()</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a8a2c784b617959da288ba4ff1efd6704">deleteSocketEvent()</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a34fad2764693925b722b77089fe54b16">EPoller()</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a1f6e5c94bc89e0b371719153b32eaf0d">poll()</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a4b3ac8115f459285045f009585b37ccb">updateSocketEvent()</a>, and <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#afada10c028cdf8fb564894d9dadec955">~EPoller()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#aa93b5322523e35685eb796efa83c509b">deleteSocketEvent()</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a34fad2764693925b722b77089fe54b16">EPoller()</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a1f6e5c94bc89e0b371719153b32eaf0d">poll()</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a940abd2247104e167ba2063a3d0ec73b">updateSocketEvent()</a>, and <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#afada10c028cdf8fb564894d9dadec955">~EPoller()</a>.</p>
 
 </div>
 </div>

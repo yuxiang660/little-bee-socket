@@ -5,7 +5,7 @@ var searchData=
   ['defaultconfigurations',['defaultConfigurations',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#acb38f67cf5e297f4be3efa5312e09914',1,'el::base::RegisteredLoggers::defaultConfigurations()'],['../d7/d00/classel_1_1Loggers.html#ac40ea77b26a058b8f820be7a119ce69f',1,'el::Loggers::defaultConfigurations()']]],
   ['defaultprerolloutcallback',['defaultPreRollOutCallback',['../d4/d7f/namespaceel_1_1base.html#ac727cc7769b50f434890d370614baf25',1,'el::base']]],
   ['defaulttypedconfigurations',['defaultTypedConfigurations',['../d7/d00/classel_1_1Loggers.html#a592324bd539ea075101031c14cd9fd41',1,'el::Loggers']]],
-  ['deletesocketevent',['deleteSocketEvent',['../da/db8/classcbee_1_1EPoller.html#a8a2c784b617959da288ba4ff1efd6704',1,'cbee::EPoller']]],
+  ['deletesocketevent',['deleteSocketEvent',['../da/db8/classcbee_1_1EPoller.html#aa93b5322523e35685eb796efa83c509b',1,'cbee::EPoller']]],
   ['disableallevents',['disableAllEvents',['../d0/dfe/classcbee_1_1SocketEvent.html#a030a28eb5a6f78de508bc9a40681e040',1,'cbee::SocketEvent']]],
   ['disablereadevent',['disableReadEvent',['../d0/dfe/classcbee_1_1SocketEvent.html#a45dd494b11153c1a8d1b8ea377f1a516',1,'cbee::SocketEvent']]],
   ['disablewriteevent',['disableWriteEvent',['../d0/dfe/classcbee_1_1SocketEvent.html#a6fb84b41bc7448d9ac1a619c6384bafa',1,'cbee::SocketEvent']]],
