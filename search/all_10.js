@@ -49,7 +49,7 @@ var searchData=
   ['shutdownread',['shutdownRead',['../da/df5/classcbee_1_1Socket.html#a392fc9fd2bffbf06a833f09ebb89c872',1,'cbee::Socket']]],
   ['shutdownwrite',['shutdownWrite',['../da/df5/classcbee_1_1Socket.html#ad956da11d446e69917bcded64d9f78de',1,'cbee::Socket']]],
   ['size',['size',['../dc/d6e/classel_1_1base_1_1utils_1_1CommandLineArgs.html#a1f7125d74bf8e88d0e51dd6d12af0000',1,'el::base::utils::CommandLineArgs::size()'],['../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html#a58a7b8ea964bdf6008701dcfb6609ca5',1,'el::base::utils::AbstractRegistry::size()']]],
-  ['sockaddr',['Sockaddr',['../d0/da4/classcbee_1_1Sockaddr.html',1,'cbee::Sockaddr'],['../d0/da4/classcbee_1_1Sockaddr.html#a12a697b7d9b654c44dbc3863b9d4b08f',1,'cbee::Sockaddr::Sockaddr()'],['../d0/da4/classcbee_1_1Sockaddr.html#a45cf2b9413c62e40de7886ead1ca0de9',1,'cbee::Sockaddr::Sockaddr(const Sockaddr &amp;)=delete']]],
+  ['sockaddr',['Sockaddr',['../d0/da4/classcbee_1_1Sockaddr.html',1,'cbee::Sockaddr'],['../d0/da4/classcbee_1_1Sockaddr.html#a12a697b7d9b654c44dbc3863b9d4b08f',1,'cbee::Sockaddr::Sockaddr()']]],
   ['sockaddr_2ecpp',['Sockaddr.cpp',['../d9/def/Sockaddr_8cpp.html',1,'']]],
   ['sockaddr_2eh',['Sockaddr.h',['../d6/d75/Sockaddr_8h.html',1,'']]],
   ['sockaddrcast',['sockaddrCast',['../da/df5/classcbee_1_1Socket.html#aa13796c72bac3194c290fb2996606e39',1,'cbee::Socket::sockaddrCast(Sockaddr *addr)'],['../da/df5/classcbee_1_1Socket.html#a6ab7a162d48c1a0729c1f0aa6aa6562f',1,'cbee::Socket::sockaddrCast(const Sockaddr *addr)']]],
