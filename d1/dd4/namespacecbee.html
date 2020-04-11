@@ -71,6 +71,8 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html">EPoller</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html">Event</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da3/classcbee_1_1InetAddress.html">InetAddress</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfc/structcbee_1_1Initializer.html">Initializer</a></td></tr>
@@ -82,8 +84,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4d/classcbee_1_1ServerInterface.html">ServerInterface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da4/classcbee_1_1Sockaddr.html">Sockaddr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dfe/classcbee_1_1SocketEvent.html">SocketEvent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ddc/classcbee_1_1SocketFd.html">SocketFd</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,8 +98,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:aac60068457e3ab50a4dc08c6c1265ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f9d52d648cb2a55f0afb7bd7c4dbea"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd4/namespacecbee.html#a48f9d52d648cb2a55f0afb7bd7c4dbea">DisConnectedFunc</a></td></tr>
 <tr class="separator:a48f9d52d648cb2a55f0afb7bd7c4dbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ecc44194a8e09b1b663b5fee6c2c3f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d0/dfe/classcbee_1_1SocketEvent.html">SocketEvent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd4/namespacecbee.html#a22ecc44194a8e09b1b663b5fee6c2c3f">SocketEventHandler</a></td></tr>
-<tr class="separator:a22ecc44194a8e09b1b663b5fee6c2c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54baa1950c9febfba7bd2a0ae7759892"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d8/d36/classcbee_1_1Event.html">Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd4/namespacecbee.html#a54baa1950c9febfba7bd2a0ae7759892">EventHandler</a></td></tr>
+<tr class="separator:a54baa1950c9febfba7bd2a0ae7759892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -137,6 +137,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a54baa1950c9febfba7bd2a0ae7759892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54baa1950c9febfba7bd2a0ae7759892">&#9670;&nbsp;</a></span>EventHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="../../d8/d36/classcbee_1_1Event.html">Event</a>* <a class="el" href="../../d1/dd4/namespacecbee.html#a54baa1950c9febfba7bd2a0ae7759892">cbee::EventHandler</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaef7f8a8da09103614fa16099749ff40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaef7f8a8da09103614fa16099749ff40">&#9670;&nbsp;</a></span>ReadDoneFunc</h2>
 
@@ -145,20 +159,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef std::function&lt;void()&gt; <a class="el" href="../../d1/dd4/namespacecbee.html#aaef7f8a8da09103614fa16099749ff40">cbee::ReadDoneFunc</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a22ecc44194a8e09b1b663b5fee6c2c3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22ecc44194a8e09b1b663b5fee6c2c3f">&#9670;&nbsp;</a></span>SocketEventHandler</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="../../d0/dfe/classcbee_1_1SocketEvent.html">SocketEvent</a>* <a class="el" href="../../d1/dd4/namespacecbee.html#a22ecc44194a8e09b1b663b5fee6c2c3f">cbee::SocketEventHandler</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,7 +200,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/dea/classel_1_1base_1_1Writer.html#a0662aa19522d77df6e1105f35c8c367a">el::base::Writer::construct()</a>, <a class="el" href="../../db/d87/classel_1_1base_1_1utils_1_1DateTime.html#a9f19da20362c685d32be922a06faf586">el::base::utils::DateTime::formatTime()</a>, <a class="el" href="../../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html#a35de8807521651c85acb26532a2623e1">el::base::utils::AbstractRegistry&lt; T_Ptr, std::vector&lt; T_Ptr *&gt; &gt;::operator!=()</a>, <a class="el" href="../../d2/da4/namespaceel_1_1base_1_1utils.html#a3aae3aa11f2f7c51f50d404374cc1646">el::base::utils::operator&lt;&lt;()</a>, <a class="el" href="../../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html#ac3e648dc0caa8914f8604650f00bc94b">el::base::utils::AbstractRegistry&lt; T_Ptr, std::vector&lt; T_Ptr *&gt; &gt;::operator==()</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a1f6e5c94bc89e0b371719153b32eaf0d">cbee::EPoller::poll()</a>, <a class="el" href="../../d8/dea/classel_1_1base_1_1Writer.html#a692d05d209840d6ae8c2c8e0bea21d29">el::base::Writer::processDispatch()</a>, <a class="el" href="../../dc/d6e/classel_1_1base_1_1utils_1_1CommandLineArgs.html#af88a16e6ce7b5d48f9679f304367b27a">el::base::utils::CommandLineArgs::setArgs()</a>, and <a class="el" href="../../df/d67/classel_1_1base_1_1MessageBuilder.html#a240ef66bd4e1ff4169594b8138ca2baa">el::base::MessageBuilder::writeIterator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/dea/classel_1_1base_1_1Writer.html#a0662aa19522d77df6e1105f35c8c367a">el::base::Writer::construct()</a>, <a class="el" href="../../db/d87/classel_1_1base_1_1utils_1_1DateTime.html#a9f19da20362c685d32be922a06faf586">el::base::utils::DateTime::formatTime()</a>, <a class="el" href="../../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html#a35de8807521651c85acb26532a2623e1">el::base::utils::AbstractRegistry&lt; T_Ptr, std::vector&lt; T_Ptr *&gt; &gt;::operator!=()</a>, <a class="el" href="../../d2/da4/namespaceel_1_1base_1_1utils.html#a3aae3aa11f2f7c51f50d404374cc1646">el::base::utils::operator&lt;&lt;()</a>, <a class="el" href="../../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html#ac3e648dc0caa8914f8604650f00bc94b">el::base::utils::AbstractRegistry&lt; T_Ptr, std::vector&lt; T_Ptr *&gt; &gt;::operator==()</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a2779640fe29ce04611cdeed4769023fd">cbee::EPoller::poll()</a>, <a class="el" href="../../d8/dea/classel_1_1base_1_1Writer.html#a692d05d209840d6ae8c2c8e0bea21d29">el::base::Writer::processDispatch()</a>, <a class="el" href="../../dc/d6e/classel_1_1base_1_1utils_1_1CommandLineArgs.html#af88a16e6ce7b5d48f9679f304367b27a">el::base::utils::CommandLineArgs::setArgs()</a>, and <a class="el" href="../../df/d67/classel_1_1base_1_1MessageBuilder.html#a240ef66bd4e1ff4169594b8138ca2baa">el::base::MessageBuilder::writeIterator()</a>.</p>
 
 </div>
 </div>

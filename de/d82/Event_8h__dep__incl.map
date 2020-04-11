@@ -1,5 +1,5 @@
-<map id="src/internal/system/SocketEvent.h" name="src/internal/system/SocketEvent.h">
+<map id="src/internal/system/Event.h" name="src/internal/system/Event.h">
 <area shape="rect" id="node2" href="$d2/d18/EPoller_8h.html" title="src/internal/system\l/EPoller.h" alt="" coords="5,95,139,136"/>
-<area shape="rect" id="node4" href="$d4/df3/SocketEvent_8cpp.html" title="src/internal/system\l/SocketEvent.cpp" alt="" coords="163,95,296,136"/>
+<area shape="rect" id="node4" href="$d7/d9f/Event_8cpp.html" title="src/internal/system\l/Event.cpp" alt="" coords="163,95,296,136"/>
 <area shape="rect" id="node3" href="$d9/dc5/EPoller_8cpp.html" title="src/internal/system\l/EPoller.cpp" alt="" coords="5,184,139,225"/>
 </map>

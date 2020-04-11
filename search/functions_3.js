@@ -6,9 +6,9 @@ var searchData=
   ['defaultprerolloutcallback',['defaultPreRollOutCallback',['../d4/d7f/namespaceel_1_1base.html#ac727cc7769b50f434890d370614baf25',1,'el::base']]],
   ['defaulttypedconfigurations',['defaultTypedConfigurations',['../d7/d00/classel_1_1Loggers.html#a592324bd539ea075101031c14cd9fd41',1,'el::Loggers']]],
   ['deletesocketevent',['deleteSocketEvent',['../da/db8/classcbee_1_1EPoller.html#aa93b5322523e35685eb796efa83c509b',1,'cbee::EPoller']]],
-  ['disableallevents',['disableAllEvents',['../d0/dfe/classcbee_1_1SocketEvent.html#a030a28eb5a6f78de508bc9a40681e040',1,'cbee::SocketEvent']]],
-  ['disablereadevent',['disableReadEvent',['../d0/dfe/classcbee_1_1SocketEvent.html#a45dd494b11153c1a8d1b8ea377f1a516',1,'cbee::SocketEvent']]],
-  ['disablewriteevent',['disableWriteEvent',['../d0/dfe/classcbee_1_1SocketEvent.html#a6fb84b41bc7448d9ac1a619c6384bafa',1,'cbee::SocketEvent']]],
+  ['disableallevents',['disableAllEvents',['../d8/d36/classcbee_1_1Event.html#a4aa95dcf6b24762bae631d66a64bfc95',1,'cbee::Event']]],
+  ['disablereadevent',['disableReadEvent',['../d8/d36/classcbee_1_1Event.html#a14b98e10a17712f2253a3fcc278dbfe8',1,'cbee::Event']]],
+  ['disablewriteevent',['disableWriteEvent',['../d8/d36/classcbee_1_1Event.html#af77eef626310859951eba1ef431f4b52',1,'cbee::Event']]],
   ['dispatch',['dispatch',['../d0/dda/classel_1_1base_1_1DefaultLogDispatchCallback.html#adc7c200395c99534d55cb23cfabafcb1',1,'el::base::DefaultLogDispatchCallback::dispatch()'],['../d5/dce/classel_1_1base_1_1LogDispatcher.html#a88d4a644364bb454136c85338f05da7a',1,'el::base::LogDispatcher::dispatch()']]],
   ['dispatchaction',['dispatchAction',['../d3/de7/classel_1_1LogDispatchData.html#aa7f834fbd4c8440d25ba1958ccf51ea7',1,'el::LogDispatchData']]]
 ];

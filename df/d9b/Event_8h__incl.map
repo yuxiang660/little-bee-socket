@@ -1,4 +1,4 @@
-<map id="src/internal/system/SocketEvent.h" name="src/internal/system/SocketEvent.h">
+<map id="src/internal/system/Event.h" name="src/internal/system/Event.h">
 <area shape="rect" id="node2" href="$dd/d2e/SocketFd_8h.html" title="SocketFd.h" alt="" coords="85,95,175,121"/>
 <area shape="rect" id="node3" href="$d6/d75/Sockaddr_8h.html" title="Sockaddr.h" alt="" coords="86,169,174,196"/>
 </map>

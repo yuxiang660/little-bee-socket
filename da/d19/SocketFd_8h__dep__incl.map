@@ -1,7 +1,7 @@
 <map id="src/internal/system/SocketFd.h" name="src/internal/system/SocketFd.h">
-<area shape="rect" id="node2" href="$db/d89/SocketEvent_8h.html" title="src/internal/system\l/SocketEvent.h" alt="" coords="109,95,243,136"/>
+<area shape="rect" id="node2" href="$d6/d8d/Event_8h.html" title="src/internal/system\l/Event.h" alt="" coords="109,95,243,136"/>
 <area shape="rect" id="node3" href="$d2/d18/EPoller_8h.html" title="src/internal/system\l/EPoller.h" alt="" coords="5,184,139,225"/>
 <area shape="rect" id="node6" href="$d6/dc7/SocketFd_8cpp.html" title="src/internal/system\l/SocketFd.cpp" alt="" coords="267,95,400,136"/>
-<area shape="rect" id="node5" href="$d4/df3/SocketEvent_8cpp.html" title="src/internal/system\l/SocketEvent.cpp" alt="" coords="163,184,296,225"/>
+<area shape="rect" id="node5" href="$d7/d9f/Event_8cpp.html" title="src/internal/system\l/Event.cpp" alt="" coords="163,184,296,225"/>
 <area shape="rect" id="node4" href="$d9/dc5/EPoller_8cpp.html" title="src/internal/system\l/EPoller.cpp" alt="" coords="5,273,139,315"/>
 </map>

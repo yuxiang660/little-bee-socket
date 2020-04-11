@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>cbee: src/internal/system/SocketEvent.h File Reference</title>
+<title>cbee: src/internal/system/Event.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -63,52 +63,31 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">SocketEvent.h File Reference</div>  </div>
+<div class="title">Event.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../dd/d2e/SocketFd_8h_source.html">SocketFd.h</a>&quot;</code><br />
-<code>#include &lt;sys/epoll.h&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d6/d8d/Event_8h_source.html">Event.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/da4/Logger_8h_source.html">log/Logger.h</a>&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for SocketEvent.h:</div>
+Include dependency graph for Event.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../df/d2d/SocketEvent_8h__incl.png" border="0" usemap="#src_2internal_2system_2SocketEvent_8h" alt=""/></div>
-<map name="src_2internal_2system_2SocketEvent_8h" id="src_2internal_2system_2SocketEvent_8h">
-<area shape="rect" id="node2" href="../../dd/d2e/SocketFd_8h.html" title="SocketFd.h" alt="" coords="85,95,175,121"/>
-<area shape="rect" id="node3" href="../../d6/d75/Sockaddr_8h.html" title="Sockaddr.h" alt="" coords="86,169,174,196"/>
+<div class="center"><img src="../../d3/dae/Event_8cpp__incl.png" border="0" usemap="#src_2internal_2system_2Event_8cpp" alt=""/></div>
+<map name="src_2internal_2system_2Event_8cpp" id="src_2internal_2system_2Event_8cpp">
+<area shape="rect" id="node2" href="../../d6/d8d/Event_8h.html" title="Event.h" alt="" coords="246,95,313,121"/>
+<area shape="rect" id="node10" href="../../dd/da4/Logger_8h.html" title="log/Logger.h" alt="" coords="675,95,769,121"/>
+<area shape="rect" id="node3" href="../../dd/d2e/SocketFd_8h.html" title="SocketFd.h" alt="" coords="64,169,153,196"/>
+<area shape="rect" id="node4" href="../../d6/d75/Sockaddr_8h.html" title="Sockaddr.h" alt="" coords="46,244,134,271"/>
+<area shape="rect" id="node11" href="../../d8/d1b/easylogging_09_09_8h.html" title="internal/lib/easylogging++.h" alt="" coords="971,169,1153,196"/>
 </map>
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d4/d36/SocketEvent_8h__dep__incl.png" border="0" usemap="#src_2internal_2system_2SocketEvent_8hdep" alt=""/></div>
-<map name="src_2internal_2system_2SocketEvent_8hdep" id="src_2internal_2system_2SocketEvent_8hdep">
-<area shape="rect" id="node2" href="../../d2/d18/EPoller_8h.html" title="src/internal/system\l/EPoller.h" alt="" coords="5,95,139,136"/>
-<area shape="rect" id="node4" href="../../d4/df3/SocketEvent_8cpp.html" title="src/internal/system\l/SocketEvent.cpp" alt="" coords="163,95,296,136"/>
-<area shape="rect" id="node3" href="../../d9/dc5/EPoller_8cpp.html" title="src/internal/system\l/EPoller.cpp" alt="" coords="5,184,139,225"/>
-</map>
-</div>
-</div>
-<p><a href="../../db/d89/SocketEvent_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dfe/classcbee_1_1SocketEvent.html">cbee::SocketEvent</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d1/dd4/namespacecbee"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd4/namespacecbee.html">cbee</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a22ecc44194a8e09b1b663b5fee6c2c3f"><td class="memItemLeft" align="right" valign="top">typedef SocketEvent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd4/namespacecbee.html#a22ecc44194a8e09b1b663b5fee6c2c3f">cbee::SocketEventHandler</a></td></tr>
-<tr class="separator:a22ecc44194a8e09b1b663b5fee6c2c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

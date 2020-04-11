@@ -21,7 +21,7 @@ var searchData=
   ['unsetprerolloutcallback',['unsetPreRollOutCallback',['../d0/da4/classel_1_1base_1_1Storage.html#a2bfdc3a20eeafe158ee8603c805131e4',1,'el::base::Storage']]],
   ['updatedateformat',['updateDateFormat',['../db/df7/classel_1_1base_1_1LogFormat.html#a966bed1ee6f8597152d08d4ed70a5855',1,'el::base::LogFormat']]],
   ['updateformatspec',['updateFormatSpec',['../db/df7/classel_1_1base_1_1LogFormat.html#aa3c2ddecf237d0ec3eca4b2a3a442e67',1,'el::base::LogFormat']]],
-  ['updatesocketevent',['updateSocketEvent',['../da/db8/classcbee_1_1EPoller.html#a940abd2247104e167ba2063a3d0ec73b',1,'cbee::EPoller']]],
+  ['updatesocketevent',['updateSocketEvent',['../da/db8/classcbee_1_1EPoller.html#a35fc0e40d28799eb23c67f0438930ec9',1,'cbee::EPoller']]],
   ['user',['User',['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00a8f9bfe9d1345237cb3b2b205864da075',1,'el::base']]],
   ['userformat',['userFormat',['../db/df7/classel_1_1base_1_1LogFormat.html#a3ed7232a8a89d816513844ce6380c15d',1,'el::base::LogFormat']]],
   ['utils',['Utils',['../d4/dbf/classel_1_1base_1_1utils_1_1Utils.html',1,'el::base::utils']]]
