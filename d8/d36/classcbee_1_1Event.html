@@ -86,27 +86,25 @@ Collaboration diagram for cbee::Event:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa300e6d31fe5912fc3b5cc11a6961ef8"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a></td></tr>
-<tr class="separator:aa300e6d31fe5912fc3b5cc11a6961ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9956357026efa1ef81e221ea9bc9fc57"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a9956357026efa1ef81e221ea9bc9fc57">ReadFunc</a></td></tr>
+<tr class="separator:a9956357026efa1ef81e221ea9bc9fc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8544027688f037ef5a70c4da63f60f"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c8544027688f037ef5a70c4da63f60f">WriteFunc</a></td></tr>
+<tr class="separator:a6c8544027688f037ef5a70c4da63f60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a448496f263b3e6918e0174f9c4dde9"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8a448496f263b3e6918e0174f9c4dde9">RemoveFunc</a></td></tr>
+<tr class="separator:a8a448496f263b3e6918e0174f9c4dde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b71d0eabce820acc9715a92b7463f5"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a74b71d0eabce820acc9715a92b7463f5">ErrorFunc</a></td></tr>
+<tr class="separator:a74b71d0eabce820acc9715a92b7463f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeedbe01c43130c20c1f5d7a0b13eae93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aeedbe01c43130c20c1f5d7a0b13eae93">Event</a> (const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;socket)</td></tr>
-<tr class="separator:aeedbe01c43130c20c1f5d7a0b13eae93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df047e84fd05e48198a273d56567132"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a2df047e84fd05e48198a273d56567132">Event</a> (const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;socket, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a9956357026efa1ef81e221ea9bc9fc57">ReadFunc</a> read, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c8544027688f037ef5a70c4da63f60f">WriteFunc</a> write, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8a448496f263b3e6918e0174f9c4dde9">RemoveFunc</a> remove, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a74b71d0eabce820acc9715a92b7463f5">ErrorFunc</a> error)</td></tr>
+<tr class="separator:a2df047e84fd05e48198a273d56567132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaab390c9f0063ade9f7a1d3318f1f847"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aaab390c9f0063ade9f7a1d3318f1f847">getAllEvents</a> () const</td></tr>
 <tr class="separator:aaab390c9f0063ade9f7a1d3318f1f847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10dce28124ac4b56d57344ac2a90a9bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a10dce28124ac4b56d57344ac2a90a9bb">getActiveEvents</a> () const</td></tr>
 <tr class="separator:a10dce28124ac4b56d57344ac2a90a9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f9db1ce4003f9e5e0e135659bae7d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a5f9db1ce4003f9e5e0e135659bae7d26">setActiveEvents</a> (int events)</td></tr>
 <tr class="separator:a5f9db1ce4003f9e5e0e135659bae7d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1506a6e72cc1ff9c3b4e9f52af879238"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a1506a6e72cc1ff9c3b4e9f52af879238">setReadCallback</a> (<a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a> cb)</td></tr>
-<tr class="separator:a1506a6e72cc1ff9c3b4e9f52af879238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab13f8ddf39333ddf5129d664d966996f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab13f8ddf39333ddf5129d664d966996f">setWriteCallback</a> (<a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a> cb)</td></tr>
-<tr class="separator:ab13f8ddf39333ddf5129d664d966996f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa0827ab3cb452143d4c8223324b381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#afaa0827ab3cb452143d4c8223324b381">setRemoveCallback</a> (<a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a> cb)</td></tr>
-<tr class="separator:afaa0827ab3cb452143d4c8223324b381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a588e82f2496f9e4040d422f8100332a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a588e82f2496f9e4040d422f8100332a8">setErrorCallback</a> (<a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a> cb)</td></tr>
-<tr class="separator:a588e82f2496f9e4040d422f8100332a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2bb8c8209e2b115f6b2e381f429595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#ace2bb8c8209e2b115f6b2e381f429595">enableReadEvent</a> ()</td></tr>
 <tr class="separator:ace2bb8c8209e2b115f6b2e381f429595"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14b98e10a17712f2253a3fcc278dbfe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14b98e10a17712f2253a3fcc278dbfe8">disableReadEvent</a> ()</td></tr>
@@ -148,24 +146,66 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a4072782f29a8009a9d6fdd52ba181b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3e749113173812fe85b15ba4114977c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab3e749113173812fe85b15ba4114977c">activeEvents</a></td></tr>
 <tr class="separator:ab3e749113173812fe85b15ba4114977c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc128070514c6b8129926227e9c0d4f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#afc128070514c6b8129926227e9c0d4f3">writeCallback</a></td></tr>
-<tr class="separator:afc128070514c6b8129926227e9c0d4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af19de34c44792f5c14519d709221beac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#af19de34c44792f5c14519d709221beac">readCallback</a></td></tr>
-<tr class="separator:af19de34c44792f5c14519d709221beac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce557716417cebbc48e18d41df02f4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8ce557716417cebbc48e18d41df02f4b">removeCallback</a></td></tr>
-<tr class="separator:a8ce557716417cebbc48e18d41df02f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07c7e2f8dc23fce4622fcd332eeefcc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a07c7e2f8dc23fce4622fcd332eeefcc0">errorCallback</a></td></tr>
-<tr class="separator:a07c7e2f8dc23fce4622fcd332eeefcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4da4386f1072b0d4e26e78a25d4aa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a9956357026efa1ef81e221ea9bc9fc57">ReadFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c4da4386f1072b0d4e26e78a25d4aa2">readCallback</a></td></tr>
+<tr class="separator:a6c4da4386f1072b0d4e26e78a25d4aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486b80526b78a0a6898aa392f1c33f7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c8544027688f037ef5a70c4da63f60f">WriteFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a486b80526b78a0a6898aa392f1c33f7f">writeCallback</a></td></tr>
+<tr class="separator:a486b80526b78a0a6898aa392f1c33f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154ff557f18926ac32501a974f5fef98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8a448496f263b3e6918e0174f9c4dde9">RemoveFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a154ff557f18926ac32501a974f5fef98">removeCallback</a></td></tr>
+<tr class="separator:a154ff557f18926ac32501a974f5fef98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4775be26f6737b0c7e65c4d4f4e11a99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a74b71d0eabce820acc9715a92b7463f5">ErrorFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a4775be26f6737b0c7e65c4d4f4e11a99">errorCallback</a></td></tr>
+<tr class="separator:a4775be26f6737b0c7e65c4d4f4e11a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa300e6d31fe5912fc3b5cc11a6961ef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa300e6d31fe5912fc3b5cc11a6961ef8">&#9670;&nbsp;</a></span>EventCallback</h2>
+<a id="a74b71d0eabce820acc9715a92b7463f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b71d0eabce820acc9715a92b7463f5">&#9670;&nbsp;</a></span>ErrorFunc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void()&gt; <a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">cbee::Event::EventCallback</a></td>
+          <td class="memname">typedef std::function&lt;void()&gt; <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a74b71d0eabce820acc9715a92b7463f5">cbee::Event::ErrorFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9956357026efa1ef81e221ea9bc9fc57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9956357026efa1ef81e221ea9bc9fc57">&#9670;&nbsp;</a></span>ReadFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;void()&gt; <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a9956357026efa1ef81e221ea9bc9fc57">cbee::Event::ReadFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a448496f263b3e6918e0174f9c4dde9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a448496f263b3e6918e0174f9c4dde9">&#9670;&nbsp;</a></span>RemoveFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;void(int)&gt; <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8a448496f263b3e6918e0174f9c4dde9">cbee::Event::RemoveFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c8544027688f037ef5a70c4da63f60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c8544027688f037ef5a70c4da63f60f">&#9670;&nbsp;</a></span>WriteFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;void()&gt; <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c8544027688f037ef5a70c4da63f60f">cbee::Event::WriteFunc</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -173,8 +213,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aeedbe01c43130c20c1f5d7a0b13eae93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeedbe01c43130c20c1f5d7a0b13eae93">&#9670;&nbsp;</a></span>Event() <span class="overload">[1/2]</span></h2>
+<a id="a2df047e84fd05e48198a273d56567132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df047e84fd05e48198a273d56567132">&#9670;&nbsp;</a></span>Event() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,13 +223,39 @@ Private Attributes</h2></td></tr>
           <td class="memname">cbee::Event::Event </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;&#160;</td>
-          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td class="paramname"><em>socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a9956357026efa1ef81e221ea9bc9fc57">ReadFunc</a>&#160;</td>
+          <td class="paramname"><em>read</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c8544027688f037ef5a70c4da63f60f">WriteFunc</a>&#160;</td>
+          <td class="paramname"><em>write</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8a448496f263b3e6918e0174f9c4dde9">RemoveFunc</a>&#160;</td>
+          <td class="paramname"><em>remove</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a74b71d0eabce820acc9715a92b7463f5">ErrorFunc</a>&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a0e9f976bebaa51f74a936e8bd849a3bd">bindedSocket</a>, and <a class="el" href="../../da/df5/classcbee_1_1Socket.html#aeed856b706ad8dbc1ef1b1454bac8f30">cbee::Socket::getFd()</a>.</p>
 
 </div>
 </div>
@@ -368,7 +434,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab3e749113173812fe85b15ba4114977c">activeEvents</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a07c7e2f8dc23fce4622fcd332eeefcc0">errorCallback</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c199a053b35c025fb7c932683cdd8a1">kConnectedOrReadableOrCloseEvent</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a229e6a0f591e449d453fadbb10ca487e">kErrorEvent</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#aab8fcd0fd913f4d8afd5eb54a6d1e4a1">kRemoveEvent</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ae4cc7aa57feea69e52deceede9ce005e">kWritableEvent</a>, <a class="el" href="../../d8/d1b/easylogging_09_09_8h.html#acecfb113caaa2f52fe8e764fe04476bc">LOG</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#af19de34c44792f5c14519d709221beac">readCallback</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8ce557716417cebbc48e18d41df02f4b">removeCallback</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#afc128070514c6b8129926227e9c0d4f3">writeCallback</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab3e749113173812fe85b15ba4114977c">activeEvents</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a0e9f976bebaa51f74a936e8bd849a3bd">bindedSocket</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a4775be26f6737b0c7e65c4d4f4e11a99">errorCallback</a>, <a class="el" href="../../da/df5/classcbee_1_1Socket.html#aeed856b706ad8dbc1ef1b1454bac8f30">cbee::Socket::getFd()</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c199a053b35c025fb7c932683cdd8a1">kConnectedOrReadableOrCloseEvent</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a229e6a0f591e449d453fadbb10ca487e">kErrorEvent</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#aab8fcd0fd913f4d8afd5eb54a6d1e4a1">kRemoveEvent</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ae4cc7aa57feea69e52deceede9ce005e">kWritableEvent</a>, <a class="el" href="../../d8/d1b/easylogging_09_09_8h.html#acecfb113caaa2f52fe8e764fe04476bc">LOG</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c4da4386f1072b0d4e26e78a25d4aa2">readCallback</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a154ff557f18926ac32501a974f5fef98">removeCallback</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a486b80526b78a0a6898aa392f1c33f7f">writeCallback</a>.</p>
 
 </div>
 </div>
@@ -417,86 +483,6 @@ Private Attributes</h2></td></tr>
 <p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab3e749113173812fe85b15ba4114977c">activeEvents</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a2779640fe29ce04611cdeed4769023fd">cbee::EPoller::poll()</a>.</p>
-
-</div>
-</div>
-<a id="a588e82f2496f9e4040d422f8100332a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a588e82f2496f9e4040d422f8100332a8">&#9670;&nbsp;</a></span>setErrorCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cbee::Event::setErrorCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a>&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a07c7e2f8dc23fce4622fcd332eeefcc0">errorCallback</a>.</p>
-
-</div>
-</div>
-<a id="a1506a6e72cc1ff9c3b4e9f52af879238"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1506a6e72cc1ff9c3b4e9f52af879238">&#9670;&nbsp;</a></span>setReadCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cbee::Event::setReadCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a>&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#af19de34c44792f5c14519d709221beac">readCallback</a>.</p>
-
-</div>
-</div>
-<a id="afaa0827ab3cb452143d4c8223324b381"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaa0827ab3cb452143d4c8223324b381">&#9670;&nbsp;</a></span>setRemoveCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cbee::Event::setRemoveCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a>&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8ce557716417cebbc48e18d41df02f4b">removeCallback</a>.</p>
-
-</div>
-</div>
-<a id="ab13f8ddf39333ddf5129d664d966996f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab13f8ddf39333ddf5129d664d966996f">&#9670;&nbsp;</a></span>setWriteCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cbee::Event::setWriteCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a>&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#afc128070514c6b8129926227e9c0d4f3">writeCallback</a>.</p>
 
 </div>
 </div>
@@ -569,12 +555,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#aeedbe01c43130c20c1f5d7a0b13eae93">Event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>.</p>
 
 </div>
 </div>
-<a id="a07c7e2f8dc23fce4622fcd332eeefcc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07c7e2f8dc23fce4622fcd332eeefcc0">&#9670;&nbsp;</a></span>errorCallback</h2>
+<a id="a4775be26f6737b0c7e65c4d4f4e11a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4775be26f6737b0c7e65c4d4f4e11a99">&#9670;&nbsp;</a></span>errorCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,7 +569,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a> cbee::Event::errorCallback</td>
+          <td class="memname"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a74b71d0eabce820acc9715a92b7463f5">ErrorFunc</a> cbee::Event::errorCallback</td>
         </tr>
       </table>
   </td>
@@ -593,7 +579,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a588e82f2496f9e4040d422f8100332a8">setErrorCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>.</p>
 
 </div>
 </div>
@@ -717,8 +703,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af19de34c44792f5c14519d709221beac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af19de34c44792f5c14519d709221beac">&#9670;&nbsp;</a></span>readCallback</h2>
+<a id="a6c4da4386f1072b0d4e26e78a25d4aa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4da4386f1072b0d4e26e78a25d4aa2">&#9670;&nbsp;</a></span>readCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -727,7 +713,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a> cbee::Event::readCallback</td>
+          <td class="memname"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a9956357026efa1ef81e221ea9bc9fc57">ReadFunc</a> cbee::Event::readCallback</td>
         </tr>
       </table>
   </td>
@@ -737,12 +723,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a1506a6e72cc1ff9c3b4e9f52af879238">setReadCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>.</p>
 
 </div>
 </div>
-<a id="a8ce557716417cebbc48e18d41df02f4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce557716417cebbc48e18d41df02f4b">&#9670;&nbsp;</a></span>removeCallback</h2>
+<a id="a154ff557f18926ac32501a974f5fef98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a154ff557f18926ac32501a974f5fef98">&#9670;&nbsp;</a></span>removeCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -751,7 +737,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a> cbee::Event::removeCallback</td>
+          <td class="memname"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8a448496f263b3e6918e0174f9c4dde9">RemoveFunc</a> cbee::Event::removeCallback</td>
         </tr>
       </table>
   </td>
@@ -761,12 +747,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#afaa0827ab3cb452143d4c8223324b381">setRemoveCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>.</p>
 
 </div>
 </div>
-<a id="afc128070514c6b8129926227e9c0d4f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc128070514c6b8129926227e9c0d4f3">&#9670;&nbsp;</a></span>writeCallback</h2>
+<a id="a486b80526b78a0a6898aa392f1c33f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486b80526b78a0a6898aa392f1c33f7f">&#9670;&nbsp;</a></span>writeCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -775,7 +761,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8">EventCallback</a> cbee::Event::writeCallback</td>
+          <td class="memname"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c8544027688f037ef5a70c4da63f60f">WriteFunc</a> cbee::Event::writeCallback</td>
         </tr>
       </table>
   </td>
@@ -785,7 +771,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab13f8ddf39333ddf5129d664d966996f">setWriteCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>.</p>
 
 </div>
 </div>
