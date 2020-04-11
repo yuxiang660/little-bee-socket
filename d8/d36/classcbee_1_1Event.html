@@ -66,6 +66,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../df/de2/classcbee_1_1Event-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -74,6 +75,14 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &quot;<a class="el" href="../../d6/d8d/Event_8h_source.html">Event.h</a>&quot;</code></p>
+<div class="dynheader">
+Collaboration diagram for cbee::Event:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/df8/classcbee_1_1Event__coll__graph.png" border="0" usemap="#cbee_1_1Event_coll__map" alt="Collaboration graph"/></div>
+<map name="cbee_1_1Event_coll__map" id="cbee_1_1Event_coll__map">
+<area shape="rect" id="node2" href="../../da/df5/classcbee_1_1Socket.html" title="cbee::Socket" alt="" coords="5,5,104,32"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -82,8 +91,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a6fb4e67ee19fae16fd4db3b79c32bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8a6fb4e67ee19fae16fd4db3b79c32bc">Event</a> ()</td></tr>
-<tr class="separator:a8a6fb4e67ee19fae16fd4db3b79c32bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeedbe01c43130c20c1f5d7a0b13eae93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aeedbe01c43130c20c1f5d7a0b13eae93">Event</a> (const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;socket)</td></tr>
+<tr class="separator:aeedbe01c43130c20c1f5d7a0b13eae93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaab390c9f0063ade9f7a1d3318f1f847"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#aaab390c9f0063ade9f7a1d3318f1f847">getAllEvents</a> () const</td></tr>
 <tr class="separator:aaab390c9f0063ade9f7a1d3318f1f847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10dce28124ac4b56d57344ac2a90a9bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a10dce28124ac4b56d57344ac2a90a9bb">getActiveEvents</a> () const</td></tr>
@@ -108,8 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af77eef626310859951eba1ef431f4b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa95dcf6b24762bae631d66a64bfc95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a4aa95dcf6b24762bae631d66a64bfc95">disableAllEvents</a> ()</td></tr>
 <tr class="separator:a4aa95dcf6b24762bae631d66a64bfc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7a1999884b80bc1e07f45d32a26994a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent</a> ()</td></tr>
-<tr class="separator:ad7a1999884b80bc1e07f45d32a26994a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f155083e63408b7b1164c7cae2e0fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent</a> () const</td></tr>
+<tr class="separator:a14f155083e63408b7b1164c7cae2e0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -124,8 +133,17 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a229e6a0f591e449d453fadbb10ca487e"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a229e6a0f591e449d453fadbb10ca487e">kErrorEvent</a> = EPOLLERR</td></tr>
 <tr class="separator:a229e6a0f591e449d453fadbb10ca487e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a0f13377e424f3271448c54d3b43f95c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a0f13377e424f3271448c54d3b43f95c8">Event</a> (const <a class="el" href="../../d8/d36/classcbee_1_1Event.html">Event</a> &amp;)=delete</td></tr>
+<tr class="separator:a0f13377e424f3271448c54d3b43f95c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcba27a0fcb7028827ffb67c8bfd22b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d36/classcbee_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a7fcba27a0fcb7028827ffb67c8bfd22b">operator=</a> (const <a class="el" href="../../d8/d36/classcbee_1_1Event.html">Event</a> &amp;)=delete</td></tr>
+<tr class="separator:a7fcba27a0fcb7028827ffb67c8bfd22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a0e9f976bebaa51f74a936e8bd849a3bd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a0e9f976bebaa51f74a936e8bd849a3bd">bindedSocket</a></td></tr>
+<tr class="separator:a0e9f976bebaa51f74a936e8bd849a3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4072782f29a8009a9d6fdd52ba181b05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#a4072782f29a8009a9d6fdd52ba181b05">allEvents</a></td></tr>
 <tr class="separator:a4072782f29a8009a9d6fdd52ba181b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3e749113173812fe85b15ba4114977c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab3e749113173812fe85b15ba4114977c">activeEvents</a></td></tr>
@@ -155,8 +173,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8a6fb4e67ee19fae16fd4db3b79c32bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a6fb4e67ee19fae16fd4db3b79c32bc">&#9670;&nbsp;</a></span>Event()</h2>
+<a id="aeedbe01c43130c20c1f5d7a0b13eae93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeedbe01c43130c20c1f5d7a0b13eae93">&#9670;&nbsp;</a></span>Event() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,10 +182,39 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">cbee::Event::Event </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a> &amp;&#160;</td>
+          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a0e9f976bebaa51f74a936e8bd849a3bd">bindedSocket</a>, and <a class="el" href="../../da/df5/classcbee_1_1Socket.html#aeed856b706ad8dbc1ef1b1454bac8f30">cbee::Socket::getFd()</a>.</p>
+
+</div>
+</div>
+<a id="a0f13377e424f3271448c54d3b43f95c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f13377e424f3271448c54d3b43f95c8">&#9670;&nbsp;</a></span>Event() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cbee::Event::Event </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d36/classcbee_1_1Event.html">Event</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -306,8 +353,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad7a1999884b80bc1e07f45d32a26994a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7a1999884b80bc1e07f45d32a26994a">&#9670;&nbsp;</a></span>handleEvent()</h2>
+<a id="a14f155083e63408b7b1164c7cae2e0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f155083e63408b7b1164c7cae2e0fb">&#9670;&nbsp;</a></span>handleEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,12 +363,38 @@ Private Attributes</h2></td></tr>
           <td class="memname">void cbee::Event::handleEvent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="reference">References <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab3e749113173812fe85b15ba4114977c">activeEvents</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a07c7e2f8dc23fce4622fcd332eeefcc0">errorCallback</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a6c199a053b35c025fb7c932683cdd8a1">kConnectedOrReadableOrCloseEvent</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a229e6a0f591e449d453fadbb10ca487e">kErrorEvent</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#aab8fcd0fd913f4d8afd5eb54a6d1e4a1">kRemoveEvent</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ae4cc7aa57feea69e52deceede9ce005e">kWritableEvent</a>, <a class="el" href="../../d8/d1b/easylogging_09_09_8h.html#acecfb113caaa2f52fe8e764fe04476bc">LOG</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#af19de34c44792f5c14519d709221beac">readCallback</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a8ce557716417cebbc48e18d41df02f4b">removeCallback</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#afc128070514c6b8129926227e9c0d4f3">writeCallback</a>.</p>
+
+</div>
+</div>
+<a id="a7fcba27a0fcb7028827ffb67c8bfd22b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcba27a0fcb7028827ffb67c8bfd22b">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d36/classcbee_1_1Event.html">Event</a>&amp; cbee::Event::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d36/classcbee_1_1Event.html">Event</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -448,7 +521,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a10dce28124ac4b56d57344ac2a90a9bb">getActiveEvents()</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a5f9db1ce4003f9e5e0e135659bae7d26">setActiveEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a10dce28124ac4b56d57344ac2a90a9bb">getActiveEvents()</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a5f9db1ce4003f9e5e0e135659bae7d26">setActiveEvents()</a>.</p>
 
 </div>
 </div>
@@ -476,6 +549,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0e9f976bebaa51f74a936e8bd849a3bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e9f976bebaa51f74a936e8bd849a3bd">&#9670;&nbsp;</a></span>bindedSocket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../da/df5/classcbee_1_1Socket.html">Socket</a>&amp; cbee::Event::bindedSocket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#aeedbe01c43130c20c1f5d7a0b13eae93">Event()</a>.</p>
+
+</div>
+</div>
 <a id="a07c7e2f8dc23fce4622fcd332eeefcc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07c7e2f8dc23fce4622fcd332eeefcc0">&#9670;&nbsp;</a></span>errorCallback</h2>
 
@@ -496,7 +593,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a588e82f2496f9e4040d422f8100332a8">setErrorCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a588e82f2496f9e4040d422f8100332a8">setErrorCallback()</a>.</p>
 
 </div>
 </div>
@@ -520,7 +617,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14b98e10a17712f2253a3fcc278dbfe8">disableReadEvent()</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ace2bb8c8209e2b115f6b2e381f429595">enableReadEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14b98e10a17712f2253a3fcc278dbfe8">disableReadEvent()</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ace2bb8c8209e2b115f6b2e381f429595">enableReadEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>.</p>
 
 </div>
 </div>
@@ -544,7 +641,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>.</p>
 
 </div>
 </div>
@@ -592,7 +689,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>.</p>
 
 </div>
 </div>
@@ -616,7 +713,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#af77eef626310859951eba1ef431f4b52">disableWriteEvent()</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#af6e8560bfc0c971417a9c690d9f4ffcf">enableWriteEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#af77eef626310859951eba1ef431f4b52">disableWriteEvent()</a>, <a class="el" href="../../d8/d36/classcbee_1_1Event.html#af6e8560bfc0c971417a9c690d9f4ffcf">enableWriteEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>.</p>
 
 </div>
 </div>
@@ -640,7 +737,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a1506a6e72cc1ff9c3b4e9f52af879238">setReadCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a1506a6e72cc1ff9c3b4e9f52af879238">setReadCallback()</a>.</p>
 
 </div>
 </div>
@@ -664,7 +761,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#afaa0827ab3cb452143d4c8223324b381">setRemoveCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#afaa0827ab3cb452143d4c8223324b381">setRemoveCallback()</a>.</p>
 
 </div>
 </div>
@@ -688,7 +785,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ad7a1999884b80bc1e07f45d32a26994a">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab13f8ddf39333ddf5129d664d966996f">setWriteCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d36/classcbee_1_1Event.html#a14f155083e63408b7b1164c7cae2e0fb">handleEvent()</a>, and <a class="el" href="../../d8/d36/classcbee_1_1Event.html#ab13f8ddf39333ddf5129d664d966996f">setWriteCallback()</a>.</p>
 
 </div>
 </div>

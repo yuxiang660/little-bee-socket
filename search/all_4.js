@@ -100,7 +100,7 @@ var searchData=
   ['epollfd',['epollFd',['../da/db8/classcbee_1_1EPoller.html#ad475c2659ab437705ef4b057b2e406c6',1,'cbee::EPoller']]],
   ['error',['Error',['../da/d7e/namespaceel.html#ab0ac6091262344c52dd2d3ad099e8e36a902b0d55fddef6f8d651fe1035b7d4bd',1,'el']]],
   ['errorcallback',['errorCallback',['../d8/d36/classcbee_1_1Event.html#a07c7e2f8dc23fce4622fcd332eeefcc0',1,'cbee::Event']]],
-  ['event',['Event',['../d8/d36/classcbee_1_1Event.html',1,'cbee::Event'],['../d8/d36/classcbee_1_1Event.html#a8a6fb4e67ee19fae16fd4db3b79c32bc',1,'cbee::Event::Event()']]],
+  ['event',['Event',['../d8/d36/classcbee_1_1Event.html',1,'cbee::Event'],['../d8/d36/classcbee_1_1Event.html#aeedbe01c43130c20c1f5d7a0b13eae93',1,'cbee::Event::Event(const Socket &amp;socket)'],['../d8/d36/classcbee_1_1Event.html#a0f13377e424f3271448c54d3b43f95c8',1,'cbee::Event::Event(const Event &amp;)=delete']]],
   ['event_2ecpp',['Event.cpp',['../d7/d9f/Event_8cpp.html',1,'']]],
   ['event_2eh',['Event.h',['../d6/d8d/Event_8h.html',1,'']]],
   ['eventcallback',['EventCallback',['../d8/d36/classcbee_1_1Event.html#aa300e6d31fe5912fc3b5cc11a6961ef8',1,'cbee::Event']]],

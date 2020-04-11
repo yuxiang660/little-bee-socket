@@ -7,6 +7,6 @@ var searchData=
   ['end',['end',['../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html#a67c40207c171f23ad50a71db819e84f9',1,'el::base::utils::AbstractRegistry']]],
   ['endswith',['endsWith',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a8116fdf0f0308f78a42989da9df52377',1,'el::base::utils::Str']]],
   ['epoller',['EPoller',['../da/db8/classcbee_1_1EPoller.html#a34fad2764693925b722b77089fe54b16',1,'cbee::EPoller']]],
-  ['event',['Event',['../d8/d36/classcbee_1_1Event.html#a8a6fb4e67ee19fae16fd4db3b79c32bc',1,'cbee::Event']]],
+  ['event',['Event',['../d8/d36/classcbee_1_1Event.html#aeedbe01c43130c20c1f5d7a0b13eae93',1,'cbee::Event::Event(const Socket &amp;socket)'],['../d8/d36/classcbee_1_1Event.html#a0f13377e424f3271448c54d3b43f95c8',1,'cbee::Event::Event(const Event &amp;)=delete']]],
   ['extractpathfromfilename',['extractPathFromFilename',['../dc/d5c/classel_1_1base_1_1utils_1_1File.html#aeb03bbb8d34b7ac37bcec1ab493926e6',1,'el::base::utils::File']]]
 ];
