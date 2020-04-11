@@ -39,12 +39,12 @@ public:
 
    void updateSocketEvent()
    {
-      epoll.updateSocketEvent(socket, &event);
+      epoll.updateEvent(socket.getFd(), &event);
    }
 
    void deleteSocketEvent()
    {
-      epoll.deleteSocketEvent(socket);
+      epoll.deleteEvent(socket.getFd());
    }
 
    const cbee::SocketFd& getSocket() const
@@ -102,7 +102,7 @@ public:
 
       serverSocket.bind(serverAddr);
       serverSocket.listen();
-      epoll.updateSocketEvent(serverSocket, &serverEvent);
+      epoll.updateEvent(serverSocket.getFd(), &serverEvent);
 
       auto connenctEvent = epoll.poll(-1).front();
       EXPECT_EQ(EPOLLIN, connenctEvent->getActiveEvents());
