@@ -15,28 +15,41 @@ static const char expectedBuffer[] = "hello";
 class Connection
 {
 public:
-   Connection(const int fd) : socket(fd), event(socket)
-   {
-      setEvent();
-   }
-
-   ~Connection()
-   {
-   }
-
-   cbee::EventHandler getEvent()
-   {
-      return &event;
-   }
-
-   const cbee::Socket& getSocket()
-   {
-      return socket;
-   }
-
-   void setNonBlock()
+   Connection
+   (
+      const cbee::EPoller& e,
+      const int fd,
+      cbee::Event::RemoveFunc remove
+   ) :
+      epoll(e),
+      socket(fd),
+      handleRemove(remove),
+      event
+      (
+         socket,
+         [this](){handleRead();},
+         nullptr,
+         handleRemove,
+         nullptr
+      )
    {
       socket.setNonBlock();
+      event.enableReadEvent();
+   }
+
+   void updateEvent()
+   {
+      epoll.updateEvent(socket, &event);
+   }
+
+   void deleteEvent()
+   {
+      epoll.deleteEvent(socket);
+   }
+
+   const cbee::Socket& getSocket() const
+   {
+      return socket;
    }
 
 private:
@@ -44,38 +57,41 @@ private:
    Connection& operator=(const Connection&) = delete;
 
 private:
-   void setEvent()
+   void handleRead()
    {
-      event.setReadCallback([&]() {
-         char actualBuffer[1024] = {0};
-         int actualSize = socket.read(actualBuffer, sizeof(actualBuffer));
-         if (actualSize == 0)
-         {
-            // socket.close();
-            return;
-         }
-         EXPECT_EQ(sizeof(expectedBuffer), actualSize);
-         EXPECT_STREQ(expectedBuffer, actualBuffer);
-      });
-      event.enableReadEvent();
+      char actualBuffer[1024] = {0};
+      int actualSize = socket.read(actualBuffer, sizeof(actualBuffer));
+      if (actualSize == 0)
+      {
+         if(handleRemove) handleRemove(socket.getFd());
+         return;
+      }
+      EXPECT_EQ(sizeof(expectedBuffer), actualSize);
+      EXPECT_STREQ(expectedBuffer, actualBuffer);
    }
 
 private:
+   const cbee::EPoller& epoll;
    cbee::Socket socket;
+   cbee::Event::RemoveFunc handleRemove;
    cbee::Event event;
 };
 
 class EPollerTest : public ::testing::Test
 {
 public:
-   EPollerTest() : serverEvent(serverSocket)
+   EPollerTest() :
+      serverEvent
+      (
+         serverSocket,
+         [this](){handleRead();},
+         nullptr,
+         nullptr,
+         nullptr
+      )
    {
       serverSocket.setNonBlock();
-      setServerEvent();
-   }
-
-   ~EPollerTest()
-   {
+      serverEvent.enableReadEvent();
    }
 
    void serve()
@@ -100,29 +116,32 @@ public:
       // peer connection was closed, which causes EPOLLIN + EPOLLRDHUP
       EXPECT_EQ(EPOLLIN | EPOLLRDHUP, removeEvent->getActiveEvents());
       removeEvent->handleEvent();
+      EXPECT_EQ(nullptr, connection.get());
    }
 
    cbee::EPoller epoll;
-
    cbee::Socket serverSocket;
    cbee::Event serverEvent;
+
    cbee::Sockaddr serverAddr;
    std::unique_ptr<Connection> connection;
 
 private:
-   void setServerEvent()
+   void handleRead()
    {
-      serverEvent.setReadCallback([&]() {
-         cbee::Sockaddr connectAddr;
-         int connectionFd = serverSocket.accept(&connectAddr);
-         EXPECT_STREQ("127.0.0.1", connectAddr.getIp().c_str());
+      cbee::Sockaddr connectAddr;
+      int connectionFd = serverSocket.accept(&connectAddr);
+      EXPECT_STREQ("127.0.0.1", connectAddr.getIp().c_str());
 
-         connection = std::make_unique<Connection>(connectionFd);
-         connection->setNonBlock();
+      connection = std::make_unique<Connection>(epoll, connectionFd, [this](int fdKey){removeConnection(fdKey);});
+      connection->updateEvent();
+   }
 
-         epoll.updateEvent(connection->getSocket(), connection->getEvent());
-      });
-      serverEvent.enableReadEvent();
+   void removeConnection(int fdKey)
+   {
+      EXPECT_EQ(fdKey, connection->getSocket().getFd());
+      connection->deleteEvent();
+      connection.reset();
    }
 };
 

@@ -11,16 +11,21 @@ class EventTest : public ::testing::Test
 {
 public:
    EventTest() :
-      event(socket),
-      writeDone(false),
+      socket(),
+      event
+      (
+         socket,
+         [this]() { readDone = true; },
+         [this]() { writeDone = true; },
+         [this](int fdKey) { removedFd = fdKey; removeDone = true; },
+         [this]() { errorDone = true; }
+      ),
       readDone(false),
+      writeDone(false),
       removeDone(false),
-      errorDone(false)
+      errorDone(false),
+      removedFd(-1)
    {
-      event.setWriteCallback([&]() { writeDone = true; });
-      event.setReadCallback([&]() { readDone = true; });
-      event.setRemoveCallback([&]() { removeDone = true; });
-      event.setErrorCallback([&]() { errorDone = true; });
    }
 
    ~EventTest()
@@ -29,10 +34,11 @@ public:
 
    cbee::Socket socket;
    cbee::Event event;
-   bool writeDone;
    bool readDone;
+   bool writeDone;
    bool removeDone;
    bool errorDone;
+   int removedFd;
 };
 
 TEST_F(EventTest, readEvent_expectedCallBack)
@@ -65,7 +71,7 @@ TEST_F(EventTest, errorEvent_expectedCallBack)
    EXPECT_EQ(true, errorDone);
 }
 
-TEST_F(EventTest, destructEvent_expectedCallBack)
+TEST_F(EventTest, removeEvent_expectedCallBack)
 {
    event.setActiveEvents(cbee::Event::kRemoveEvent);
    event.handleEvent();
@@ -73,6 +79,7 @@ TEST_F(EventTest, destructEvent_expectedCallBack)
    EXPECT_EQ(false, readDone);
    EXPECT_EQ(true, removeDone);
    EXPECT_EQ(false, errorDone);
+   EXPECT_EQ(socket.getFd(), removedFd);
 }
 
 } // namespace

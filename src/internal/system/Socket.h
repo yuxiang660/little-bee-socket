@@ -12,7 +12,7 @@ class Socket
 {
 public:
    Socket();
-   Socket(int socketFd);
+   explicit Socket(int socketFd);
    ~Socket();
 
    void shutdownRead();

@@ -10,7 +10,11 @@ namespace cbee
 class Event
 {
 public:
-   typedef std::function<void()> EventCallback;
+   typedef std::function<void()> ReadFunc;
+   typedef std::function<void()> WriteFunc;
+   typedef std::function<void(int)> RemoveFunc;
+   typedef std::function<void()> ErrorFunc;
+
    static const int kNoneEvent = 0;
    // 1. The listen socket receives a new connection, which triggers EPOLLIN.
    // 2. The socket receives data, which triggers EPOLLIN.
@@ -24,15 +28,18 @@ public:
    // 1. Write data to peer socket that has been closed. Local socke receives RST message which triggers EPOLLIN+EPOLLRDHUP+EPOLLHUP+EPOLLERR.
    static const int kErrorEvent = EPOLLERR;
 
-   Event(const Socket& socket);
+   Event
+   (
+      const Socket& socket,
+      ReadFunc read,
+      WriteFunc write,
+      RemoveFunc remove,
+      ErrorFunc error
+   );
+
    int getAllEvents() const;
    int getActiveEvents() const;
    void setActiveEvents(int events);
-
-   void setReadCallback(EventCallback cb);
-   void setWriteCallback(EventCallback cb);
-   void setRemoveCallback(EventCallback cb);
-   void setErrorCallback(EventCallback cb);
 
    void enableReadEvent();
    void disableReadEvent();
@@ -50,10 +57,10 @@ private:
    const Socket& bindedSocket;
    int allEvents;    // Events configured to epoll
    int activeEvents; // Events from epoll polling
-   EventCallback writeCallback;
-   EventCallback readCallback;
-   EventCallback removeCallback;
-   EventCallback errorCallback;
+   ReadFunc readCallback;
+   WriteFunc writeCallback;
+   RemoveFunc removeCallback;
+   ErrorFunc errorCallback;
 };
 
 typedef Event* EventHandler;

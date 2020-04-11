@@ -6,14 +6,21 @@
 namespace cbee
 {
 
-Event::Event(const Socket& socket) :
+Event::Event
+(
+   const Socket& socket,
+   ReadFunc read,
+   WriteFunc write,
+   RemoveFunc remove,
+   ErrorFunc error
+) :
    bindedSocket(socket),
    allEvents(kNoneEvent),
    activeEvents(kNoneEvent),
-   writeCallback(nullptr),
-   readCallback(nullptr),
-   removeCallback(nullptr),
-   errorCallback(nullptr)
+   readCallback(read),
+   writeCallback(write),
+   removeCallback(remove),
+   errorCallback(error)
 {
    assert(bindedSocket.getFd() >= 0);
 }
@@ -70,7 +77,7 @@ void Event::handleEvent() const
    if (activeEvents & kRemoveEvent)
    {
       LOG(DEBUG) << "kRemoveEvent event: " << activeEvents;
-      if (removeCallback) removeCallback();
+      if (removeCallback) removeCallback(bindedSocket.getFd());
       return;
    }
 
@@ -87,26 +94,6 @@ void Event::handleEvent() const
       if (writeCallback) writeCallback();
       return;
    }
-}
-
-void Event::setReadCallback(EventCallback cb)
-{
-   readCallback = cb;
-}
-
-void Event::setWriteCallback(EventCallback cb)
-{
-   writeCallback = cb;
-}
-
-void Event::setRemoveCallback(EventCallback cb)
-{
-   removeCallback = cb;
-}
-
-void Event::setErrorCallback(EventCallback cb)
-{
-   errorCallback = cb;
 }
 
 } // namespace cbee
