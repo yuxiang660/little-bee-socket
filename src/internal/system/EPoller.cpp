@@ -21,7 +21,7 @@ EPoller::~EPoller()
    assert(ret == 0);
 }
 
-std::vector<SocketEventHandler> EPoller::poll(int timeoutMs)
+std::vector<EventHandler> EPoller::poll(int timeoutMs)
 {
    int sizeOfPollContainer = static_cast<int>(pollContainer.size());
    int numberOfActiveEvents = ::epoll_wait
@@ -39,10 +39,10 @@ std::vector<SocketEventHandler> EPoller::poll(int timeoutMs)
    }
 
    assert(numberOfActiveEvents <= sizeOfPollContainer);
-   std::vector<SocketEventHandler> activeEvents;
+   std::vector<EventHandler> activeEvents;
    for (int i = 0; i < numberOfActiveEvents; i++)
    {
-      SocketEventHandler handle = static_cast<SocketEventHandler>(pollContainer[i].data.ptr);
+      EventHandler handle = static_cast<EventHandler>(pollContainer[i].data.ptr);
       handle->setActiveEvents(pollContainer[i].events);
       activeEvents.push_back(handle);
    }
@@ -55,7 +55,7 @@ std::vector<SocketEventHandler> EPoller::poll(int timeoutMs)
    return activeEvents;
 }
 
-void EPoller::updateSocketEvent(const SocketFd& socket, SocketEventHandler event) const
+void EPoller::updateSocketEvent(const SocketFd& socket, EventHandler event) const
 {
    struct epoll_event e;
    memset(&e, 0, sizeof(epoll_event));

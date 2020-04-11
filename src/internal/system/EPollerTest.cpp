@@ -1,5 +1,5 @@
 #include "EPoller.h"
-#include "SocketEvent.h"
+#include "Event.h"
 #include "Sockaddr.h"
 #include "SocketFd.h"
 
@@ -19,7 +19,7 @@ public:
    (
       const cbee::EPoller& e,
       const int fd,
-      cbee::SocketEvent::RemoveFunc remove
+      cbee::Event::RemoveFunc remove
    ) :
       epoll(e),
       socket(fd),
@@ -73,8 +73,8 @@ private:
 private:
    const cbee::EPoller& epoll;
    cbee::SocketFd socket;
-   cbee::SocketEvent::RemoveFunc handleRemove;
-   cbee::SocketEvent event;
+   cbee::Event::RemoveFunc handleRemove;
+   cbee::Event event;
 };
 
 class EPollerSocketTest : public ::testing::Test
@@ -121,7 +121,7 @@ public:
 
    cbee::EPoller epoll;
    cbee::SocketFd serverSocket;
-   cbee::SocketEvent serverEvent;
+   cbee::Event serverEvent;
 
    cbee::Sockaddr serverAddr;
    std::unique_ptr<Connection> connection;

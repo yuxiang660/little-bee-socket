@@ -7,7 +7,7 @@
 namespace cbee
 {
 
-class SocketEvent
+class Event
 {
 public:
    typedef std::function<void()> ReadFunc;
@@ -28,7 +28,7 @@ public:
    // 1. Write data to peer socket that has been closed. Local socke receives RST message which triggers EPOLLIN+EPOLLRDHUP+EPOLLHUP+EPOLLERR.
    static const int kErrorEvent = EPOLLERR;
 
-   SocketEvent
+   Event
    (
       const SocketFd& socket,
       ReadFunc read,
@@ -50,8 +50,8 @@ public:
    void handleEvent() const;
 
 private:
-   SocketEvent(const SocketEvent&) = delete;
-   SocketEvent& operator=(const SocketEvent&) = delete;
+   Event(const Event&) = delete;
+   Event& operator=(const Event&) = delete;
 
 private:
    const SocketFd& bindedSocket;
@@ -63,6 +63,6 @@ private:
    ErrorFunc errorCallback;
 };
 
-typedef SocketEvent* SocketEventHandler;
+typedef Event* EventHandler;
 
 } // namespace cbee
