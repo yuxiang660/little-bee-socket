@@ -21,6 +21,10 @@ public:
    std::vector<EventHandler> poll(int timeoutMs);
 
 private:
+   EPoller(const EPoller&) = delete;
+   EPoller& operator=(const EPoller&) = delete;
+
+private:
    int epollFd;
    std::vector<struct epoll_event> pollContainer;
 };
