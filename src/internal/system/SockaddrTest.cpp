@@ -2,6 +2,7 @@
 
 #include <netinet/in.h>
 #include <gtest/gtest.h>
+#include <memory>
 #include <stdio.h>
 #include <string>
 
@@ -15,6 +16,42 @@ TEST(SockaddrTest, constructor_memoryZeroOut)
    cbee::Sockaddr addr;
 
    EXPECT_EQ(memcmp(&addr, tester, memoryLength), 0);
+}
+
+TEST(SockaddrTest, copyConstructor_expectedCopy)
+{
+   const char* expectedIp = "10.11.12.13";
+   const uint16_t expectedPort = 8080;
+   auto tempAddr = std::make_unique<cbee::Sockaddr>();
+   tempAddr->setIp(expectedIp);
+   tempAddr->setPort(expectedPort);
+
+   cbee::Sockaddr copyAddr(*tempAddr);
+   tempAddr.reset();
+
+   EXPECT_EQ(nullptr, tempAddr.get());
+   EXPECT_STREQ(expectedIp, copyAddr.getIp().c_str());
+   EXPECT_EQ(expectedPort, copyAddr.getPort());
+}
+
+TEST(SockaddrTest, assignOperation_assignNewAddr_expectedValue)
+{
+   const char* expectedIp = "10.11.12.13";
+   const uint16_t expectedPort = 8080;
+   cbee::Sockaddr expectedAddr;
+   expectedAddr.setIp(expectedIp);
+   expectedAddr.setPort(expectedPort);
+
+   cbee::Sockaddr addr;
+   addr.setIp("101.111.112.113");
+   addr.setPort(8181);
+
+   EXPECT_STRNE(expectedIp, addr.getIp().c_str());
+   EXPECT_NE(expectedPort, addr.getPort());
+
+   addr = expectedAddr;
+   EXPECT_STREQ(expectedIp, addr.getIp().c_str());
+   EXPECT_EQ(expectedPort, addr.getPort());
 }
 
 TEST(SockaddrTest, setIp_validIp_getExpectedIp)

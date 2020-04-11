@@ -19,10 +19,6 @@ public:
    uint16_t getPort() const;
 
 private:
-   Sockaddr(const Sockaddr&) = delete;
-   Sockaddr& operator=(const Sockaddr&) = delete;
-
-private:
    struct sockaddr_in address;
 };
 
