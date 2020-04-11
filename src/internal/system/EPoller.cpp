@@ -55,7 +55,7 @@ std::vector<SocketEventHandler> EPoller::poll(int timeoutMs)
    return activeEvents;
 }
 
-void EPoller::updateSocketEvent(const Socket& socket, SocketEventHandler event) const
+void EPoller::updateSocketEvent(const SocketFd& socket, SocketEventHandler event) const
 {
    struct epoll_event e;
    memset(&e, 0, sizeof(epoll_event));
@@ -68,7 +68,7 @@ void EPoller::updateSocketEvent(const Socket& socket, SocketEventHandler event) 
    }
 }
 
-void EPoller::deleteSocketEvent(const Socket& socket) const
+void EPoller::deleteSocketEvent(const SocketFd& socket) const
 {
    if (::epoll_ctl(epollFd, EPOLL_CTL_DEL, socket.getFd(), nullptr) < 0)
    {

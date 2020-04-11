@@ -8,7 +8,7 @@ namespace cbee
 
 SocketEvent::SocketEvent
 (
-   const Socket& socket,
+   const SocketFd& socket,
    ReadFunc read,
    WriteFunc write,
    RemoveFunc remove,

@@ -1,5 +1,5 @@
 #include "SocketEvent.h"
-#include "Socket.h"
+#include "SocketFd.h"
 
 #include <gtest/gtest.h>
 #include <sys/epoll.h>
@@ -28,7 +28,7 @@ public:
    {
    }
 
-   cbee::Socket socket;
+   cbee::SocketFd socket;
    cbee::SocketEvent event;
    bool readDone;
    bool writeDone;

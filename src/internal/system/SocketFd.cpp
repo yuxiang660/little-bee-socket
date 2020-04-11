@@ -1,4 +1,4 @@
-#include "Socket.h"
+#include "SocketFd.h"
 
 #include <fcntl.h>
 #include <sys/socket.h>
@@ -8,23 +8,23 @@
 namespace cbee
 {
 
-Socket::Socket() : fd(::socket(AF_INET, SOCK_STREAM, IPPROTO_TCP))
+SocketFd::SocketFd() : fd(::socket(AF_INET, SOCK_STREAM, IPPROTO_TCP))
 {
    assert(fd >= 0);
 }
 
-Socket::Socket(const int socketFd) : fd(socketFd)
+SocketFd::SocketFd(const int socketFd) : fd(socketFd)
 {
    assert(fd >= 0);
 }
 
-Socket::~Socket()
+SocketFd::~SocketFd()
 {
    __attribute__((unused)) auto ret = ::close(fd);
    assert(ret == 0);
 }
 
-void Socket::shutdownRead()
+void SocketFd::shutdownRead()
 {
    if (::shutdown(fd, SHUT_RD) < 0)
    {
@@ -33,7 +33,7 @@ void Socket::shutdownRead()
    }
 }
 
-void Socket::shutdownWrite()
+void SocketFd::shutdownWrite()
 {
    if (::shutdown(fd, SHUT_WR) < 0)
    {
@@ -42,7 +42,7 @@ void Socket::shutdownWrite()
    }
 }
 
-void Socket::shutdown()
+void SocketFd::shutdown()
 {
    if (::shutdown(fd, SHUT_RDWR) < 0)
    {
@@ -51,7 +51,7 @@ void Socket::shutdown()
    }
 }
 
-void Socket::setNonBlock()
+void SocketFd::setNonBlock()
 {
    int flags = ::fcntl(fd, F_GETFL, 0);
    flags |= O_NONBLOCK;
@@ -70,7 +70,7 @@ void Socket::setNonBlock()
    }
 }
 
-void Socket::bind(const Sockaddr& serverAddr)
+void SocketFd::bind(const Sockaddr& serverAddr)
 {
    if (::bind(fd, sockaddrCast(&serverAddr), sizeof(Sockaddr)) < 0)
    {
@@ -79,7 +79,7 @@ void Socket::bind(const Sockaddr& serverAddr)
    }
 }
 
-void Socket::listen()
+void SocketFd::listen()
 {
    if (::listen(fd, SOMAXCONN) < 0)
    {
@@ -88,7 +88,7 @@ void Socket::listen()
    }
 }
 
-int Socket::accept(Sockaddr* connectAddr)
+int SocketFd::accept(Sockaddr* connectAddr)
 {
    assert(connectAddr != nullptr);
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
@@ -101,7 +101,7 @@ int Socket::accept(Sockaddr* connectAddr)
    return connfd;
 }
 
-void Socket::connect(const Sockaddr& serverAddr)
+void SocketFd::connect(const Sockaddr& serverAddr)
 {
    if (::connect(fd, sockaddrCast(&serverAddr), static_cast<socklen_t>(sizeof(Sockaddr))) < 0)
    {
@@ -110,22 +110,22 @@ void Socket::connect(const Sockaddr& serverAddr)
    }
 }
 
-int Socket::getFd() const
+int SocketFd::getFd() const
 {
    return fd;
 }
 
-int Socket::read(void* buf, int count)
+int SocketFd::read(void* buf, int count)
 {
    return static_cast<int>(::read(fd, buf, count));
 }
 
-int Socket::write(const void* buf, int count)
+int SocketFd::write(const void* buf, int count)
 {
    return static_cast<int>(::write(fd, buf, count));
 }
 
-Sockaddr Socket::getLocalAddr()
+Sockaddr SocketFd::getLocalAddr()
 {
    Sockaddr localaddr;
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
@@ -137,7 +137,7 @@ Sockaddr Socket::getLocalAddr()
    return localaddr;
 }
 
-Sockaddr Socket::getPeerAddr()
+Sockaddr SocketFd::getPeerAddr()
 {
    Sockaddr peeraddr;
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
@@ -149,12 +149,12 @@ Sockaddr Socket::getPeerAddr()
    return peeraddr;
 }
 
-struct sockaddr* Socket::sockaddrCast(Sockaddr* addr)
+struct sockaddr* SocketFd::sockaddrCast(Sockaddr* addr)
 {
    return reinterpret_cast<struct sockaddr*>(addr);
 }
 
-const struct sockaddr* Socket::sockaddrCast(const Sockaddr* addr)
+const struct sockaddr* SocketFd::sockaddrCast(const Sockaddr* addr)
 {
    return reinterpret_cast<const struct sockaddr*>(addr);
 }

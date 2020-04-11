@@ -1,4 +1,4 @@
-#include "Socket.h"
+#include "SocketFd.h"
 #include "Sockaddr.h"
 
 #include <gtest/gtest.h>
@@ -8,7 +8,7 @@
 namespace
 {
 
-class SocketTest : public testing::Test
+class SocketFdTest : public testing::Test
 {
 public:
    void serve()
@@ -20,7 +20,7 @@ public:
       serverSocket.bind(serverAddr);
       serverSocket.listen();
       cbee::Sockaddr connectAddr;
-      cbee::Socket connectionSocket (serverSocket.accept(&connectAddr));
+      cbee::SocketFd connectionSocket (serverSocket.accept(&connectAddr));
       
       EXPECT_STREQ("127.0.0.1", connectionSocket.getLocalAddr().getIp().c_str());
       EXPECT_EQ(serverSocket.getLocalAddr().getPort(), connectionSocket.getLocalAddr().getPort());
@@ -37,14 +37,14 @@ public:
       clientSocket.connect(serverAddr);
    }
 
-   cbee::Socket serverSocket;
-   cbee::Socket clientSocket;
+   cbee::SocketFd serverSocket;
+   cbee::SocketFd clientSocket;
    cbee::Sockaddr serverAddr;
 };
 
-TEST_F(SocketTest, serveInSubThread_connectInMainThread_getExpectedConnectAddress)
+TEST_F(SocketFdTest, serveInSubThread_connectInMainThread_getExpectedConnectAddress)
 {
-   std::thread serveThread(&SocketTest::serve, this);
+   std::thread serveThread(&SocketFdTest::serve, this);
 
    // Delay for the connection to make sure server is ready.
    std::this_thread::sleep_for(std::chrono::milliseconds(50));

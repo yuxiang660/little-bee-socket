@@ -1,7 +1,7 @@
 #pragma once
 
 #include "SocketEvent.h"
-#include "Socket.h"
+#include "SocketFd.h"
 
 #include <sys/epoll.h>
 #include <vector>
@@ -15,8 +15,8 @@ public:
    EPoller();
    ~EPoller();
 
-   void updateSocketEvent(const Socket& socket, SocketEventHandler event) const;
-   void deleteSocketEvent(const Socket& socket) const;
+   void updateSocketEvent(const SocketFd& socket, SocketEventHandler event) const;
+   void deleteSocketEvent(const SocketFd& socket) const;
 
    std::vector<SocketEventHandler> poll(int timeoutMs);
 

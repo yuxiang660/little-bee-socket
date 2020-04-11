@@ -8,12 +8,12 @@
 namespace cbee
 {
 
-class Socket
+class SocketFd
 {
 public:
-   Socket();
-   explicit Socket(int socketFd);
-   ~Socket();
+   SocketFd();
+   explicit SocketFd(int socketFd);
+   ~SocketFd();
 
    void shutdownRead();
    void shutdownWrite();
@@ -33,8 +33,8 @@ public:
    Sockaddr getPeerAddr();
 
 private:
-   Socket(const Socket&) = delete;
-   Socket& operator=(const Socket&) = delete;
+   SocketFd(const SocketFd&) = delete;
+   SocketFd& operator=(const SocketFd&) = delete;
 
 private:
    struct sockaddr* sockaddrCast(Sockaddr* addr);

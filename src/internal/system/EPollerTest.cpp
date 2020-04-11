@@ -1,7 +1,7 @@
 #include "EPoller.h"
 #include "SocketEvent.h"
 #include "Sockaddr.h"
-#include "Socket.h"
+#include "SocketFd.h"
 
 #include <gtest/gtest.h>
 #include <memory>
@@ -47,7 +47,7 @@ public:
       epoll.deleteSocketEvent(socket);
    }
 
-   const cbee::Socket& getSocket() const
+   const cbee::SocketFd& getSocket() const
    {
       return socket;
    }
@@ -72,7 +72,7 @@ private:
 
 private:
    const cbee::EPoller& epoll;
-   cbee::Socket socket;
+   cbee::SocketFd socket;
    cbee::SocketEvent::RemoveFunc handleRemove;
    cbee::SocketEvent event;
 };
@@ -120,7 +120,7 @@ public:
    }
 
    cbee::EPoller epoll;
-   cbee::Socket serverSocket;
+   cbee::SocketFd serverSocket;
    cbee::SocketEvent serverEvent;
 
    cbee::Sockaddr serverAddr;
@@ -154,7 +154,7 @@ TEST_F(EPollerTest, constructor)
       std::this_thread::sleep_for(std::chrono::milliseconds(50));
    
       // Move clientSocket to internal namespace, so the socket can destruct automatically.
-      cbee::Socket clientSocket;
+      cbee::SocketFd clientSocket;
       clientSocket.connect(serverAddr);
       clientSocket.write(expectedBuffer, sizeof(expectedBuffer));
 
