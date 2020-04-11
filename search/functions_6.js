@@ -1,8 +1,8 @@
 var searchData=
 [
   ['get',['get',['../dc/de0/classel_1_1base_1_1utils_1_1Registry.html#a18c332267f2acbe78c97a611dec2e5c2',1,'el::base::utils::Registry::get()'],['../d7/d3a/classel_1_1base_1_1utils_1_1RegistryWithPred.html#a811d9cc011d945bc7237e6ae1cf2f096',1,'el::base::utils::RegistryWithPred::get()'],['../d0/d64/classel_1_1Configurations.html#a6da4bc9bd6a14dc44feaf25163e998ca',1,'el::Configurations::get()'],['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#a1ca66763d892f3d2dc62926eb9dc56d3',1,'el::base::RegisteredLoggers::get()']]],
-  ['getactiveevents',['getActiveEvents',['../d8/d36/classcbee_1_1Event.html#a10dce28124ac4b56d57344ac2a90a9bb',1,'cbee::Event']]],
-  ['getallevents',['getAllEvents',['../d8/d36/classcbee_1_1Event.html#aaab390c9f0063ade9f7a1d3318f1f847',1,'cbee::Event']]],
+  ['getactiveevents',['getActiveEvents',['../d0/dfe/classcbee_1_1SocketEvent.html#ada965d45dc350409a9d29e04bee438b6',1,'cbee::SocketEvent']]],
+  ['getallevents',['getAllEvents',['../d0/dfe/classcbee_1_1SocketEvent.html#aed0348ab66b826445503b5b78bc6c9b2',1,'cbee::SocketEvent']]],
   ['getbashoutput',['getBashOutput',['../d4/d03/classel_1_1base_1_1utils_1_1OS.html#a58c32a7c4c30342b6cdf2ee04d540d0f',1,'el::base::utils::OS']]],
   ['getconfigbyref',['getConfigByRef',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a6c5c8a6a1bddd54d5cb1cfc70ac21847',1,'el::base::TypedConfigurations']]],
   ['getconfigbyval',['getConfigByVal',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a0f48ab593ba7ef99aa92267ce4ed470f',1,'el::base::TypedConfigurations']]],

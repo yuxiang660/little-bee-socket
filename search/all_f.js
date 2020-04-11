@@ -1,9 +1,9 @@
 var searchData=
 [
   ['read',['read',['../da/df5/classcbee_1_1Socket.html#a89528f639fd9d608ff415885c4869db0',1,'cbee::Socket']]],
-  ['readcallback',['readCallback',['../d8/d36/classcbee_1_1Event.html#a6c4da4386f1072b0d4e26e78a25d4aa2',1,'cbee::Event']]],
+  ['readcallback',['readCallback',['../d0/dfe/classcbee_1_1SocketEvent.html#adaa34919ef2607c521dd0484ae46d285',1,'cbee::SocketEvent']]],
   ['readdonefunc',['readDoneFunc',['../d9/dba/classcbee_1_1Server.html#a6324d654ec05e10ad8b636ab3beaad9d',1,'cbee::Server::readDoneFunc()'],['../d1/dd4/namespacecbee.html#aaef7f8a8da09103614fa16099749ff40',1,'cbee::ReadDoneFunc()']]],
-  ['readfunc',['ReadFunc',['../d8/d36/classcbee_1_1Event.html#a9956357026efa1ef81e221ea9bc9fc57',1,'cbee::Event']]],
+  ['readfunc',['ReadFunc',['../d0/dfe/classcbee_1_1SocketEvent.html#aec3e0cd7e49f2ddf53f9f14865d29ced',1,'cbee::SocketEvent']]],
   ['reconfigure',['reconfigure',['../d3/d2c/classel_1_1Logger.html#adfd57ab27fb398cc980a3edfab92927e',1,'el::Logger']]],
   ['reconfigureallloggers',['reconfigureAllLoggers',['../d7/d00/classel_1_1Loggers.html#a42f99e79d72d391df563df8d09272194',1,'el::Loggers::reconfigureAllLoggers(const Configurations &amp;configurations)'],['../d7/d00/classel_1_1Loggers.html#a1ebd33bc0208b430f41508e34509c7c9',1,'el::Loggers::reconfigureAllLoggers(ConfigurationType configurationType, const std::string &amp;value)'],['../d7/d00/classel_1_1Loggers.html#a396b601e204ede36f5a9acc76a8c5585',1,'el::Loggers::reconfigureAllLoggers(Level level, ConfigurationType configurationType, const std::string &amp;value)']]],
   ['reconfigurelogger',['reconfigureLogger',['../d7/d00/classel_1_1Loggers.html#a02223004494a404a2c3e7cd0c4380d3b',1,'el::Loggers::reconfigureLogger(Logger *logger, const Configurations &amp;configurations)'],['../d7/d00/classel_1_1Loggers.html#af3252cc39fa4ac17b4abf50acf6b4c5e',1,'el::Loggers::reconfigureLogger(const std::string &amp;identity, const Configurations &amp;configurations)'],['../d7/d00/classel_1_1Loggers.html#a89ec21259cfcfee3f761fca68c4ec043',1,'el::Loggers::reconfigureLogger(const std::string &amp;identity, ConfigurationType configurationType, const std::string &amp;value)']]],
@@ -19,9 +19,9 @@ var searchData=
   ['releasedate',['releaseDate',['../db/d60/classel_1_1VersionInfo.html#a9347b5c0f386117f1cf78dae99bb1752',1,'el::VersionInfo']]],
   ['releaselock',['releaseLock',['../d9/d2e/classel_1_1base_1_1threading_1_1ThreadSafe.html#a95bb166242b9691f861274a9b8ced2d9',1,'el::base::threading::ThreadSafe']]],
   ['remove',['remove',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#a4d17dc9673f6aa6216571e182097400a',1,'el::base::RegisteredLoggers']]],
-  ['removecallback',['removeCallback',['../d8/d36/classcbee_1_1Event.html#a154ff557f18926ac32501a974f5fef98',1,'cbee::Event']]],
+  ['removecallback',['removeCallback',['../d0/dfe/classcbee_1_1SocketEvent.html#ad262b72b5e61f4894098f2d0787c5135',1,'cbee::SocketEvent']]],
   ['removeflag',['removeFlag',['../d0/da4/classel_1_1base_1_1Storage.html#aaecbb6ae954d0bf748ac7f3c980a9173',1,'el::base::Storage::removeFlag()'],['../d7/d00/classel_1_1Loggers.html#a23fcb4b492f70a34285c45c0b5e2e515',1,'el::Loggers::removeFlag()'],['../d2/da4/namespaceel_1_1base_1_1utils.html#a902fbd0c3db2047f1ac37958ea11b058',1,'el::base::utils::removeFlag()']]],
-  ['removefunc',['RemoveFunc',['../d8/d36/classcbee_1_1Event.html#a8a448496f263b3e6918e0174f9c4dde9',1,'cbee::Event']]],
+  ['removefunc',['RemoveFunc',['../d0/dfe/classcbee_1_1SocketEvent.html#a04d6b135e99508cfddacb8c3a67e32f2',1,'cbee::SocketEvent']]],
   ['replaceall',['replaceAll',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#ab24bb11d2b5eb8ede4296d70b510f726',1,'el::base::utils::Str::replaceAll(std::string &amp;str, char replaceWhat, char replaceWith)'],['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a5f424d54390059c0a6a6f81a74ee846b',1,'el::base::utils::Str::replaceAll(std::string &amp;str, const std::string &amp;replaceWhat, const std::string &amp;replaceWith)']]],
   ['replacefirstwithescape',['replaceFirstWithEscape',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a0f271d7da2bb3c1f2fa062219c0e0ba2',1,'el::base::utils::Str']]],
   ['reservecustomformatspecifiers',['reserveCustomFormatSpecifiers',['../d0/df2/classel_1_1Helpers.html#afb5fb896f3222fb8c628a51a05d72c32',1,'el::Helpers']]],
