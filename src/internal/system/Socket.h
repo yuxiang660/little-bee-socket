@@ -29,6 +29,9 @@ public:
    int read(void *buf, int count);
    int write(const void *buf, int count);
 
+   Sockaddr getLocalAddr();
+   Sockaddr getPeerAddr();
+
 private:
    Socket(const Socket&) = delete;
    Socket& operator=(const Socket&) = delete;

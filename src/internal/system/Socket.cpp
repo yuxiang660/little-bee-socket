@@ -125,6 +125,30 @@ int Socket::write(const void* buf, int count)
    return static_cast<int>(::write(fd, buf, count));
 }
 
+Sockaddr Socket::getLocalAddr()
+{
+   Sockaddr localaddr;
+   socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
+   if (::getsockname(fd, sockaddrCast(&localaddr), &addrlen) < 0)
+   {
+      perror("getLocalAddr failure");
+      exit(EXIT_FAILURE);
+   }
+   return localaddr;
+}
+
+Sockaddr Socket::getPeerAddr()
+{
+   Sockaddr peeraddr;
+   socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
+   if (::getpeername(fd, sockaddrCast(&peeraddr), &addrlen) < 0)
+   {
+      perror("getPeerAddr failure");
+      exit(EXIT_FAILURE);
+   }
+   return peeraddr;
+}
+
 struct sockaddr* Socket::sockaddrCast(Sockaddr* addr)
 {
    return reinterpret_cast<struct sockaddr*>(addr);

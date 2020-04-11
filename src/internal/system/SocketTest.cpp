@@ -11,14 +11,6 @@ namespace
 class SocketTest : public testing::Test
 {
 public:
-   SocketTest()
-   {
-   }
-
-   ~SocketTest()
-   {
-   }
-
    void serve()
    {
       serverAddr.setInetFamily();
@@ -27,7 +19,17 @@ public:
 
       serverSocket.bind(serverAddr);
       serverSocket.listen();
-      serverSocket.accept(&connectAddr);
+      cbee::Sockaddr connectAddr;
+      cbee::Socket connectionSocket (serverSocket.accept(&connectAddr));
+      
+      EXPECT_STREQ("127.0.0.1", connectionSocket.getLocalAddr().getIp().c_str());
+      EXPECT_EQ(serverSocket.getLocalAddr().getPort(), connectionSocket.getLocalAddr().getPort());
+
+      EXPECT_STREQ(connectAddr.getIp().c_str(), connectionSocket.getPeerAddr().getIp().c_str());
+      EXPECT_EQ(connectAddr.getPort(), connectionSocket.getPeerAddr().getPort());
+
+      EXPECT_STREQ(clientSocket.getLocalAddr().getIp().c_str(), connectionSocket.getPeerAddr().getIp().c_str());
+      EXPECT_EQ(clientSocket.getLocalAddr().getPort(), connectionSocket.getPeerAddr().getPort());
    }
 
    void connect()
@@ -38,7 +40,6 @@ public:
    cbee::Socket serverSocket;
    cbee::Socket clientSocket;
    cbee::Sockaddr serverAddr;
-   cbee::Sockaddr connectAddr;
 };
 
 TEST_F(SocketTest, serveInSubThread_connectInMainThread_getExpectedConnectAddress)
@@ -50,9 +51,6 @@ TEST_F(SocketTest, serveInSubThread_connectInMainThread_getExpectedConnectAddres
    connect();
 
    serveThread.join();
-
-   EXPECT_STREQ("127.0.0.1", connectAddr.getIp().c_str());
-   EXPECT_NE(0, connectAddr.getPort());
 }
 
 } // namespace
