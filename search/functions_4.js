@@ -6,7 +6,7 @@ var searchData=
   ['enablewriteevent',['enableWriteEvent',['../d8/d36/classcbee_1_1Event.html#af6e8560bfc0c971417a9c690d9f4ffcf',1,'cbee::Event']]],
   ['end',['end',['../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html#a67c40207c171f23ad50a71db819e84f9',1,'el::base::utils::AbstractRegistry']]],
   ['endswith',['endsWith',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a8116fdf0f0308f78a42989da9df52377',1,'el::base::utils::Str']]],
-  ['epoller',['EPoller',['../da/db8/classcbee_1_1EPoller.html#a34fad2764693925b722b77089fe54b16',1,'cbee::EPoller']]],
+  ['epoller',['EPoller',['../da/db8/classcbee_1_1EPoller.html#a34fad2764693925b722b77089fe54b16',1,'cbee::EPoller::EPoller()'],['../da/db8/classcbee_1_1EPoller.html#a1e67a741ff69fa8e66e90a0e0633d68d',1,'cbee::EPoller::EPoller(const EPoller &amp;)=delete']]],
   ['event',['Event',['../d8/d36/classcbee_1_1Event.html#a2df047e84fd05e48198a273d56567132',1,'cbee::Event::Event(const Socket &amp;socket, ReadFunc read, WriteFunc write, RemoveFunc remove, ErrorFunc error)'],['../d8/d36/classcbee_1_1Event.html#a0f13377e424f3271448c54d3b43f95c8',1,'cbee::Event::Event(const Event &amp;)=delete']]],
   ['extractpathfromfilename',['extractPathFromFilename',['../dc/d5c/classel_1_1base_1_1utils_1_1File.html#aeb03bbb8d34b7ac37bcec1ab493926e6',1,'el::base::utils::File']]]
 ];

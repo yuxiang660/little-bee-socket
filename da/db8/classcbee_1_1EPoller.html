@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d8/d4b/classcbee_1_1EPoller-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -86,6 +87,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2779640fe29ce04611cdeed4769023fd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d1/dd4/namespacecbee.html#a54baa1950c9febfba7bd2a0ae7759892">EventHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a2779640fe29ce04611cdeed4769023fd">poll</a> (int timeoutMs)</td></tr>
 <tr class="separator:a2779640fe29ce04611cdeed4769023fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1e67a741ff69fa8e66e90a0e0633d68d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a1e67a741ff69fa8e66e90a0e0633d68d">EPoller</a> (const <a class="el" href="../../da/db8/classcbee_1_1EPoller.html">EPoller</a> &amp;)=delete</td></tr>
+<tr class="separator:a1e67a741ff69fa8e66e90a0e0633d68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf09cb1f3bc26cd1e176914cdc6a876"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html">EPoller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#acbf09cb1f3bc26cd1e176914cdc6a876">operator=</a> (const <a class="el" href="../../da/db8/classcbee_1_1EPoller.html">EPoller</a> &amp;)=delete</td></tr>
+<tr class="separator:acbf09cb1f3bc26cd1e176914cdc6a876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad475c2659ab437705ef4b057b2e406c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html#ad475c2659ab437705ef4b057b2e406c6">epollFd</a></td></tr>
@@ -95,7 +103,7 @@ Private Attributes</h2></td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a34fad2764693925b722b77089fe54b16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34fad2764693925b722b77089fe54b16">&#9670;&nbsp;</a></span>EPoller()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a34fad2764693925b722b77089fe54b16">&#9670;&nbsp;</a></span>EPoller() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,6 +140,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1e67a741ff69fa8e66e90a0e0633d68d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e67a741ff69fa8e66e90a0e0633d68d">&#9670;&nbsp;</a></span>EPoller() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cbee::EPoller::EPoller </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/db8/classcbee_1_1EPoller.html">EPoller</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a81a701af8e401401cadc41d41c29b807"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81a701af8e401401cadc41d41c29b807">&#9670;&nbsp;</a></span>deleteEvent()</h2>
@@ -150,6 +184,32 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">References <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#ad475c2659ab437705ef4b057b2e406c6">epollFd</a>, and <a class="el" href="../../da/df5/classcbee_1_1Socket.html#aeed856b706ad8dbc1ef1b1454bac8f30">cbee::Socket::getFd()</a>.</p>
+
+</div>
+</div>
+<a id="acbf09cb1f3bc26cd1e176914cdc6a876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf09cb1f3bc26cd1e176914cdc6a876">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html">EPoller</a>&amp; cbee::EPoller::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/db8/classcbee_1_1EPoller.html">EPoller</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
