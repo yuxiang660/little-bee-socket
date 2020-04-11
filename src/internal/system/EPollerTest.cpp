@@ -77,10 +77,10 @@ private:
    cbee::SocketEvent event;
 };
 
-class EPollerTest : public ::testing::Test
+class EPollerSocketTest : public ::testing::Test
 {
 public:
-   EPollerTest() :
+   EPollerSocketTest() :
       serverEvent
       (
          serverSocket,
@@ -145,9 +145,9 @@ private:
    }
 };
 
-TEST_F(EPollerTest, constructor)
+TEST_F(EPollerSocketTest, constructor)
 {
-   std::thread serveThread(&EPollerTest::serve, this);
+   std::thread serveThread(&EPollerSocketTest::serve, this);
 
    {
       // Delay for the connection to make sure server is ready.
