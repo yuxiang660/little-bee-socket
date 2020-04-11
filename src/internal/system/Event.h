@@ -1,4 +1,5 @@
 #pragma once
+#include "Socket.h"
 
 #include <sys/epoll.h>
 #include <functional>
@@ -23,7 +24,7 @@ public:
    // 1. Write data to peer socket that has been closed. Local socke receives RST message which triggers EPOLLIN+EPOLLRDHUP+EPOLLHUP+EPOLLERR.
    static const int kErrorEvent = EPOLLERR;
 
-   Event();
+   Event(const Socket& socket);
    int getAllEvents() const;
    int getActiveEvents() const;
    void setActiveEvents(int events);
@@ -39,9 +40,14 @@ public:
    void disableWriteEvent();
    void disableAllEvents();
 
-   void handleEvent();
+   void handleEvent() const;
 
 private:
+   Event(const Event&) = delete;
+   Event& operator=(const Event&) = delete;
+
+private:
+   const Socket& bindedSocket;
    int allEvents;    // Events configured to epoll
    int activeEvents; // Events from epoll polling
    EventCallback writeCallback;

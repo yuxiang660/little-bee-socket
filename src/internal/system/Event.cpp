@@ -1,10 +1,13 @@
 #include "Event.h"
 #include "log/Logger.h"
 
+#include <assert.h>
+
 namespace cbee
 {
 
-Event::Event() :
+Event::Event(const Socket& socket) :
+   bindedSocket(socket),
    allEvents(kNoneEvent),
    activeEvents(kNoneEvent),
    writeCallback(nullptr),
@@ -12,6 +15,7 @@ Event::Event() :
    removeCallback(nullptr),
    errorCallback(nullptr)
 {
+   assert(bindedSocket.getFd() >= 0);
 }
 
 int Event::getAllEvents() const
@@ -54,7 +58,7 @@ void Event::disableAllEvents()
    allEvents = kNoneEvent;
 }
 
-void Event::handleEvent()
+void Event::handleEvent() const
 {
    if (activeEvents & kErrorEvent)
    {

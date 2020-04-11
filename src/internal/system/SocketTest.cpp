@@ -13,14 +13,10 @@ class SocketTest : public testing::Test
 public:
    SocketTest()
    {
-      serverSocket.open();
-      clientSocket.open();
    }
 
    ~SocketTest()
    {
-      serverSocket.close();
-      clientSocket.close();
    }
 
    void serve()

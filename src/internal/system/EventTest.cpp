@@ -1,4 +1,5 @@
 #include "Event.h"
+#include "Socket.h"
 
 #include <gtest/gtest.h>
 #include <sys/epoll.h>
@@ -9,15 +10,25 @@ namespace
 class EventTest : public ::testing::Test
 {
 public:
-   EventTest() : writeDone(false), readDone(false), removeDone(false), errorDone(false)
+   EventTest() :
+      event(socket),
+      writeDone(false),
+      readDone(false),
+      removeDone(false),
+      errorDone(false)
    {
-      e.setWriteCallback([&]() { writeDone = true; });
-      e.setReadCallback([&]() { readDone = true; });
-      e.setRemoveCallback([&]() { removeDone = true; });
-      e.setErrorCallback([&]() { errorDone = true; });
+      event.setWriteCallback([&]() { writeDone = true; });
+      event.setReadCallback([&]() { readDone = true; });
+      event.setRemoveCallback([&]() { removeDone = true; });
+      event.setErrorCallback([&]() { errorDone = true; });
    }
 
-   cbee::Event e;
+   ~EventTest()
+   {
+   }
+
+   cbee::Socket socket;
+   cbee::Event event;
    bool writeDone;
    bool readDone;
    bool removeDone;
@@ -26,8 +37,8 @@ public:
 
 TEST_F(EventTest, readEvent_expectedCallBack)
 {
-   e.setActiveEvents(cbee::Event::kConnectedOrReadableOrCloseEvent);
-   e.handleEvent();
+   event.setActiveEvents(cbee::Event::kConnectedOrReadableOrCloseEvent);
+   event.handleEvent();
    EXPECT_EQ(false, writeDone);
    EXPECT_EQ(true, readDone);
    EXPECT_EQ(false, removeDone);
@@ -36,8 +47,8 @@ TEST_F(EventTest, readEvent_expectedCallBack)
 
 TEST_F(EventTest, writeEvent_expectedCallBack)
 {
-   e.setActiveEvents(cbee::Event::kWritableEvent);
-   e.handleEvent();
+   event.setActiveEvents(cbee::Event::kWritableEvent);
+   event.handleEvent();
    EXPECT_EQ(true, writeDone);
    EXPECT_EQ(false, readDone);
    EXPECT_EQ(false, removeDone);
@@ -46,8 +57,8 @@ TEST_F(EventTest, writeEvent_expectedCallBack)
 
 TEST_F(EventTest, errorEvent_expectedCallBack)
 {
-   e.setActiveEvents(cbee::Event::kErrorEvent);
-   e.handleEvent();
+   event.setActiveEvents(cbee::Event::kErrorEvent);
+   event.handleEvent();
    EXPECT_EQ(false, writeDone);
    EXPECT_EQ(false, readDone);
    EXPECT_EQ(false, removeDone);
@@ -56,8 +67,8 @@ TEST_F(EventTest, errorEvent_expectedCallBack)
 
 TEST_F(EventTest, destructEvent_expectedCallBack)
 {
-   e.setActiveEvents(cbee::Event::kRemoveEvent);
-   e.handleEvent();
+   event.setActiveEvents(cbee::Event::kRemoveEvent);
+   event.handleEvent();
    EXPECT_EQ(false, writeDone);
    EXPECT_EQ(false, readDone);
    EXPECT_EQ(true, removeDone);

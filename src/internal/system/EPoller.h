@@ -15,8 +15,8 @@ public:
    EPoller();
    ~EPoller();
 
-   void updateEvent(Socket socket, EventHandler event);
-   void deleteEvent(Socket socket);
+   void updateEvent(const Socket& socket, EventHandler event);
+   void deleteEvent(const Socket& socket);
 
    std::vector<EventHandler> poll(int timeoutMs);
 

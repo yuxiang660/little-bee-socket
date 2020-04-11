@@ -18,7 +18,7 @@ EPoller::EPoller() : epollFd(::epoll_create1(EPOLL_CLOEXEC)), pollContainer(kIni
 EPoller::~EPoller()
 {
    __attribute__((unused)) auto ret = ::close(epollFd);
-   assert(ret >= 0);
+   assert(ret == 0);
 }
 
 std::vector<EventHandler> EPoller::poll(int timeoutMs)
@@ -55,7 +55,7 @@ std::vector<EventHandler> EPoller::poll(int timeoutMs)
    return activeEvents;
 }
 
-void EPoller::updateEvent(Socket socket, EventHandler event)
+void EPoller::updateEvent(const Socket& socket, EventHandler event)
 {
    struct epoll_event e;
    memset(&e, 0, sizeof(epoll_event));
@@ -68,7 +68,7 @@ void EPoller::updateEvent(Socket socket, EventHandler event)
    }
 }
 
-void EPoller::deleteEvent(Socket socket)
+void EPoller::deleteEvent(const Socket& socket)
 {
    if (::epoll_ctl(epollFd, EPOLL_CTL_DEL, socket.getFd(), nullptr) < 0)
    {

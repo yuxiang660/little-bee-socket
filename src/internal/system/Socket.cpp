@@ -8,8 +8,9 @@
 namespace cbee
 {
 
-Socket::Socket() : fd(-1)
+Socket::Socket() : fd(::socket(AF_INET, SOCK_STREAM, IPPROTO_TCP))
 {
+   assert(fd >= 0);
 }
 
 Socket::Socket(const int socketFd) : fd(socketFd)
@@ -17,29 +18,14 @@ Socket::Socket(const int socketFd) : fd(socketFd)
    assert(fd >= 0);
 }
 
-void Socket::open()
+Socket::~Socket()
 {
-   fd = ::socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-   if (fd < 0)
-   {
-      perror("socket open failure");
-      exit(EXIT_FAILURE);
-   }
-}
-
-void Socket::close()
-{
-   assert(fd >= 0);
-   if(::close(fd) < 0)
-   {
-      perror("socket close failure");
-      exit(EXIT_FAILURE);
-   }
+   __attribute__((unused)) auto ret = ::close(fd);
+   assert(ret == 0);
 }
 
 void Socket::shutdownRead()
 {
-   assert(fd >= 0);
    if (::shutdown(fd, SHUT_RD) < 0)
    {
       perror("socket shutdown read failure");
@@ -49,7 +35,6 @@ void Socket::shutdownRead()
 
 void Socket::shutdownWrite()
 {
-   assert(fd >= 0);
    if (::shutdown(fd, SHUT_WR) < 0)
    {
       perror("socket shutdown write failure");
@@ -59,7 +44,6 @@ void Socket::shutdownWrite()
 
 void Socket::shutdown()
 {
-   assert(fd >= 0);
    if (::shutdown(fd, SHUT_RDWR) < 0)
    {
       perror("socket shutdown read and write failure");
@@ -88,7 +72,6 @@ void Socket::setNonBlock()
 
 void Socket::bind(const Sockaddr& serverAddr)
 {
-   assert(fd >= 0);
    if (::bind(fd, sockaddrCast(&serverAddr), sizeof(Sockaddr)) < 0)
    {
       perror("bind failure");
@@ -98,7 +81,6 @@ void Socket::bind(const Sockaddr& serverAddr)
 
 void Socket::listen()
 {
-   assert(fd >= 0);
    if (::listen(fd, SOMAXCONN) < 0)
    {
       perror("listen failure");
@@ -106,9 +88,8 @@ void Socket::listen()
    }
 }
 
-Socket Socket::accept(Sockaddr* connectAddr)
+int Socket::accept(Sockaddr* connectAddr)
 {
-   assert(fd >= 0);
    assert(connectAddr != nullptr);
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
    int connfd = ::accept(fd, sockaddrCast(connectAddr), &addrlen);
@@ -122,7 +103,6 @@ Socket Socket::accept(Sockaddr* connectAddr)
 
 void Socket::connect(const Sockaddr& serverAddr)
 {
-   assert(fd >= 0);
    if (::connect(fd, sockaddrCast(&serverAddr), static_cast<socklen_t>(sizeof(Sockaddr))) < 0)
    {
       perror("connect failure");
