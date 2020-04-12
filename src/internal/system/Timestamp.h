@@ -17,6 +17,7 @@ public:
    static Timestamp now();
 
    int64_t getMicroSeconds() const;
+   Timestamp addSeconds(double seconds) const;
 
 private:
    int64_t microSecondsSinceEpoch;

@@ -37,4 +37,17 @@ TEST(TimestampTest, compareOperations_work)
    EXPECT_EQ(false, time1 == time2);
 }
 
+TEST(TimestampTest, addSeconds_expectedNewTimestamp)
+{
+   double seconds = 1.5;
+   cbee::Timestamp now = cbee::Timestamp::now();
+   cbee::Timestamp future = now.addSeconds(seconds);
+
+   EXPECT_EQ
+   (
+      seconds * cbee::Timestamp::kMicroSecondsPerSecond,
+      future.getMicroSeconds() - now.getMicroSeconds()
+   );
+}
+
 }

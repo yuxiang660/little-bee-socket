@@ -25,4 +25,10 @@ int64_t Timestamp::getMicroSeconds() const
    return microSecondsSinceEpoch;
 }
 
+Timestamp Timestamp::addSeconds(double seconds) const
+{
+   int64_t delta = static_cast<int64_t>(seconds * kMicroSecondsPerSecond);
+   return Timestamp(microSecondsSinceEpoch + delta);
+}
+
 }
