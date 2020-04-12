@@ -4,7 +4,7 @@ var searchData=
   ['wcharptrtocharptr',['wcharPtrToCharPtr',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a6672f1ba9c6fbb54240d1981b87c064f',1,'el::base::utils::Str']]],
   ['wildcardmatch',['wildCardMatch',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a0f96b488eca9772e204f8b5feddd9a90',1,'el::base::utils::Str']]],
   ['write',['write',['../dd/ddc/classcbee_1_1SocketFd.html#a5f2962312e47b3a1203e3f827b7ba242',1,'cbee::SocketFd']]],
-  ['writecallback',['writeCallback',['../d8/d36/classcbee_1_1Event.html#a486b80526b78a0a6898aa392f1c33f7f',1,'cbee::Event']]],
+  ['writecallback',['writeCallback',['../d8/d36/classcbee_1_1Event.html#a40b773b3940bc62ef34ea56d776b3edf',1,'cbee::Event']]],
   ['writedonefunc',['writeDoneFunc',['../d9/dba/classcbee_1_1Server.html#a6de3de792f5b166ebbc398c33d71c20b',1,'cbee::Server::writeDoneFunc()'],['../d1/dd4/namespacecbee.html#aac60068457e3ab50a4dc08c6c1265ff9',1,'cbee::WriteDoneFunc()']]],
   ['writefunc',['WriteFunc',['../d8/d36/classcbee_1_1Event.html#a6c8544027688f037ef5a70c4da63f60f',1,'cbee::Event']]],
   ['writeiterator',['writeIterator',['../df/d67/classel_1_1base_1_1MessageBuilder.html#a240ef66bd4e1ff4169594b8138ca2baa',1,'el::base::MessageBuilder']]],

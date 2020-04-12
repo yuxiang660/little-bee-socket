@@ -99,7 +99,7 @@ var searchData=
   ['epoller_2eh',['EPoller.h',['../d2/d18/EPoller_8h.html',1,'']]],
   ['epollfd',['epollFd',['../da/db8/classcbee_1_1EPoller.html#a221be28b16bcb42270f5fe1b6426bc5d',1,'cbee::EPoller']]],
   ['error',['Error',['../da/d7e/namespaceel.html#ab0ac6091262344c52dd2d3ad099e8e36a902b0d55fddef6f8d651fe1035b7d4bd',1,'el']]],
-  ['errorcallback',['errorCallback',['../d8/d36/classcbee_1_1Event.html#a4775be26f6737b0c7e65c4d4f4e11a99',1,'cbee::Event']]],
+  ['errorcallback',['errorCallback',['../d8/d36/classcbee_1_1Event.html#a6fbc6deac6ab9daed406d7f183dfa080',1,'cbee::Event']]],
   ['errorfunc',['ErrorFunc',['../d8/d36/classcbee_1_1Event.html#a74b71d0eabce820acc9715a92b7463f5',1,'cbee::Event']]],
   ['event',['Event',['../d8/d36/classcbee_1_1Event.html',1,'cbee::Event'],['../d1/d00/classcbee_1_1EventTrigger.html#a9032d9b8258f9cc488de4d5e1f88d2d5',1,'cbee::EventTrigger::event()'],['../d8/d36/classcbee_1_1Event.html#a9f8d274b77b62fe96415b3c89e369a4c',1,'cbee::Event::Event(const int fd, ReadFunc read, WriteFunc write, RemoveFunc remove, ErrorFunc error)'],['../d8/d36/classcbee_1_1Event.html#a0f13377e424f3271448c54d3b43f95c8',1,'cbee::Event::Event(const Event &amp;)=delete']]],
   ['event_2ecpp',['Event.cpp',['../d7/d9f/Event_8cpp.html',1,'']]],

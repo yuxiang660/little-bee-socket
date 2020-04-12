@@ -1,7 +1,7 @@
 var searchData=
 [
   ['read',['read',['../dd/ddc/classcbee_1_1SocketFd.html#a78c14cdd3bf7f0f50771a9cf013fc6b8',1,'cbee::SocketFd']]],
-  ['readcallback',['readCallback',['../d8/d36/classcbee_1_1Event.html#a6c4da4386f1072b0d4e26e78a25d4aa2',1,'cbee::Event']]],
+  ['readcallback',['readCallback',['../d8/d36/classcbee_1_1Event.html#a3162f5cd34e707242f76fe1d3a6ea091',1,'cbee::Event']]],
   ['readdonefunc',['readDoneFunc',['../d9/dba/classcbee_1_1Server.html#a6324d654ec05e10ad8b636ab3beaad9d',1,'cbee::Server::readDoneFunc()'],['../d1/dd4/namespacecbee.html#aaef7f8a8da09103614fa16099749ff40',1,'cbee::ReadDoneFunc()']]],
   ['readfunc',['ReadFunc',['../d8/d36/classcbee_1_1Event.html#a9956357026efa1ef81e221ea9bc9fc57',1,'cbee::Event']]],
   ['reconfigure',['reconfigure',['../d3/d2c/classel_1_1Logger.html#adfd57ab27fb398cc980a3edfab92927e',1,'el::Logger']]],
@@ -19,7 +19,7 @@ var searchData=
   ['releasedate',['releaseDate',['../db/d60/classel_1_1VersionInfo.html#a9347b5c0f386117f1cf78dae99bb1752',1,'el::VersionInfo']]],
   ['releaselock',['releaseLock',['../d9/d2e/classel_1_1base_1_1threading_1_1ThreadSafe.html#a95bb166242b9691f861274a9b8ced2d9',1,'el::base::threading::ThreadSafe']]],
   ['remove',['remove',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#a4d17dc9673f6aa6216571e182097400a',1,'el::base::RegisteredLoggers']]],
-  ['removecallback',['removeCallback',['../d8/d36/classcbee_1_1Event.html#a154ff557f18926ac32501a974f5fef98',1,'cbee::Event']]],
+  ['removecallback',['removeCallback',['../d8/d36/classcbee_1_1Event.html#ae5f86f7e6da27d4666d67359b4121aaa',1,'cbee::Event']]],
   ['removeflag',['removeFlag',['../d0/da4/classel_1_1base_1_1Storage.html#aaecbb6ae954d0bf748ac7f3c980a9173',1,'el::base::Storage::removeFlag()'],['../d7/d00/classel_1_1Loggers.html#a23fcb4b492f70a34285c45c0b5e2e515',1,'el::Loggers::removeFlag()'],['../d2/da4/namespaceel_1_1base_1_1utils.html#a902fbd0c3db2047f1ac37958ea11b058',1,'el::base::utils::removeFlag()']]],
   ['removefunc',['RemoveFunc',['../d8/d36/classcbee_1_1Event.html#a8a448496f263b3e6918e0174f9c4dde9',1,'cbee::Event']]],
   ['replaceall',['replaceAll',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#ab24bb11d2b5eb8ede4296d70b510f726',1,'el::base::utils::Str::replaceAll(std::string &amp;str, char replaceWhat, char replaceWith)'],['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a5f424d54390059c0a6a6f81a74ee846b',1,'el::base::utils::Str::replaceAll(std::string &amp;str, const std::string &amp;replaceWhat, const std::string &amp;replaceWith)']]],
