@@ -56,10 +56,10 @@ private:
    const int bindedFd;
    int allEvents;    // Events configured to epoll
    int activeEvents; // Events from epoll polling
-   ReadFunc readCallback;
-   WriteFunc writeCallback;
-   RemoveFunc removeCallback;
-   ErrorFunc errorCallback;
+   const ReadFunc readCallback;
+   const WriteFunc writeCallback;
+   const RemoveFunc removeCallback;
+   const ErrorFunc errorCallback;
 };
 
 typedef Event* EventHandler;
