@@ -1,9 +1,8 @@
 #include "EventTriggerFd.h"
+#include "Macros.h"
 
 #include <sys/eventfd.h>
 #include <assert.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 
 namespace cbee
@@ -24,11 +23,7 @@ int EventTriggerFd::cleanEvents()
 {
    uint64_t numberOfEvents = 0;
 
-   if (::read(fd, &numberOfEvents, sizeof(uint64_t)) < 0)
-   {
-      perror("EventTriggerFd::cleanEvent failure");
-      exit(EXIT_FAILURE);
-   }
+   if (::read(fd, &numberOfEvents, sizeof(uint64_t)) < 0) HANDLE_ERROR("EventTriggerFd::cleanEvent failure");
 
    return static_cast<int>(numberOfEvents);
 }
@@ -37,11 +32,7 @@ void EventTriggerFd::triggerEvent()
 {
    uint64_t number = 1;
 
-   if (::write(fd, &number, sizeof(uint64_t)) < 0)
-   {
-      perror("EventTriggerFd::triggerEvent failure");
-      exit(EXIT_FAILURE);
-   }
+   if (::write(fd, &number, sizeof(uint64_t)) < 0) HANDLE_ERROR("EventTriggerFd::triggerEvent failure");
 }
 
 int EventTriggerFd::getFd() const

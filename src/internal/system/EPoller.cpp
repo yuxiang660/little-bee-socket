@@ -1,9 +1,9 @@
 #include "EPoller.h"
+#include "Macros.h"
 
 #include <assert.h>
-#include <unistd.h>
-#include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 namespace cbee
 {
@@ -32,11 +32,7 @@ std::vector<EventHandler> EPoller::poll(int timeoutMs)
       timeoutMs
    );
 
-   if (numberOfActiveEvents < 0)
-   {
-      perror("Epoller::poll failure");
-      exit(EXIT_FAILURE);
-   }
+   if (numberOfActiveEvents < 0) HANDLE_ERROR("Epoller::poll failure");
 
    assert(numberOfActiveEvents <= sizeOfPollContainer);
    std::vector<EventHandler> activeEvents;
@@ -61,20 +57,12 @@ void EPoller::updateEvent(int fd, EventHandler event) const
    memset(&e, 0, sizeof(epoll_event));
    e.events = event->getAllEvents();
    e.data.ptr = event;
-   if (::epoll_ctl(epollFd, EPOLL_CTL_ADD, fd, &e) < 0)
-   {
-      perror("EPoller::updateEvent failure");
-      exit(EXIT_FAILURE);
-   }
+   if (::epoll_ctl(epollFd, EPOLL_CTL_ADD, fd, &e) < 0) HANDLE_ERROR("EPoller::updateEvent failure");
 }
 
 void EPoller::deleteEvent(int fd) const
 {
-   if (::epoll_ctl(epollFd, EPOLL_CTL_DEL, fd, nullptr) < 0)
-   {
-      perror("EPoller::deleteEvent failure");
-      exit(EXIT_FAILURE);
-   }
+   if (::epoll_ctl(epollFd, EPOLL_CTL_DEL, fd, nullptr) < 0) HANDLE_ERROR("EPoller::deleteEvent failure");
 }
 
 } // namespace cbee

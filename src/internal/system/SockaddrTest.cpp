@@ -100,7 +100,7 @@ TEST(SockaddrErrorTest, setIp_inValidIp_exit)
    const char* invalidIp = "266.0.0.290";
 
    cbee::Sockaddr addr;
-   EXPECT_EXIT(addr.setIp(invalidIp), ::testing::ExitedWithCode(EXIT_FAILURE), "ip address is invalid");
+   EXPECT_EXIT(addr.setIp(invalidIp), ::testing::ExitedWithCode(EXIT_FAILURE), "Sockaddr::setIp failure");
 }
 
 } // namespace

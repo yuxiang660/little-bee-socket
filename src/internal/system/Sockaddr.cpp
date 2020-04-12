@@ -1,11 +1,10 @@
 #include "Sockaddr.h"
+#include "Macros.h"
 
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <assert.h>
 #include <endian.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 namespace cbee
@@ -23,11 +22,7 @@ void Sockaddr::setInetFamily()
 
 void Sockaddr::setIp(const char* ip)
 {
-   if (::inet_pton(AF_INET, ip, &address.sin_addr) <= 0)
-   {
-      perror("ip address is invalid");
-      exit(EXIT_FAILURE);
-   }
+   if (::inet_pton(AF_INET, ip, &address.sin_addr) <= 0) HANDLE_ERROR("Sockaddr::setIp failure");
 }
 
 void Sockaddr::setIp(bool loopbackOnly)

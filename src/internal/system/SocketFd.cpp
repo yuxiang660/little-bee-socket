@@ -1,9 +1,10 @@
 #include "SocketFd.h"
+#include "Macros.h"
 
-#include <fcntl.h>
 #include <sys/socket.h>
-#include <unistd.h>
 #include <assert.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 namespace cbee
 {
@@ -26,66 +27,38 @@ SocketFd::~SocketFd()
 
 void SocketFd::shutdownRead()
 {
-   if (::shutdown(fd, SHUT_RD) < 0)
-   {
-      perror("socket shutdown read failure");
-      exit(EXIT_FAILURE);
-   }
+   if (::shutdown(fd, SHUT_RD) < 0) HANDLE_ERROR("SocketFd::shutdownRead failure");
 }
 
 void SocketFd::shutdownWrite()
 {
-   if (::shutdown(fd, SHUT_WR) < 0)
-   {
-      perror("socket shutdown write failure");
-      exit(EXIT_FAILURE);
-   }
+   if (::shutdown(fd, SHUT_WR) < 0) HANDLE_ERROR("SocketFd::shutdownWrite failure");
 }
 
 void SocketFd::shutdown()
 {
-   if (::shutdown(fd, SHUT_RDWR) < 0)
-   {
-      perror("socket shutdown read and write failure");
-      exit(EXIT_FAILURE);
-   }
+   if (::shutdown(fd, SHUT_RDWR) < 0) HANDLE_ERROR("SocketFd::shutdown failure");
 }
 
 void SocketFd::setNonBlock()
 {
    int flags = ::fcntl(fd, F_GETFL, 0);
    flags |= O_NONBLOCK;
-   if(::fcntl(fd, F_SETFL, flags))
-   {
-      perror("socket config failure");
-      exit(EXIT_FAILURE);
-   }
+   if(::fcntl(fd, F_SETFL, flags)) HANDLE_ERROR("SocketFd::setNonBlock O_NONBLOCK failure");
 
    flags = ::fcntl(fd, F_GETFD, 0);
    flags |= FD_CLOEXEC;
-   if(::fcntl(fd, F_SETFD, flags))
-   {
-      perror("socket config failure");
-      exit(EXIT_FAILURE);
-   }
+   if(::fcntl(fd, F_SETFD, flags)) HANDLE_ERROR("SocketFd::setNonBlock FD_CLOEXEC failure");
 }
 
 void SocketFd::bind(const Sockaddr& serverAddr)
 {
-   if (::bind(fd, sockaddrCast(&serverAddr), sizeof(Sockaddr)) < 0)
-   {
-      perror("bind failure");
-      exit(EXIT_FAILURE);
-   }
+   if (::bind(fd, sockaddrCast(&serverAddr), sizeof(Sockaddr)) < 0) HANDLE_ERROR("SocketFd::bind failure");
 }
 
 void SocketFd::listen()
 {
-   if (::listen(fd, SOMAXCONN) < 0)
-   {
-      perror("listen failure");
-      exit(EXIT_FAILURE);
-   }
+   if (::listen(fd, SOMAXCONN) < 0) HANDLE_ERROR("SocketFd::listen failure");
 }
 
 int SocketFd::accept(Sockaddr* connectAddr)
@@ -93,21 +66,16 @@ int SocketFd::accept(Sockaddr* connectAddr)
    assert(connectAddr != nullptr);
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
    int connfd = ::accept(fd, sockaddrCast(connectAddr), &addrlen);
-   if (connfd < 0)
-   {
-      perror("accept failure");
-      exit(EXIT_FAILURE);
-   }
+
+   if (connfd < 0) HANDLE_ERROR("SocketFd::accept failure");
+
    return connfd;
 }
 
 void SocketFd::connect(const Sockaddr& serverAddr)
 {
    if (::connect(fd, sockaddrCast(&serverAddr), static_cast<socklen_t>(sizeof(Sockaddr))) < 0)
-   {
-      perror("connect failure");
-      exit(EXIT_FAILURE);
-   }
+      HANDLE_ERROR("SocketFd::connect failure");
 }
 
 int SocketFd::getFd() const
@@ -129,11 +97,9 @@ Sockaddr SocketFd::getLocalAddr()
 {
    Sockaddr localaddr;
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
-   if (::getsockname(fd, sockaddrCast(&localaddr), &addrlen) < 0)
-   {
-      perror("getLocalAddr failure");
-      exit(EXIT_FAILURE);
-   }
+
+   if (::getsockname(fd, sockaddrCast(&localaddr), &addrlen) < 0) HANDLE_ERROR("SocketFd::getLocalAddr failure");
+
    return localaddr;
 }
 
@@ -141,11 +107,9 @@ Sockaddr SocketFd::getPeerAddr()
 {
    Sockaddr peeraddr;
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
-   if (::getpeername(fd, sockaddrCast(&peeraddr), &addrlen) < 0)
-   {
-      perror("getPeerAddr failure");
-      exit(EXIT_FAILURE);
-   }
+
+   if (::getpeername(fd, sockaddrCast(&peeraddr), &addrlen) < 0) HANDLE_ERROR("SocketFd::getPeerAddr failure");
+
    return peeraddr;
 }
 
