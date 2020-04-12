@@ -8,13 +8,13 @@ namespace cbee
 
 Event::Event
 (
-   const SocketFd& socket,
+   const int fd,
    ReadFunc read,
    WriteFunc write,
    RemoveFunc remove,
    ErrorFunc error
 ) :
-   bindedSocket(socket),
+   bindedFd(fd),
    allEvents(kNoneEvent),
    activeEvents(kNoneEvent),
    readCallback(read),
@@ -22,7 +22,7 @@ Event::Event
    removeCallback(remove),
    errorCallback(error)
 {
-   assert(bindedSocket.getFd() >= 0);
+   assert(bindedFd >= 0);
 }
 
 int Event::getAllEvents() const
@@ -77,7 +77,7 @@ void Event::handleEvent() const
    if (activeEvents & kRemoveEvent)
    {
       LOG(DEBUG) << "kRemoveEvent event: " << activeEvents;
-      if (removeCallback) removeCallback(bindedSocket.getFd());
+      if (removeCallback) removeCallback(bindedFd);
       return;
    }
 

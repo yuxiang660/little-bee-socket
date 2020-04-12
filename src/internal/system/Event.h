@@ -1,5 +1,4 @@
 #pragma once
-#include "SocketFd.h"
 
 #include <sys/epoll.h>
 #include <functional>
@@ -30,7 +29,7 @@ public:
 
    Event
    (
-      const SocketFd& socket,
+      const int fd,
       ReadFunc read,
       WriteFunc write,
       RemoveFunc remove,
@@ -54,7 +53,7 @@ private:
    Event& operator=(const Event&) = delete;
 
 private:
-   const SocketFd& bindedSocket;
+   const int bindedFd;
    int allEvents;    // Events configured to epoll
    int activeEvents; // Events from epoll polling
    ReadFunc readCallback;

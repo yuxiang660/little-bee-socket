@@ -26,7 +26,7 @@ public:
       handleRemove(remove),
       event
       (
-         socket,
+         socket.getFd(),
          [this](){handleRead();},
          nullptr,
          handleRemove,
@@ -83,7 +83,7 @@ public:
    EPollerSocketTest() :
       serverEvent
       (
-         serverSocket,
+         serverSocket.getFd(),
          [this](){handleRead();},
          nullptr,
          nullptr,

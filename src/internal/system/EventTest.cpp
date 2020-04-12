@@ -1,5 +1,4 @@
 #include "Event.h"
-#include "SocketFd.h"
 
 #include <gtest/gtest.h>
 #include <sys/epoll.h>
@@ -7,14 +6,15 @@
 namespace
 {
 
+const int fakeFd = 1;
+
 class EventTest : public ::testing::Test
 {
 public:
    EventTest() :
-      socket(),
       event
       (
-         socket,
+         fakeFd,
          [this]() { readDone = true; },
          [this]() { writeDone = true; },
          [this](int fdKey) { removedFd = fdKey; removeDone = true; },
@@ -28,7 +28,6 @@ public:
    {
    }
 
-   cbee::SocketFd socket;
    cbee::Event event;
    bool readDone;
    bool writeDone;
@@ -75,7 +74,7 @@ TEST_F(EventTest, removeEvent_expectedCallBack)
    EXPECT_EQ(false, readDone);
    EXPECT_EQ(true, removeDone);
    EXPECT_EQ(false, errorDone);
-   EXPECT_EQ(socket.getFd(), removedFd);
+   EXPECT_EQ(fakeFd, removedFd);
 }
 
 } // namespace
