@@ -36,7 +36,6 @@ private:
    SocketFd(const SocketFd&) = delete;
    SocketFd& operator=(const SocketFd&) = delete;
 
-private:
    struct sockaddr* sockaddrCast(Sockaddr* addr) const;
    const struct sockaddr* sockaddrCast(const Sockaddr* addr) const;
 

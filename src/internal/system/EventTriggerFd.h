@@ -15,6 +15,10 @@ public:
    int getFd() const;
 
 private:
+   EventTriggerFd(const EventTriggerFd&) = delete;
+   EventTriggerFd& operator=(const EventTriggerFd&) = delete;
+
+private:
    const int fd;
 };
 

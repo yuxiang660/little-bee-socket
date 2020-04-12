@@ -17,6 +17,10 @@ public:
    int getFd() const;
 
 private:
+   EventTimerFd(const EventTimerFd&) = delete;
+   EventTimerFd& operator=(const EventTimerFd&) = delete;
+
+private:
    struct timespec getRelativeTimeFromNow(Timestamp expiredTime) const;
 
 private:
