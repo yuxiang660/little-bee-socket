@@ -3,7 +3,7 @@ var searchData=
   ['warning',['Warning',['../da/d7e/namespaceel.html#ab0ac6091262344c52dd2d3ad099e8e36a0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'el']]],
   ['wcharptrtocharptr',['wcharPtrToCharPtr',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a6672f1ba9c6fbb54240d1981b87c064f',1,'el::base::utils::Str']]],
   ['wildcardmatch',['wildCardMatch',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a0f96b488eca9772e204f8b5feddd9a90',1,'el::base::utils::Str']]],
-  ['write',['write',['../dd/ddc/classcbee_1_1SocketFd.html#a71412407755955ba4d4c44390e998937',1,'cbee::SocketFd']]],
+  ['write',['write',['../dd/ddc/classcbee_1_1SocketFd.html#a5f2962312e47b3a1203e3f827b7ba242',1,'cbee::SocketFd']]],
   ['writecallback',['writeCallback',['../d8/d36/classcbee_1_1Event.html#a486b80526b78a0a6898aa392f1c33f7f',1,'cbee::Event']]],
   ['writedonefunc',['writeDoneFunc',['../d9/dba/classcbee_1_1Server.html#a6de3de792f5b166ebbc398c33d71c20b',1,'cbee::Server::writeDoneFunc()'],['../d1/dd4/namespacecbee.html#aac60068457e3ab50a4dc08c6c1265ff9',1,'cbee::WriteDoneFunc()']]],
   ['writefunc',['WriteFunc',['../d8/d36/classcbee_1_1Event.html#a6c8544027688f037ef5a70c4da63f60f',1,'cbee::Event']]],
