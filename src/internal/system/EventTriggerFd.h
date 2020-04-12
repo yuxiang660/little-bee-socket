@@ -9,8 +9,8 @@ public:
    EventTriggerFd();
    ~EventTriggerFd();
 
-   int cleanEvents();
-   void triggerEvent();
+   int cleanEvents() const;
+   void triggerEvent() const;
 
    int getFd() const;
 

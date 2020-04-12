@@ -20,13 +20,13 @@ EventTimerFd::~EventTimerFd()
    assert(ret == 0);
 }
 
-void EventTimerFd::cleanEvent()
+void EventTimerFd::cleanEvent() const
 {
    uint64_t numberOfEvents = 0;
    if (::read(fd, &numberOfEvents, sizeof(uint64_t)) < 0) HANDLE_ERROR("EventTimerFd::cleanEvent failure");
 }
 
-void EventTimerFd::resetEventTimer(Timestamp expiredTime)
+void EventTimerFd::resetEventTimer(Timestamp expiredTime) const
 {
    struct itimerspec newValue;
    memset(&newValue, 0, sizeof(newValue));

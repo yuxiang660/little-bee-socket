@@ -19,7 +19,7 @@ EventTriggerFd::~EventTriggerFd()
    assert(ret == 0);
 }
 
-int EventTriggerFd::cleanEvents()
+int EventTriggerFd::cleanEvents() const
 {
    uint64_t numberOfEvents = 0;
 
@@ -28,7 +28,7 @@ int EventTriggerFd::cleanEvents()
    return static_cast<int>(numberOfEvents);
 }
 
-void EventTriggerFd::triggerEvent()
+void EventTriggerFd::triggerEvent() const
 {
    uint64_t number = 1;
 

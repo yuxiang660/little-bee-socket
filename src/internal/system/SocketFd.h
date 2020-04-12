@@ -15,30 +15,30 @@ public:
    explicit SocketFd(int socketFd);
    ~SocketFd();
 
-   void shutdownRead();
-   void shutdownWrite();
-   void shutdown();
+   void shutdownRead() const;
+   void shutdownWrite() const;
+   void shutdown() const;
 
-   void setNonBlock();
-   void bind(const Sockaddr& serverAddr);
-   void listen();
-   int accept(Sockaddr* connectAddr);
-   void connect(const Sockaddr& serverAddr);
+   void setNonBlock() const;
+   void bind(const Sockaddr& serverAddr) const;
+   void listen() const;
+   int accept(Sockaddr* connectAddr) const;
+   void connect(const Sockaddr& serverAddr) const;
    int getFd() const;
 
-   int read(void *buf, int count);
-   int write(const void *buf, int count);
+   int read(void *buf, int count) const;
+   int write(const void *buf, int count) const;
 
-   Sockaddr getLocalAddr();
-   Sockaddr getPeerAddr();
+   Sockaddr getLocalAddr() const;
+   Sockaddr getPeerAddr() const;
 
 private:
    SocketFd(const SocketFd&) = delete;
    SocketFd& operator=(const SocketFd&) = delete;
 
 private:
-   struct sockaddr* sockaddrCast(Sockaddr* addr);
-   const struct sockaddr* sockaddrCast(const Sockaddr* addr);
+   struct sockaddr* sockaddrCast(Sockaddr* addr) const;
+   const struct sockaddr* sockaddrCast(const Sockaddr* addr) const;
 
 private:
    const int fd;

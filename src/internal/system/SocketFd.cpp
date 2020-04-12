@@ -25,22 +25,22 @@ SocketFd::~SocketFd()
    assert(ret == 0);
 }
 
-void SocketFd::shutdownRead()
+void SocketFd::shutdownRead() const
 {
    if (::shutdown(fd, SHUT_RD) < 0) HANDLE_ERROR("SocketFd::shutdownRead failure");
 }
 
-void SocketFd::shutdownWrite()
+void SocketFd::shutdownWrite() const
 {
    if (::shutdown(fd, SHUT_WR) < 0) HANDLE_ERROR("SocketFd::shutdownWrite failure");
 }
 
-void SocketFd::shutdown()
+void SocketFd::shutdown() const
 {
    if (::shutdown(fd, SHUT_RDWR) < 0) HANDLE_ERROR("SocketFd::shutdown failure");
 }
 
-void SocketFd::setNonBlock()
+void SocketFd::setNonBlock() const
 {
    int flags = ::fcntl(fd, F_GETFL, 0);
    flags |= O_NONBLOCK;
@@ -51,17 +51,17 @@ void SocketFd::setNonBlock()
    if(::fcntl(fd, F_SETFD, flags)) HANDLE_ERROR("SocketFd::setNonBlock FD_CLOEXEC failure");
 }
 
-void SocketFd::bind(const Sockaddr& serverAddr)
+void SocketFd::bind(const Sockaddr& serverAddr) const
 {
    if (::bind(fd, sockaddrCast(&serverAddr), sizeof(Sockaddr)) < 0) HANDLE_ERROR("SocketFd::bind failure");
 }
 
-void SocketFd::listen()
+void SocketFd::listen() const
 {
    if (::listen(fd, SOMAXCONN) < 0) HANDLE_ERROR("SocketFd::listen failure");
 }
 
-int SocketFd::accept(Sockaddr* connectAddr)
+int SocketFd::accept(Sockaddr* connectAddr) const
 {
    assert(connectAddr != nullptr);
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
@@ -72,7 +72,7 @@ int SocketFd::accept(Sockaddr* connectAddr)
    return connfd;
 }
 
-void SocketFd::connect(const Sockaddr& serverAddr)
+void SocketFd::connect(const Sockaddr& serverAddr) const
 {
    if (::connect(fd, sockaddrCast(&serverAddr), static_cast<socklen_t>(sizeof(Sockaddr))) < 0)
       HANDLE_ERROR("SocketFd::connect failure");
@@ -83,17 +83,17 @@ int SocketFd::getFd() const
    return fd;
 }
 
-int SocketFd::read(void* buf, int count)
+int SocketFd::read(void* buf, int count) const
 {
    return static_cast<int>(::read(fd, buf, count));
 }
 
-int SocketFd::write(const void* buf, int count)
+int SocketFd::write(const void* buf, int count) const
 {
    return static_cast<int>(::write(fd, buf, count));
 }
 
-Sockaddr SocketFd::getLocalAddr()
+Sockaddr SocketFd::getLocalAddr() const
 {
    Sockaddr localaddr;
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
@@ -103,7 +103,7 @@ Sockaddr SocketFd::getLocalAddr()
    return localaddr;
 }
 
-Sockaddr SocketFd::getPeerAddr()
+Sockaddr SocketFd::getPeerAddr() const
 {
    Sockaddr peeraddr;
    socklen_t addrlen = static_cast<socklen_t>(sizeof(Sockaddr));
@@ -113,12 +113,12 @@ Sockaddr SocketFd::getPeerAddr()
    return peeraddr;
 }
 
-struct sockaddr* SocketFd::sockaddrCast(Sockaddr* addr)
+struct sockaddr* SocketFd::sockaddrCast(Sockaddr* addr) const
 {
    return reinterpret_cast<struct sockaddr*>(addr);
 }
 
-const struct sockaddr* SocketFd::sockaddrCast(const Sockaddr* addr)
+const struct sockaddr* SocketFd::sockaddrCast(const Sockaddr* addr) const
 {
    return reinterpret_cast<const struct sockaddr*>(addr);
 }

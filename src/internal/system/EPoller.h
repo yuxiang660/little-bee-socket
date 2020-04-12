@@ -24,7 +24,7 @@ private:
    EPoller& operator=(const EPoller&) = delete;
 
 private:
-   int epollFd;
+   const int epollFd;
    std::vector<struct epoll_event> pollContainer;
 };
 
