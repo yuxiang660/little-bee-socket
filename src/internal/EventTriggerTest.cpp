@@ -39,7 +39,7 @@ public:
    std::atomic<bool> isEventCleared;
 };
 
-TEST_F(EventTriggerTest, constructor)
+TEST_F(EventTriggerTest, triggerOnce_invokeSeveralTimes_triggerEPollExpected)
 {
    const int triggerTimes = 5;
 
