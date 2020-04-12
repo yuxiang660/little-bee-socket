@@ -1,8 +1,14 @@
 var searchData=
 [
-  ['timed_5fblock',['TIMED_BLOCK',['../d8/d1b/easylogging_09_09_8h.html#ab2246418a3c1264aac8d24504cbd4d72',1,'easylogging++.h']]],
-  ['timed_5ffunc',['TIMED_FUNC',['../d8/d1b/easylogging_09_09_8h.html#acf5e8558f413f8ecc44231a562bc8bf0',1,'easylogging++.h']]],
-  ['timed_5ffunc_5fif',['TIMED_FUNC_IF',['../d8/d1b/easylogging_09_09_8h.html#a5dcfce39a374c368c08aa7c2e95d76f5',1,'easylogging++.h']]],
-  ['timed_5fscope',['TIMED_SCOPE',['../d8/d1b/easylogging_09_09_8h.html#abb8dc8f7caabb002e7b0f7c0b36e138f',1,'easylogging++.h']]],
-  ['timed_5fscope_5fif',['TIMED_SCOPE_IF',['../d8/d1b/easylogging_09_09_8h.html#a54df686ae242849f40005c81cd344949',1,'easylogging++.h']]]
+  ['share_5feasyloggingpp',['SHARE_EASYLOGGINGPP',['../d8/d1b/easylogging_09_09_8h.html#afe8bf576b87241e0e208b48a79b6f481',1,'easylogging++.h']]],
+  ['start_5feasyloggingpp',['START_EASYLOGGINGPP',['../d8/d1b/easylogging_09_09_8h.html#aff5b8951b257d2151aa8cc8c2a0a25a2',1,'easylogging++.h']]],
+  ['strcat',['STRCAT',['../d8/d1b/easylogging_09_09_8h.html#a705b55dd0ca41ce80b2073b3701d1fb3',1,'easylogging++.h']]],
+  ['strcpy',['STRCPY',['../d8/d1b/easylogging_09_09_8h.html#a1529c2e8eec8772b1bc832bd1d793b1b',1,'easylogging++.h']]],
+  ['strerror',['STRERROR',['../d8/d1b/easylogging_09_09_8h.html#a8acb62af98165ec54cdf57d59e885048',1,'easylogging++.h']]],
+  ['strtok',['STRTOK',['../d8/d1b/easylogging_09_09_8h.html#a467ada1a12edc2402c2bd6dc266173cf',1,'easylogging++.h']]],
+  ['syslog',['SYSLOG',['../d8/d1b/easylogging_09_09_8h.html#a139c60bed70c16c40d781d14393d2317',1,'easylogging++.h']]],
+  ['syslog_5fafter_5fn',['SYSLOG_AFTER_N',['../d8/d1b/easylogging_09_09_8h.html#ad6a2f5dcdde6250c57a59262c89df000',1,'easylogging++.h']]],
+  ['syslog_5fevery_5fn',['SYSLOG_EVERY_N',['../d8/d1b/easylogging_09_09_8h.html#acc3daab3c81d515cf86496933ab7f49b',1,'easylogging++.h']]],
+  ['syslog_5fif',['SYSLOG_IF',['../d8/d1b/easylogging_09_09_8h.html#a2a4338f329a6e9c537a0e5c48a8d70e8',1,'easylogging++.h']]],
+  ['syslog_5fn_5ftimes',['SYSLOG_N_TIMES',['../d8/d1b/easylogging_09_09_8h.html#af850da0a9ee82b60d5aca839c1073620',1,'easylogging++.h']]]
 ];
