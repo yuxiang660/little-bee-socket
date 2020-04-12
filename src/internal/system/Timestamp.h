@@ -22,4 +22,24 @@ private:
    int64_t microSecondsSinceEpoch;
 };
 
+inline bool operator<(Timestamp lhs, Timestamp rhs)
+{
+  return lhs.getMicroSeconds() < rhs.getMicroSeconds();
+}
+
+inline bool operator==(Timestamp lhs, Timestamp rhs)
+{
+  return lhs.getMicroSeconds() == rhs.getMicroSeconds();
+}
+
+inline bool operator>(Timestamp lhs, Timestamp rhs)
+{
+  return lhs.getMicroSeconds() > rhs.getMicroSeconds();
+}
+
+inline bool operator!=(Timestamp lhs, Timestamp rhs)
+{
+  return lhs.getMicroSeconds() != rhs.getMicroSeconds();
+}
+
 } // namespace cbee
