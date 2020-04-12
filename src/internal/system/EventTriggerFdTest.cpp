@@ -5,7 +5,7 @@
 namespace
 {
 
-TEST(EventTriggerTest, triggerEvent_cleanEvents_expectedEventNumber)
+TEST(EventTriggerFdTest, triggerEvent_cleanEvents_expectedEventNumber)
 {
    const int expectedNumberOfEvents = 3;
 
