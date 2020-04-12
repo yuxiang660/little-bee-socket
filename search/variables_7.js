@@ -43,6 +43,7 @@ var searchData=
   ['kmaxvalid',['kMaxValid',['../d2/d13/classel_1_1LevelHelper.html#aa06e80c65db5c336c4aad25872cf9a48',1,'el::LevelHelper::kMaxValid()'],['../d8/d56/classel_1_1ConfigurationTypeHelper.html#aa02f3cefb127e7eb97d7e1dd7f51a12d',1,'el::ConfigurationTypeHelper::kMaxValid()']]],
   ['kmaxverboselevel',['kMaxVerboseLevel',['../d3/deb/namespaceel_1_1base_1_1consts.html#ab05de8d933ef9761e4658f100cd2be9a',1,'el::base::consts']]],
   ['kmessageformatspecifier',['kMessageFormatSpecifier',['../d3/deb/namespaceel_1_1base_1_1consts.html#a5dedb20dede9aedff8e758bcc495d9dc',1,'el::base::consts']]],
+  ['kmicrosecondspersecond',['kMicroSecondsPerSecond',['../d0/db3/classcbee_1_1Timestamp.html#abfb145045975a6e22cec1b051783e9bd',1,'cbee::Timestamp']]],
   ['kminvalid',['kMinValid',['../d2/d13/classel_1_1LevelHelper.html#a3ecfe43d5b242e9946bad7f61ea4d89d',1,'el::LevelHelper::kMinValid()'],['../d8/d56/classel_1_1ConfigurationTypeHelper.html#ab7266e698eb32dec2da285325a66e322',1,'el::ConfigurationTypeHelper::kMinValid()']]],
   ['kmonths',['kMonths',['../d3/deb/namespaceel_1_1base_1_1consts.html#a1ea88533c7d8d92def186d05b2317c2e',1,'el::base::consts']]],
   ['kmonthsabbrev',['kMonthsAbbrev',['../d3/deb/namespaceel_1_1base_1_1consts.html#aadf0fe596e80fb2776d8c6602bc85891',1,'el::base::consts']]],

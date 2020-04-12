@@ -9,6 +9,7 @@ var searchData=
   ['normallog',['NormalLog',['../d4/d7f/namespaceel_1_1base.html#a3aa2563d38e47388ba242a1694fc2839a44d8ee68145a7d9849eeaa634c443602',1,'el::base']]],
   ['noscopedlock',['NoScopedLock',['../d5/d27/classel_1_1base_1_1threading_1_1internal_1_1NoScopedLock.html',1,'el::base::threading::internal::NoScopedLock&lt; Mutex &gt;'],['../d5/d27/classel_1_1base_1_1threading_1_1internal_1_1NoScopedLock.html#a020f8cea6e83f40ea29662ef57a58235',1,'el::base::threading::internal::NoScopedLock::NoScopedLock(Mutex &amp;)'],['../d5/d27/classel_1_1base_1_1threading_1_1internal_1_1NoScopedLock.html#a1e8ff78d9138e899b98e58a983defca6',1,'el::base::threading::internal::NoScopedLock::NoScopedLock(void)']]],
   ['not',['Not',['../df/d2e/namespaceel_1_1base_1_1utils_1_1bitwise.html#aa7c5c01947028de25e99f9465a12c035',1,'el::base::utils::bitwise']]],
+  ['now',['now',['../d0/db3/classcbee_1_1Timestamp.html#a15cad5024175b15bc2cb305d93644566',1,'cbee::Timestamp']]],
   ['nullwriter',['NullWriter',['../dc/d20/classel_1_1base_1_1NullWriter.html',1,'el::base::NullWriter'],['../dc/d20/classel_1_1base_1_1NullWriter.html#a936572812bfcd5a34ed928f11cac9e22',1,'el::base::NullWriter::NullWriter()']]],
   ['numb',['numb',['../d3/deb/namespaceel_1_1base_1_1consts.html#ad500da448be26a12d4ca42afc29a1316',1,'el::base::consts']]]
 ];

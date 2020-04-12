@@ -5,6 +5,7 @@ var searchData=
   ['_7econfiguration',['~Configuration',['../d0/d6b/classel_1_1Configuration.html#abaf0a9e1a96bd40800174982c983a4ac',1,'el::Configuration']]],
   ['_7econfigurations',['~Configurations',['../d0/d64/classel_1_1Configurations.html#aed56020af78d32cb4d3e4ac73abf3349',1,'el::Configurations']]],
   ['_7eepoller',['~EPoller',['../da/db8/classcbee_1_1EPoller.html#afada10c028cdf8fb564894d9dadec955',1,'cbee::EPoller']]],
+  ['_7eeventtimerfd',['~EventTimerFd',['../df/d5c/classcbee_1_1EventTimerFd.html#aa4ee956172fadada1192ee9902e86033',1,'cbee::EventTimerFd']]],
   ['_7eeventtriggerfd',['~EventTriggerFd',['../df/d7d/classcbee_1_1EventTriggerFd.html#a4b442481e0ee0d44aa2b733345918ea9',1,'cbee::EventTriggerFd']]],
   ['_7ehitcounter',['~HitCounter',['../dd/dbd/classel_1_1base_1_1HitCounter.html#a8ff49793a4baef0a9ed0320f7d7db513',1,'el::base::HitCounter']]],
   ['_7einitializer',['~Initializer',['../d5/dfc/structcbee_1_1Initializer.html#a907dd2e26717450efff3246a24faaf5a',1,'cbee::Initializer']]],

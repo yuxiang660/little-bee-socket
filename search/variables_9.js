@@ -78,5 +78,6 @@ var searchData=
   ['m_5fvalue',['m_value',['../d0/d6b/classel_1_1Configuration.html#a45acd1edcd253110d23851b04dc8f16e',1,'el::Configuration']]],
   ['m_5fverboselevel',['m_verboseLevel',['../d9/dd3/classel_1_1LogMessage.html#a1175df6a8d538848353fb425e2703f0e',1,'el::LogMessage::m_verboseLevel()'],['../d8/dea/classel_1_1base_1_1Writer.html#a335803052b6878c058a4a888279df04d',1,'el::base::Writer::m_verboseLevel()']]],
   ['m_5fvregistry',['m_vRegistry',['../d0/da4/classel_1_1base_1_1Storage.html#a1225686b8bc699e1a94db84ad2cf6711',1,'el::base::Storage']]],
-  ['m_5fwidth',['m_width',['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html#a7e24991325599de4d9ff96ac691cbbf6',1,'el::base::SubsecondPrecision']]]
+  ['m_5fwidth',['m_width',['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html#a7e24991325599de4d9ff96ac691cbbf6',1,'el::base::SubsecondPrecision']]],
+  ['microsecondssinceepoch',['microSecondsSinceEpoch',['../d0/db3/classcbee_1_1Timestamp.html#a466c264bab7749589060f3068da9b041',1,'cbee::Timestamp']]]
 ];

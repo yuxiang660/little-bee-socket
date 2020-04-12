@@ -86,6 +86,7 @@ var searchData=
   ['message',['message',['../d9/dd3/classel_1_1LogMessage.html#a55e99351b41fd7bc05123253868b208b',1,'el::LogMessage']]],
   ['messagebuilder',['MessageBuilder',['../df/d67/classel_1_1base_1_1MessageBuilder.html',1,'el::base::MessageBuilder'],['../df/d67/classel_1_1base_1_1MessageBuilder.html#ac0b1b1be970ceab13eb023ef0399ef87',1,'el::base::MessageBuilder::MessageBuilder()']]],
   ['microsecond',['Microsecond',['../d4/d7f/namespaceel_1_1base.html#a1b886858c6409097395b24b1bdf03c39a1f14b3811ca5de688daa740d8471249e',1,'el::base']]],
+  ['microsecondssinceepoch',['microSecondsSinceEpoch',['../d0/db3/classcbee_1_1Timestamp.html#a466c264bab7749589060f3068da9b041',1,'cbee::Timestamp']]],
   ['millisecond',['Millisecond',['../d4/d7f/namespaceel_1_1base.html#a1b886858c6409097395b24b1bdf03c39a988bbeeb80e7e0a6b4651aab5a76b413',1,'el::base']]],
   ['millisecondswidth',['millisecondsWidth',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#afd65ea428144f620d8514073341db670',1,'el::base::TypedConfigurations::millisecondsWidth()'],['../d4/d7f/namespaceel_1_1base.html#abbc234f4907eccec2673dfc6efaa5925',1,'el::base::MillisecondsWidth()'],['../da/d7e/namespaceel.html#a281f5db6d6163678bc68a8b23b59e124a052bf0f0c813b3c41c5b5046ebc26529',1,'el::MillisecondsWidth()']]],
   ['minute',['Minute',['../d4/d7f/namespaceel_1_1base.html#a1b886858c6409097395b24b1bdf03c39a62902641c38f3a4a8eb3212454360e24',1,'el::base']]],
