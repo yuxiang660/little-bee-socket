@@ -101,7 +101,7 @@ var searchData=
   ['error',['Error',['../da/d7e/namespaceel.html#ab0ac6091262344c52dd2d3ad099e8e36a902b0d55fddef6f8d651fe1035b7d4bd',1,'el']]],
   ['errorcallback',['errorCallback',['../d8/d36/classcbee_1_1Event.html#a4775be26f6737b0c7e65c4d4f4e11a99',1,'cbee::Event']]],
   ['errorfunc',['ErrorFunc',['../d8/d36/classcbee_1_1Event.html#a74b71d0eabce820acc9715a92b7463f5',1,'cbee::Event']]],
-  ['event',['Event',['../d8/d36/classcbee_1_1Event.html',1,'cbee::Event'],['../d8/d36/classcbee_1_1Event.html#a3da28587881c73e2ea83b492b53a3af3',1,'cbee::Event::Event(const SocketFd &amp;socket, ReadFunc read, WriteFunc write, RemoveFunc remove, ErrorFunc error)'],['../d8/d36/classcbee_1_1Event.html#a0f13377e424f3271448c54d3b43f95c8',1,'cbee::Event::Event(const Event &amp;)=delete']]],
+  ['event',['Event',['../d8/d36/classcbee_1_1Event.html',1,'cbee::Event'],['../d8/d36/classcbee_1_1Event.html#a9f8d274b77b62fe96415b3c89e369a4c',1,'cbee::Event::Event(const int fd, ReadFunc read, WriteFunc write, RemoveFunc remove, ErrorFunc error)'],['../d8/d36/classcbee_1_1Event.html#a0f13377e424f3271448c54d3b43f95c8',1,'cbee::Event::Event(const Event &amp;)=delete']]],
   ['event_2ecpp',['Event.cpp',['../d7/d9f/Event_8cpp.html',1,'']]],
   ['event_2eh',['Event.h',['../d6/d8d/Event_8h.html',1,'']]],
   ['eventhandler',['EventHandler',['../d1/dd4/namespacecbee.html#a54baa1950c9febfba7bd2a0ae7759892',1,'cbee']]],
