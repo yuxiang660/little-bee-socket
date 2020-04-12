@@ -22,15 +22,15 @@ EventTriggerFd::~EventTriggerFd()
 
 int EventTriggerFd::cleanEvents()
 {
-   uint64_t number = 0;
+   uint64_t numberOfEvents = 0;
 
-   if (::read(fd, &number, sizeof(uint64_t)) < 0)
+   if (::read(fd, &numberOfEvents, sizeof(uint64_t)) < 0)
    {
       perror("EventTriggerFd::cleanEvent failure");
       exit(EXIT_FAILURE);
    }
 
-   return static_cast<int>(number);
+   return static_cast<int>(numberOfEvents);
 }
 
 void EventTriggerFd::triggerEvent()
