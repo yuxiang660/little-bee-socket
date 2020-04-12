@@ -55,7 +55,7 @@ var searchData=
   ['defaultlogdispatchcallback',['DefaultLogDispatchCallback',['../d0/dda/classel_1_1base_1_1DefaultLogDispatchCallback.html',1,'el::base']]],
   ['defaultprerolloutcallback',['defaultPreRollOutCallback',['../d4/d7f/namespaceel_1_1base.html#ac727cc7769b50f434890d370614baf25',1,'el::base']]],
   ['defaulttypedconfigurations',['defaultTypedConfigurations',['../d7/d00/classel_1_1Loggers.html#a592324bd539ea075101031c14cd9fd41',1,'el::Loggers']]],
-  ['deleteevent',['deleteEvent',['../da/db8/classcbee_1_1EPoller.html#a5721427aae563c4487878ef0f53e2066',1,'cbee::EPoller']]],
+  ['deleteevent',['deleteEvent',['../da/db8/classcbee_1_1EPoller.html#afda63bc9c1d70fbde01beaf055f9c771',1,'cbee::EPoller::deleteEvent()'],['../d9/df8/classcbee_1_1EventModifierInterface.html#a5f0f6d48ab19bf1754f24652cab7629d',1,'cbee::EventModifierInterface::deleteEvent()']]],
   ['detail',['detail',['../d3/deb/namespaceel_1_1base_1_1consts.html#a2b4b9cbcbf8c93a7e770c7d9efe33560',1,'el::base::consts']]],
   ['disableallevents',['disableAllEvents',['../d8/d36/classcbee_1_1Event.html#a4aa95dcf6b24762bae631d66a64bfc95',1,'cbee::Event']]],
   ['disableapplicationabortonfatallog',['DisableApplicationAbortOnFatalLog',['../da/d7e/namespaceel.html#a2784aacd04cb7816ac1c0b20fcbf83cba8dd9782f8a19cf7a41e4ec38d1c6a4ae',1,'el']]],

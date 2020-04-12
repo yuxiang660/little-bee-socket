@@ -18,7 +18,7 @@ var searchData=
   ['unsafevalidatefilerolling',['unsafeValidateFileRolling',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a39b254514a300352fb6e2852a93621f9',1,'el::base::TypedConfigurations']]],
   ['unsetprerolloutcallback',['unsetPreRollOutCallback',['../d0/da4/classel_1_1base_1_1Storage.html#a2bfdc3a20eeafe158ee8603c805131e4',1,'el::base::Storage']]],
   ['updatedateformat',['updateDateFormat',['../db/df7/classel_1_1base_1_1LogFormat.html#a966bed1ee6f8597152d08d4ed70a5855',1,'el::base::LogFormat']]],
-  ['updateevent',['updateEvent',['../da/db8/classcbee_1_1EPoller.html#aaf184efc24458d137b8ad2429c0e5ac3',1,'cbee::EPoller']]],
+  ['updateevent',['updateEvent',['../da/db8/classcbee_1_1EPoller.html#a17b73c9b1adc9274c0d8741d9b18d61a',1,'cbee::EPoller::updateEvent()'],['../d9/df8/classcbee_1_1EventModifierInterface.html#a274398be94562ddde3759a0e321b9027',1,'cbee::EventModifierInterface::updateEvent()']]],
   ['updateformatspec',['updateFormatSpec',['../db/df7/classel_1_1base_1_1LogFormat.html#aa3c2ddecf237d0ec3eca4b2a3a442e67',1,'el::base::LogFormat']]],
   ['userformat',['userFormat',['../db/df7/classel_1_1base_1_1LogFormat.html#a3ed7232a8a89d816513844ce6380c15d',1,'el::base::LogFormat']]]
 ];
