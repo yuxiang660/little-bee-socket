@@ -1,5 +1,6 @@
 #pragma once
 
+#include "EventModifierInterface.h"
 #include "Event.h"
 
 #include <sys/epoll.h>
@@ -8,14 +9,14 @@
 namespace cbee
 {
 
-class EPoller
+class EPoller : public EventModifierInterface
 {
 public:
    EPoller();
    ~EPoller();
 
-   void updateEvent(int fd, EventHandler event) const;
-   void deleteEvent(int fd) const;
+   void updateEvent(int fd, EventHandler event) const override;
+   void deleteEvent(int fd) const override;
 
    std::vector<EventHandler> poll(int timeoutMs);
 
