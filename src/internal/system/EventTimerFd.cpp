@@ -24,16 +24,20 @@ EventTimerFd::~EventTimerFd()
 void EventTimerFd::cleanEvent() const
 {
    uint64_t numberOfEvents = 0;
-   if (::read(fd, &numberOfEvents, sizeof(uint64_t)) < 0) HANDLE_ERROR("EventTimerFd::cleanEvent failure");
+
+   if (::read(fd, &numberOfEvents, sizeof(uint64_t)) < 0)
+      HANDLE_ERROR("EventTimerFd::cleanEvent failure");
+
+   assert(numberOfEvents == 1);
 }
 
-void EventTimerFd::resetEventTimer(Timestamp expiredTime) const
+void EventTimerFd::triggerEventAt(Timestamp expiredTime) const
 {
    struct itimerspec newValue;
    memset(&newValue, 0, sizeof(newValue));
    newValue.it_value = getRelativeTimeFromNow(expiredTime);
    if(::timerfd_settime(fd, 0 /* relative time */, &newValue, nullptr) < 0)
-      HANDLE_ERROR("EventTimerFd::resetEventTime failure");
+      HANDLE_ERROR("EventTimerFd::triggerEventAt failure");
 }
 
 void EventTimerFd::triggerEventRightNow() const

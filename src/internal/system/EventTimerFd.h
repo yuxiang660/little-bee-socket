@@ -14,7 +14,7 @@ public:
    ~EventTimerFd();
 
    void cleanEvent() const;
-   void resetEventTimer(Timestamp expiredTime) const;
+   void triggerEventAt(Timestamp expiredTime) const;
    void triggerEventRightNow() const;
 
    int getFd() const;
