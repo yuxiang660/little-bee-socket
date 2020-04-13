@@ -20,7 +20,7 @@ var searchData=
   ['getparamvalue',['getParamValue',['../dc/d6e/classel_1_1base_1_1utils_1_1CommandLineArgs.html#aaf9b11a61b3e1445c81408fdc4d6cc9d',1,'el::base::utils::CommandLineArgs']]],
   ['getpeeraddr',['getPeerAddr',['../dd/ddc/classcbee_1_1SocketFd.html#a8ce3169fa90d145ab2e5d45f120ff303',1,'cbee::SocketFd']]],
   ['getport',['getPort',['../d0/da4/classcbee_1_1Sockaddr.html#a56874cf39515d5e26f9a0e45f440df71',1,'cbee::Sockaddr']]],
-  ['getrelativetimefromnow',['getRelativeTimeFromNow',['../df/d5c/classcbee_1_1EventTimerFd.html#af6235650081256457128dad6eac14950',1,'cbee::EventTimerFd']]],
+  ['getrelativetimefromnow',['getRelativeTimeFromNow',['../df/d5c/classcbee_1_1EventTimerFd.html#a4e46df82aa58638fec647454586834ee',1,'cbee::EventTimerFd']]],
   ['getsizeoffile',['getSizeOfFile',['../dc/d5c/classel_1_1base_1_1utils_1_1File.html#a9d6a7a5203667fffcbba62fc9ddd40c4',1,'el::base::utils::File']]],
   ['getthreadname',['getThreadName',['../d0/da4/classel_1_1base_1_1Storage.html#aefa8cd1b921eab81d233ae8c5a79f3ee',1,'el::base::Storage::getThreadName()'],['../d0/df2/classel_1_1Helpers.html#ae19cb3baa6d8081a9e922736a384f70b',1,'el::Helpers::getThreadName()']]],
   ['gettimedifference',['getTimeDifference',['../db/d87/classel_1_1base_1_1utils_1_1DateTime.html#a6635a2a31d6f3d79d47012ea3ccf9d31',1,'el::base::utils::DateTime']]],
