@@ -21,5 +21,6 @@ var searchData=
   ['resolvefilename',['resolveFilename',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a38c9262f6d645459d8f22bec4d47200e',1,'el::base::TypedConfigurations']]],
   ['resolveloggerformatspec',['resolveLoggerFormatSpec',['../d3/d2c/classel_1_1Logger.html#acfb9ef869b9b4dc3efd78d7f64b8bebd',1,'el::Logger']]],
   ['resolver',['resolver',['../d1/d0d/classel_1_1CustomFormatSpecifier.html#a9e388356717597849bc3902835370ece',1,'el::CustomFormatSpecifier']]],
-  ['rtrim',['rtrim',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a2192df38f98b1d9547ff0e339e33f486',1,'el::base::utils::Str']]]
+  ['rtrim',['rtrim',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a2192df38f98b1d9547ff0e339e33f486',1,'el::base::utils::Str']]],
+  ['run',['run',['../de/ddd/classcbee_1_1TimerHandler.html#a5456035f952b7143910a168a99aeaa30',1,'cbee::TimerHandler']]]
 ];

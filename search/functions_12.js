@@ -12,5 +12,5 @@ var searchData=
   ['verboselevel',['verboseLevel',['../d9/dd3/classel_1_1LogMessage.html#a6a576d3c2c325173baa7177fe9aacf3b',1,'el::LogMessage::verboseLevel()'],['../d7/d00/classel_1_1Loggers.html#a319ed41034f683fe42542e9c0280246b',1,'el::Loggers::verboseLevel()']]],
   ['version',['version',['../db/d60/classel_1_1VersionInfo.html#a07250d64dcc52a58cab6d3c6eb9e6f2a',1,'el::VersionInfo']]],
   ['vmodulesenabled',['vModulesEnabled',['../de/d00/classel_1_1base_1_1VRegistry.html#ad7a8e939daf6b3d6b949def0a9f65a1f',1,'el::base::VRegistry']]],
-  ['vregistry',['VRegistry',['../de/d00/classel_1_1base_1_1VRegistry.html#ac4b36d32d3722238024480ce66c52ad0',1,'el::base::VRegistry::VRegistry()'],['../d0/da4/classel_1_1base_1_1Storage.html#a7fd4cf506308fa85c4b0559daa89555d',1,'el::base::Storage::vRegistry()']]]
+  ['vregistry',['vRegistry',['../d0/da4/classel_1_1base_1_1Storage.html#a7fd4cf506308fa85c4b0559daa89555d',1,'el::base::Storage::vRegistry()'],['../de/d00/classel_1_1base_1_1VRegistry.html#ac4b36d32d3722238024480ce66c52ad0',1,'el::base::VRegistry::VRegistry()']]]
 ];

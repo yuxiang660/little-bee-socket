@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['writedonefunc',['WriteDoneFunc',['../d1/dd4/namespacecbee.html#aac60068457e3ab50a4dc08c6c1265ff9',1,'cbee']]],
-  ['writefunc',['WriteFunc',['../d8/d36/classcbee_1_1Event.html#a6c8544027688f037ef5a70c4da63f60f',1,'cbee::Event']]]
+  ['verboselevel',['VerboseLevel',['../da/d71/namespaceel_1_1base_1_1type.html#a379652fdd9386faa5e26bf1f2493bffa',1,'el::base::type']]]
 ];

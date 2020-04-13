@@ -2,6 +2,7 @@ var searchData=
 [
   ['termsupportscolor',['termSupportsColor',['../d4/d03/classel_1_1base_1_1utils_1_1OS.html#accd095c4a86d2c2c4aebe57122fdca16',1,'el::base::utils::OS']]],
   ['threadsafe',['ThreadSafe',['../d9/d2e/classel_1_1base_1_1threading_1_1ThreadSafe.html#aba1e98467da50d452a30672aabb6752d',1,'el::base::threading::ThreadSafe']]],
+  ['timerhandler',['TimerHandler',['../de/ddd/classcbee_1_1TimerHandler.html#ac67445c32577a6960ef340f15f04b763',1,'cbee::TimerHandler::TimerHandler(Timestamp time, double interval, TimerFunc cb)'],['../de/ddd/classcbee_1_1TimerHandler.html#a778cae16b60724fbb51b6dca8a45db58',1,'cbee::TimerHandler::TimerHandler(const TimerHandler &amp;)=delete']]],
   ['timestamp',['Timestamp',['../d0/db3/classcbee_1_1Timestamp.html#a94178de32081c394ebe1e122b379787f',1,'cbee::Timestamp::Timestamp()'],['../d0/db3/classcbee_1_1Timestamp.html#a144ef47ac1231654fbde1f6416f9dcaf',1,'cbee::Timestamp::Timestamp(int64_t microSeconds)']]],
   ['timevaltostring',['timevalToString',['../db/d87/classel_1_1base_1_1utils_1_1DateTime.html#a535546a91e5fa6cd30d2ac2a980d442a',1,'el::base::utils::DateTime']]],
   ['tofile',['toFile',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a20b9a1bd152cad3b72b558f97de3876b',1,'el::base::TypedConfigurations']]],
