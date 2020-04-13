@@ -8,11 +8,14 @@ namespace cbee
 class EventTimerFd
 {
 public:
+   static const int64_t kMinimalTimerIntervalUs = 100;
+
    EventTimerFd();
    ~EventTimerFd();
 
    void cleanEvent() const;
    void resetEventTimer(Timestamp expiredTime) const;
+   void triggerEventRightNow() const;
 
    int getFd() const;
 
@@ -21,7 +24,7 @@ private:
    EventTimerFd& operator=(const EventTimerFd&) = delete;
 
 private:
-   struct timespec getRelativeTimeFromNow(Timestamp expiredTime) const;
+   struct timespec getRelativeTimeFromNow(Timestamp expiredTime = 0) const;
 
 private:
    const int fd;

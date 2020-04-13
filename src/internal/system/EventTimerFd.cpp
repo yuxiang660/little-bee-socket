@@ -2,6 +2,7 @@
 #include "Macros.h"
 
 #include <sys/timerfd.h>
+#include <algorithm>
 #include <assert.h>
 #include <string.h>
 #include <unistd.h>
@@ -31,7 +32,17 @@ void EventTimerFd::resetEventTimer(Timestamp expiredTime) const
    struct itimerspec newValue;
    memset(&newValue, 0, sizeof(newValue));
    newValue.it_value = getRelativeTimeFromNow(expiredTime);
-   if(::timerfd_settime(fd, 0 /* relative time */, &newValue, nullptr) < 0) HANDLE_ERROR("EventTimerFd::resetEventTime failure");
+   if(::timerfd_settime(fd, 0 /* relative time */, &newValue, nullptr) < 0)
+      HANDLE_ERROR("EventTimerFd::resetEventTime failure");
+}
+
+void EventTimerFd::triggerEventRightNow() const
+{
+   struct itimerspec newValue;
+   memset(&newValue, 0, sizeof(newValue));
+   newValue.it_value = getRelativeTimeFromNow();
+   if(::timerfd_settime(fd, 0 /* relative time */, &newValue, nullptr) < 0)
+      HANDLE_ERROR("EventTimerFd::triggerEventRightNow failure");
 }
 
 int EventTimerFd::getFd() const
@@ -41,11 +52,14 @@ int EventTimerFd::getFd() const
 
 struct timespec EventTimerFd::getRelativeTimeFromNow(Timestamp expiredTime) const
 {
-   int64_t microSeconds = expiredTime.getMicroSeconds() - Timestamp::now().getMicroSeconds();
-   if (microSeconds < 100)
+   int64_t microSeconds = kMinimalTimerIntervalUs;
+   if (expiredTime.getMicroSeconds() != 0)
    {
-      // minimal time
-      microSeconds = 100;
+      microSeconds = std::max
+      (
+         microSeconds,
+         expiredTime.getMicroSeconds() - Timestamp::now().getMicroSeconds()
+      );
    }
 
    struct timespec ret;
