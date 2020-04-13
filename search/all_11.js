@@ -23,6 +23,7 @@ var searchData=
   ['trace',['Trace',['../da/d7e/namespaceel.html#ab0ac6091262344c52dd2d3ad099e8e36add4ec0ac4e58f7c32a01244ae91150b1',1,'el']]],
   ['triggerdispatch',['triggerDispatch',['../d8/dea/classel_1_1base_1_1Writer.html#a1c7d90bd4e00af4e7307f5936e1b6507',1,'el::base::Writer']]],
   ['triggerevent',['triggerEvent',['../df/d7d/classcbee_1_1EventTriggerFd.html#ae1eeac93f089d2dad85ed0ed3fb129d7',1,'cbee::EventTriggerFd']]],
+  ['triggereventat',['triggerEventAt',['../df/d5c/classcbee_1_1EventTimerFd.html#abc59389abedc4bacd71752b5bb43694a',1,'cbee::EventTimerFd']]],
   ['triggereventrightnow',['triggerEventRightNow',['../df/d5c/classcbee_1_1EventTimerFd.html#a45b2eb2c90ae84123cd63e14a349176d',1,'cbee::EventTimerFd']]],
   ['triggeronce',['triggerOnce',['../d1/d00/classcbee_1_1EventTrigger.html#a3355c8b294034d99791f513af2b80759',1,'cbee::EventTrigger']]],
   ['trim',['trim',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a2f1d427fb0893861961dee5c79d05e10',1,'el::base::utils::Str']]],

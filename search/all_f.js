@@ -25,7 +25,6 @@ var searchData=
   ['replaceall',['replaceAll',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#ab24bb11d2b5eb8ede4296d70b510f726',1,'el::base::utils::Str::replaceAll(std::string &amp;str, char replaceWhat, char replaceWith)'],['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a5f424d54390059c0a6a6f81a74ee846b',1,'el::base::utils::Str::replaceAll(std::string &amp;str, const std::string &amp;replaceWhat, const std::string &amp;replaceWith)']]],
   ['replacefirstwithescape',['replaceFirstWithEscape',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a0f271d7da2bb3c1f2fa062219c0e0ba2',1,'el::base::utils::Str']]],
   ['reservecustomformatspecifiers',['reserveCustomFormatSpecifiers',['../d0/df2/classel_1_1Helpers.html#afb5fb896f3222fb8c628a51a05d72c32',1,'el::Helpers']]],
-  ['reseteventtimer',['resetEventTimer',['../df/d5c/classcbee_1_1EventTimerFd.html#a20695277471fd62a58b6616e62c4535e',1,'cbee::EventTimerFd']]],
   ['resetlocation',['resetLocation',['../dd/dbd/classel_1_1base_1_1HitCounter.html#a56f5a7450080d31b8d54c2be877b8597',1,'el::base::HitCounter']]],
   ['resolvefilename',['resolveFilename',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a38c9262f6d645459d8f22bec4d47200e',1,'el::base::TypedConfigurations']]],
   ['resolveloggerformatspec',['resolveLoggerFormatSpec',['../d3/d2c/classel_1_1Logger.html#acfb9ef869b9b4dc3efd78d7f64b8bebd',1,'el::Logger']]],
