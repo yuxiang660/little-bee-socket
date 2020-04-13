@@ -42,14 +42,4 @@ TEST(EventTimerFdTest, resetEventTimer_resetTwice_twoEventsHappen)
    ASSERT_NO_THROW(timer.cleanEvent());
 }
 
-TEST(EventTimerFdTest, triggerEventRightNow_cleanEvents_noException)
-{
-   cbee::EventTimerFd timer;
-   timer.triggerEventRightNow();
-
-   const int64_t minDelay = cbee::EventTimerFd::kMinimalTimerIntervalUs * 10 /* add some jitter */;
-   std::this_thread::sleep_for(std::chrono::microseconds(minDelay));
-   ASSERT_NO_THROW(timer.cleanEvent());
-}
-
 }

@@ -40,15 +40,6 @@ void EventTimerFd::triggerEventAt(Timestamp expiredTime) const
       HANDLE_ERROR("EventTimerFd::triggerEventAt failure");
 }
 
-void EventTimerFd::triggerEventRightNow() const
-{
-   struct itimerspec newValue;
-   memset(&newValue, 0, sizeof(newValue));
-   newValue.it_value = getRelativeTimeFromNow();
-   if(::timerfd_settime(fd, 0 /* relative time */, &newValue, nullptr) < 0)
-      HANDLE_ERROR("EventTimerFd::triggerEventRightNow failure");
-}
-
 int EventTimerFd::getFd() const
 {
    return fd;
@@ -56,15 +47,12 @@ int EventTimerFd::getFd() const
 
 struct timespec EventTimerFd::getRelativeTimeFromNow(Timestamp expiredTime) const
 {
-   int64_t microSeconds = kMinimalTimerIntervalUs;
-   if (expiredTime.getMicroSeconds() != 0)
-   {
-      microSeconds = std::max
-      (
-         microSeconds,
-         expiredTime.getMicroSeconds() - Timestamp::now().getMicroSeconds()
-      );
-   }
+   const int64_t kMinimalTimerIntervalUs = 100;
+   int64_t microSeconds = std::max
+   (
+      kMinimalTimerIntervalUs,
+      expiredTime.getMicroSeconds() - Timestamp::now().getMicroSeconds()
+   );
 
    struct timespec ret;
    ret.tv_sec = static_cast<time_t>(microSeconds / Timestamp::kMicroSecondsPerSecond);
