@@ -1,7 +1,9 @@
 <map id="src/internal/system/Timestamp.h" name="src/internal/system/Timestamp.h">
-<area shape="rect" id="node2" href="$d4/dbc/TimerHandler_8h.html" title="src/internal/TimerHandler.h" alt="" coords="17,102,195,129"/>
-<area shape="rect" id="node4" href="$d8/dac/EventTimerFd_8h.html" title="src/internal/system\l/EventTimerFd.h" alt="" coords="221,95,354,136"/>
-<area shape="rect" id="node6" href="$db/d54/Timestamp_8cpp.html" title="src/internal/system\l/Timestamp.cpp" alt="" coords="378,95,511,136"/>
-<area shape="rect" id="node3" href="$d9/dfa/TimerHandler_8cpp.html" title="src/internal/TimerHandler.cpp" alt="" coords="5,191,199,218"/>
-<area shape="rect" id="node5" href="$d7/dea/EventTimerFd_8cpp.html" title="src/internal/system\l/EventTimerFd.cpp" alt="" coords="223,184,357,225"/>
+<area shape="rect" id="node2" href="$d8/dac/EventTimerFd_8h.html" title="src/internal/system\l/EventTimerFd.h" alt="" coords="93,95,227,136"/>
+<area shape="rect" id="node3" href="$d3/dbb/EventTimerHandlerQueue_8h.html" title="src/internal/EventTimerHandler\lQueue.h" alt="" coords="163,184,365,225"/>
+<area shape="rect" id="node6" href="$d4/dbc/TimerHandler_8h.html" title="src/internal/TimerHandler.h" alt="" coords="301,102,480,129"/>
+<area shape="rect" id="node8" href="$db/d54/Timestamp_8cpp.html" title="src/internal/system\l/Timestamp.cpp" alt="" coords="504,95,637,136"/>
+<area shape="rect" id="node5" href="$d7/dea/EventTimerFd_8cpp.html" title="src/internal/system\l/EventTimerFd.cpp" alt="" coords="5,184,139,225"/>
+<area shape="rect" id="node4" href="$d6/d42/EventTimerHandlerQueue_8cpp.html" title="src/internal/EventTimerHandler\lQueue.cpp" alt="" coords="163,273,365,315"/>
+<area shape="rect" id="node7" href="$d9/dfa/TimerHandler_8cpp.html" title="src/internal/TimerHandler.cpp" alt="" coords="390,191,583,218"/>
 </map>

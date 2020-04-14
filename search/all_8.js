@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i',['i',['../d1/dd4/namespacecbee.html#a99a21d23ec2a8e391e572069d2510851',1,'cbee']]],
-  ['id',['id',['../d3/d2c/classel_1_1Logger.html#a8583bfdeea4cb781396fd635addd64e9',1,'el::Logger']]],
+  ['id',['id',['../de/ddd/classcbee_1_1TimerHandler.html#a1e437f1644f2638c3dda20f9cdb12d7e',1,'cbee::TimerHandler::id()'],['../d3/d2c/classel_1_1Logger.html#a8583bfdeea4cb781396fd635addd64e9',1,'el::Logger::id()']]],
   ['ignorecomments',['ignoreComments',['../df/de1/classel_1_1Configurations_1_1Parser.html#abe21625425296ecefde02d43f3ed69b5',1,'el::Configurations::Parser']]],
   ['ignoresigint',['IgnoreSigInt',['../da/d7e/namespaceel.html#a2784aacd04cb7816ac1c0b20fcbf83cbabff7a37f020193c055a5e32b294d408f',1,'el']]],
   ['immediateflush',['ImmediateFlush',['../da/d7e/namespaceel.html#a2784aacd04cb7816ac1c0b20fcbf83cba7817e369fa619155822043e76ef88c7c',1,'el']]],

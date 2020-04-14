@@ -1,6 +1,8 @@
 <map id="src/internal/system/EventModifierInterface.h" name="src/internal/system/EventModifierInterface.h">
-<area shape="rect" id="node2" href="$d4/de0/EventTrigger_8h.html" title="src/internal/EventTrigger.h" alt="" coords="15,102,190,129"/>
-<area shape="rect" id="node4" href="$d2/d18/EPoller_8h.html" title="src/internal/system\l/EPoller.h" alt="" coords="216,95,349,136"/>
-<area shape="rect" id="node3" href="$df/d5a/EventTrigger_8cpp.html" title="src/internal/EventTrigger.cpp" alt="" coords="5,191,195,218"/>
-<area shape="rect" id="node5" href="$d9/dc5/EPoller_8cpp.html" title="src/internal/system\l/EPoller.cpp" alt="" coords="219,184,352,225"/>
+<area shape="rect" id="node2" href="$d3/dbb/EventTimerHandlerQueue_8h.html" title="src/internal/EventTimerHandler\lQueue.h" alt="" coords="9,95,212,136"/>
+<area shape="rect" id="node4" href="$d4/de0/EventTrigger_8h.html" title="src/internal/EventTrigger.h" alt="" coords="239,102,414,129"/>
+<area shape="rect" id="node6" href="$d2/d18/EPoller_8h.html" title="src/internal/system\l/EPoller.h" alt="" coords="441,95,575,136"/>
+<area shape="rect" id="node3" href="$d6/d42/EventTimerHandlerQueue_8cpp.html" title="src/internal/EventTimerHandler\lQueue.cpp" alt="" coords="5,184,208,225"/>
+<area shape="rect" id="node5" href="$df/d5a/EventTrigger_8cpp.html" title="src/internal/EventTrigger.cpp" alt="" coords="232,191,421,218"/>
+<area shape="rect" id="node7" href="$d9/dc5/EPoller_8cpp.html" title="src/internal/system\l/EPoller.cpp" alt="" coords="445,184,579,225"/>
 </map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['i',['i',['../d1/dd4/namespacecbee.html#a99a21d23ec2a8e391e572069d2510851',1,'cbee']]],
-  ['intervalseconds',['intervalSeconds',['../de/ddd/classcbee_1_1TimerHandler.html#aea4756af4ba18682c4d134b344929407',1,'cbee::TimerHandler']]]
+  ['handlerqueue',['handlerQueue',['../d7/d2a/classcbee_1_1EventTimerHandlerQueue.html#a46a142b952be2ce7fff500a9c4748fa8',1,'cbee::EventTimerHandlerQueue']]]
 ];

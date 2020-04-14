@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['s_5fnumberofcreated',['s_numberOfCreated',['../de/ddd/classcbee_1_1TimerHandler.html#a7a7c73db58abc03fb6eec0e9587b6874',1,'cbee::TimerHandler']]],
   ['safedelete',['safeDelete',['../d2/da4/namespaceel_1_1base_1_1utils.html#a8cad5c357a7913cdbe69add3d6a4e8ac',1,'el::base::utils']]],
   ['scopedaddflag',['ScopedAddFlag',['../de/db6/classel_1_1Loggers_1_1ScopedAddFlag.html',1,'el::Loggers::ScopedAddFlag'],['../de/db6/classel_1_1Loggers_1_1ScopedAddFlag.html#a13e0b1052cd1a7a15fae63fd6454d598',1,'el::Loggers::ScopedAddFlag::ScopedAddFlag()']]],
   ['scopedlock',['ScopedLock',['../dd/d24/namespaceel_1_1base_1_1threading.html#a84bb1940fe98386c8907c1f4ceac5718',1,'el::base::threading']]],
@@ -74,7 +75,7 @@ var searchData=
   ['stringtolevelitem',['StringToLevelItem',['../dc/d75/structel_1_1StringToLevelItem.html',1,'el']]],
   ['stringtolevelmap',['stringToLevelMap',['../da/d7e/namespaceel.html#a56f975c71aeea7c310c7bb409721c624',1,'el']]],
   ['strtok',['STRTOK',['../d8/d1b/easylogging_09_09_8h.html#a467ada1a12edc2402c2bd6dc266173cf',1,'easylogging++.h']]],
-  ['subsecondprecision',['SubsecondPrecision',['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html',1,'el::base::SubsecondPrecision'],['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a674125948caf78b836a5b4f38561c8cc',1,'el::base::TypedConfigurations::subsecondPrecision()'],['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html#a7b6681bcf8457b97da6d2ad5da4b45c3',1,'el::base::SubsecondPrecision::SubsecondPrecision(void)'],['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html#aff4556f058704e26df60907bf95998ff',1,'el::base::SubsecondPrecision::SubsecondPrecision(int width)'],['../da/d7e/namespaceel.html#a281f5db6d6163678bc68a8b23b59e124a945b6ef21f66457079a6ab7b6c3459f9',1,'el::SubsecondPrecision()']]],
+  ['subsecondprecision',['SubsecondPrecision',['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html',1,'el::base::SubsecondPrecision'],['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html#a7b6681bcf8457b97da6d2ad5da4b45c3',1,'el::base::SubsecondPrecision::SubsecondPrecision(void)'],['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html#aff4556f058704e26df60907bf95998ff',1,'el::base::SubsecondPrecision::SubsecondPrecision(int width)'],['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a674125948caf78b836a5b4f38561c8cc',1,'el::base::TypedConfigurations::subsecondPrecision()'],['../da/d7e/namespaceel.html#a281f5db6d6163678bc68a8b23b59e124a945b6ef21f66457079a6ab7b6c3459f9',1,'el::SubsecondPrecision()']]],
   ['syslog',['SysLog',['../d4/d7f/namespaceel_1_1base.html#a3aa2563d38e47388ba242a1694fc2839aa0861ec9150978a150dcefab74fad51b',1,'el::base::SysLog()'],['../d8/d1b/easylogging_09_09_8h.html#a139c60bed70c16c40d781d14393d2317',1,'SYSLOG():&#160;easylogging++.h']]],
   ['syslog_5fafter_5fn',['SYSLOG_AFTER_N',['../d8/d1b/easylogging_09_09_8h.html#ad6a2f5dcdde6250c57a59262c89df000',1,'easylogging++.h']]],
   ['syslog_5fevery_5fn',['SYSLOG_EVERY_N',['../d8/d1b/easylogging_09_09_8h.html#acc3daab3c81d515cf86496933ab7f49b',1,'easylogging++.h']]],

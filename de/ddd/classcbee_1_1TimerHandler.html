@@ -65,8 +65,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="../../d8/df4/classcbee_1_1TimerHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">cbee::TimerHandler Class Reference</div>  </div>
@@ -98,13 +98,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a42095dee6b5ff28b0bf6fb4643044507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4cca02c3e5ed01392f8097c6dd84cad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/db3/classcbee_1_1Timestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#af4cca02c3e5ed01392f8097c6dd84cad">getExpiredTime</a> () const</td></tr>
 <tr class="separator:af4cca02c3e5ed01392f8097c6dd84cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a778cae16b60724fbb51b6dca8a45db58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#a778cae16b60724fbb51b6dca8a45db58">TimerHandler</a> (const <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html">TimerHandler</a> &amp;)=delete</td></tr>
-<tr class="separator:a778cae16b60724fbb51b6dca8a45db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a411cbdcba45bfb28b2b86fe4aaedb623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html">TimerHandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#a411cbdcba45bfb28b2b86fe4aaedb623">operator=</a> (const <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html">TimerHandler</a> &amp;)=delete</td></tr>
-<tr class="separator:a411cbdcba45bfb28b2b86fe4aaedb623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b3aa08f8772c502d01532fff0a9cb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#ac4b3aa08f8772c502d01532fff0a9cb9">getId</a> () const</td></tr>
+<tr class="separator:ac4b3aa08f8772c502d01532fff0a9cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -114,6 +109,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aea4756af4ba18682c4d134b344929407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69d02f746f24f281577aa57c68f98f5d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#af69d6642f54baf89a00b2978ee220b0a">TimerFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#a69d02f746f24f281577aa57c68f98f5d">callback</a></td></tr>
 <tr class="separator:a69d02f746f24f281577aa57c68f98f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e437f1644f2638c3dda20f9cdb12d7e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#a1e437f1644f2638c3dda20f9cdb12d7e">id</a></td></tr>
+<tr class="separator:a1e437f1644f2638c3dda20f9cdb12d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a7a7c73db58abc03fb6eec0e9587b6874"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#a7a7c73db58abc03fb6eec0e9587b6874">s_numberOfCreated</a> = 0</td></tr>
+<tr class="separator:a7a7c73db58abc03fb6eec0e9587b6874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af69d6642f54baf89a00b2978ee220b0a"></a>
@@ -132,7 +134,7 @@ Private Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac67445c32577a6960ef340f15f04b763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac67445c32577a6960ef340f15f04b763">&#9670;&nbsp;</a></span>TimerHandler() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67445c32577a6960ef340f15f04b763">&#9670;&nbsp;</a></span>TimerHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,32 +167,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a778cae16b60724fbb51b6dca8a45db58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a778cae16b60724fbb51b6dca8a45db58">&#9670;&nbsp;</a></span>TimerHandler() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">cbee::TimerHandler::TimerHandler </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html">TimerHandler</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af4cca02c3e5ed01392f8097c6dd84cad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4cca02c3e5ed01392f8097c6dd84cad">&#9670;&nbsp;</a></span>getExpiredTime()</h2>
@@ -209,31 +185,26 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#acaad3a279ad90fd7b78648f051a81596">expiredTime</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d7/d2a/classcbee_1_1EventTimerHandlerQueue.html#afa38009162e929af01f66ce1c4568901">cbee::EventTimerHandlerQueue::addHandler()</a>.</p>
+
 </div>
 </div>
-<a id="a411cbdcba45bfb28b2b86fe4aaedb623"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a411cbdcba45bfb28b2b86fe4aaedb623">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="ac4b3aa08f8772c502d01532fff0a9cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b3aa08f8772c502d01532fff0a9cb9">&#9670;&nbsp;</a></span>getId()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html">TimerHandler</a>&amp; cbee::TimerHandler::operator= </td>
+          <td class="memname">int cbee::TimerHandler::getId </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html">TimerHandler</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#a1e437f1644f2638c3dda20f9cdb12d7e">id</a>.</p>
 
 </div>
 </div>
@@ -325,6 +296,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1e437f1644f2638c3dda20f9cdb12d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e437f1644f2638c3dda20f9cdb12d7e">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int cbee::TimerHandler::id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#ac4b3aa08f8772c502d01532fff0a9cb9">getId()</a>.</p>
+
+</div>
+</div>
 <a id="aea4756af4ba18682c4d134b344929407"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea4756af4ba18682c4d134b344929407">&#9670;&nbsp;</a></span>intervalSeconds</h2>
 
@@ -346,6 +341,28 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">Referenced by <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#a42095dee6b5ff28b0bf6fb4643044507">updateExpiredTime()</a>.</p>
+
+</div>
+</div>
+<a id="a7a7c73db58abc03fb6eec0e9587b6874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7c73db58abc03fb6eec0e9587b6874">&#9670;&nbsp;</a></span>s_numberOfCreated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt; int &gt; cbee::TimerHandler::s_numberOfCreated = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
