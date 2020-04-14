@@ -20,12 +20,12 @@ public:
 
    void addHandler(const TimerHandler& handler);
    void cancelHandler(int id);
-   void handleRead();
 
 private:
    EventTimerHandlerQueue(const EventTimerHandlerQueue&) = delete;
    EventTimerHandlerQueue& operator=(const EventTimerHandlerQueue&) = delete;
 
+   void handleRead();
    std::vector<TimerHandler> extractExpiredHandlers(Timestamp handleTime);
    void triggerEvent(const std::vector<TimerHandler>& expiredHandlers, Timestamp handleTime);
 
