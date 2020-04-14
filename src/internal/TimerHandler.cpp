@@ -3,10 +3,13 @@
 namespace cbee
 {
 
+std::atomic<int> TimerHandler::s_numberOfCreated = 0;
+
 TimerHandler::TimerHandler(Timestamp time, double interval, TimerFunc cb) :
    expiredTime(time),
    intervalSeconds(interval),
-   callback(cb)
+   callback(cb),
+   id(s_numberOfCreated.fetch_add(1))
 {
 }
 
@@ -26,6 +29,11 @@ bool TimerHandler::updateExpiredTime(Timestamp handleTime)
 Timestamp TimerHandler::getExpiredTime() const
 {
    return expiredTime;
+}
+
+int TimerHandler::getId() const
+{
+   return id;
 }
 
 } // namespace cbee

@@ -31,6 +31,16 @@ TEST_F(TimerHandlerTest, run_callSeveralTimes_callbackInvokeExpected)
    EXPECT_EQ(2, invokeTimes);
 }
 
+TEST(TimerHandlerIdTest, getId_createSeveralTimerHandler_getExpectedId)
+{
+   cbee::TimerHandler handler1(0, 0, nullptr);
+   cbee::TimerHandler handler2(0, 0, nullptr);
+   cbee::TimerHandler handler3(0, 0, nullptr);
+
+   EXPECT_EQ(handler1.getId() + 1, handler2.getId());
+   EXPECT_EQ(handler2.getId() + 1, handler3.getId());
+}
+
 struct TimerHandlerExpiredTimeTestCase
 {
    int64_t initialExpiredTime;
