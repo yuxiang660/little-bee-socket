@@ -36,5 +36,7 @@ var searchData=
   ['logmessage',['LogMessage',['../d9/dd3/classel_1_1LogMessage.html',1,'el::LogMessage'],['../d3/de7/classel_1_1LogDispatchData.html#a456673f303f61bd311333fa527f2e664',1,'el::LogDispatchData::logMessage()'],['../d9/dd3/classel_1_1LogMessage.html#a0ac3d7462be1c375a39e2ecd0b7c6cea',1,'el::LogMessage::LogMessage()'],['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00a80672412fb77a287c9c90cbacf039fc7',1,'el::base::LogMessage()']]],
   ['logstreamsreference',['logStreamsReference',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#a11eb24bac74b7ae2d85b324fed707819',1,'el::base::RegisteredLoggers::logStreamsReference()'],['../d7/d00/classel_1_1Loggers.html#a1b9314fd68cdbb0b70264a8a5c7f60ed',1,'el::Loggers::logStreamsReference()']]],
   ['logstreamsreferencemap',['LogStreamsReferenceMap',['../d4/d7f/namespaceel_1_1base.html#a6f440ada16117d20b5b5fc75b2f3a80f',1,'el::base']]],
+  ['loop',['loop',['../dc/daf/classcbee_1_1IoManager.html#a0e4f739087461ad3c15afa3fb50350d4',1,'cbee::IoManager']]],
+  ['loopthreadid',['loopThreadId',['../dc/daf/classcbee_1_1IoManager.html#a1ff2c44c4eba9a6df9c900464a5d0c26',1,'cbee::IoManager']]],
   ['ltrim',['ltrim',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#adf34c645138317e324701a2f409d7c93',1,'el::base::utils::Str']]]
 ];

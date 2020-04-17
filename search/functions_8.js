@@ -15,10 +15,12 @@ var searchData=
   ['installlogdispatchcallback',['installLogDispatchCallback',['../d0/da4/classel_1_1base_1_1Storage.html#aec36c8e770c0ac354e74d57aba1cfa03',1,'el::base::Storage::installLogDispatchCallback()'],['../d0/df2/classel_1_1Helpers.html#a3f3e84057567a8ac568a35899318544a',1,'el::Helpers::installLogDispatchCallback()']]],
   ['installloggerregistrationcallback',['installLoggerRegistrationCallback',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#a62000b4c52b2383ec7f480ee0fd12586',1,'el::base::RegisteredLoggers::installLoggerRegistrationCallback()'],['../d7/d00/classel_1_1Loggers.html#a8df040fad4898c2682be34ba5128b61d',1,'el::Loggers::installLoggerRegistrationCallback()']]],
   ['installprerolloutcallback',['installPreRollOutCallback',['../d0/df2/classel_1_1Helpers.html#a5fd7ad6d636c28d2e706203d0c43cf8c',1,'el::Helpers']]],
+  ['iomanager',['IoManager',['../dc/daf/classcbee_1_1IoManager.html#a973fcb6fdc6d97e98a6f48463bfe99c6',1,'cbee::IoManager::IoManager()'],['../dc/daf/classcbee_1_1IoManager.html#ab37b9195f8cf48ffa817d4ebe9c5f492',1,'cbee::IoManager::IoManager(const IoManager &amp;)=delete']]],
   ['iscomment',['isComment',['../df/de1/classel_1_1Configurations_1_1Parser.html#afbf7fb724d1a1a9f0040c966023cc04b',1,'el::Configurations::Parser']]],
   ['isconfig',['isConfig',['../df/de1/classel_1_1Configurations_1_1Parser.html#a6d55cc5727c054922d479bda6624c7d3',1,'el::Configurations::Parser']]],
   ['isdigit',['isDigit',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a4caae91dfe0310d9f182bd9b7e99103c',1,'el::base::utils::Str']]],
   ['isflushneeded',['isFlushNeeded',['../d3/d2c/classel_1_1Logger.html#abdf56c00388c71d1cbaa7e2df4449202',1,'el::Logger']]],
+  ['isinloopthread',['isInLoopThread',['../dc/daf/classcbee_1_1IoManager.html#a13eca2975fda5f9821d71fed932dc1c6',1,'cbee::IoManager']]],
   ['islevel',['isLevel',['../df/de1/classel_1_1Configurations_1_1Parser.html#ade3578dee6378620c6281b090433ce72',1,'el::Configurations::Parser']]],
   ['isvalidid',['isValidId',['../d3/d2c/classel_1_1Logger.html#ab134ceead9e69cab71380af41e3ee5d3',1,'el::Logger']]]
 ];

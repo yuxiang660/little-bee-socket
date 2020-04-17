@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['writecallback',['writeCallback',['../d8/d36/classcbee_1_1Event.html#a40b773b3940bc62ef34ea56d776b3edf',1,'cbee::Event']]],
-  ['writedonefunc',['writeDoneFunc',['../d9/dba/classcbee_1_1Server.html#a6de3de792f5b166ebbc398c33d71c20b',1,'cbee::Server']]]
+  ['unit',['unit',['../d3/deb/namespaceel_1_1base_1_1consts.html#a0c99046e04195e209e09f90ea71dd5fd',1,'el::base::consts']]]
 ];

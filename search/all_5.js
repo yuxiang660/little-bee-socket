@@ -22,5 +22,6 @@ var searchData=
   ['fstream_5ft',['fstream_t',['../da/d71/namespaceel_1_1base_1_1type.html#a620c830ead75d26b45c060c211ee2685',1,'el::base::type']]],
   ['func',['func',['../d9/dd3/classel_1_1LogMessage.html#a6b77bd14c0f79ab8a9157a3be6a414af',1,'el::LogMessage']]],
   ['function',['Function',['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00a86408593c34af77fdd90df932f8b5261',1,'el::base']]],
-  ['functions_2eh',['Functions.h',['../d8/db9/Functions_8h.html',1,'']]]
+  ['functions_2eh',['Functions.h',['../d8/db9/Functions_8h.html',1,'']]],
+  ['functor',['Functor',['../dc/daf/classcbee_1_1IoManager.html#a024d7d234bf97524a951cd3789867e94',1,'cbee::IoManager']]]
 ];
