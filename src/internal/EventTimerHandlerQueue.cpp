@@ -1,4 +1,5 @@
 #include "EventTimerHandlerQueue.h"
+#include "internal/system/Macros.h"
 
 namespace cbee
 {
@@ -28,6 +29,8 @@ void EventTimerHandlerQueue::addHandler(const TimerHandler& handler)
 
 void EventTimerHandlerQueue::cancelHandler(int id)
 {
+   const auto sizeBeforeCancel = handlerQueue.size();
+
    for (auto it = handlerQueue.begin(); it != handlerQueue.end();)
    {
       if (it->second.getId() == id)
@@ -39,6 +42,8 @@ void EventTimerHandlerQueue::cancelHandler(int id)
          it++;
       }
    }
+
+   if (sizeBeforeCancel == handlerQueue.size()) HANDLE_ERROR("EventTimerHandlerQueue::cancelHandler failure");
 }
 
 void EventTimerHandlerQueue::handleRead()
