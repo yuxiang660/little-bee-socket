@@ -19,8 +19,8 @@ void IoManager::loop()
 {
    loopThreadId = std::this_thread::get_id();
    quitFlag = false;
-
    const int kPollTimeoutMs = 10000;
+
    while(!quitFlag)
    {
       auto activeEvents = poller.poll(kPollTimeoutMs);
