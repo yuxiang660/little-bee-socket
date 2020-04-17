@@ -17,7 +17,7 @@ struct EventTimerHandlerQueueEventTest : public ::testing::Test
       invokeTimes(0)
    {}
 
-   void poll(int times)
+   void loop(int times)
    {
       for (int i = 0; i < times; i++)
       {
@@ -42,11 +42,11 @@ struct EventTimerHandlerQueueEventTest : public ::testing::Test
    int invokeTimes;
 };
 
-TEST_F(EventTimerHandlerQueueEventTest, addHandler_addServeralHandlers_expectCallbackTimes)
+TEST_F(EventTimerHandlerQueueEventTest, addHandler_addDifferentHandlers_expectCallbackTimes)
 {
    const int numberOfHandlers = 3;
 
-   std::thread pollThread(&EventTimerHandlerQueueEventTest::poll, this, numberOfHandlers);
+   std::thread loopThread(&EventTimerHandlerQueueEventTest::loop, this, numberOfHandlers);
    // Delay for the connection to make sure poll is started.
    std::this_thread::sleep_for(std::chrono::milliseconds(50));
 
@@ -56,23 +56,57 @@ TEST_F(EventTimerHandlerQueueEventTest, addHandler_addServeralHandlers_expectCal
       queue.addHandler(handler);
    }
 
-   pollThread.join();
+   loopThread.join();
 
    EXPECT_EQ(numberOfHandlers, invokeTimes);
+}
+
+TEST_F(EventTimerHandlerQueueEventTest, addHandler_addSameHandlers_expectCallbackTimes)
+{
+   std::thread loopThread(&EventTimerHandlerQueueEventTest::loop, this, 1);
+   // Delay for the connection to make sure poll is started.
+   std::this_thread::sleep_for(std::chrono::milliseconds(50));
+
+   for (int i = 0; i < 3; i++)
+   {
+      const cbee::TimerHandler handler(cbee::Timestamp::now(), 0, [this](){callback();});
+      queue.addHandler(handler);
+   }
+
+   loopThread.join();
+
+   EXPECT_EQ(3, invokeTimes);
+}
+
+TEST_F(EventTimerHandlerQueueEventTest, addHandler_inAnotherThread_expectCallback)
+{
+   auto test = [this](){
+      // Delay for the connection to make sure loop is started.
+      std::this_thread::sleep_for(std::chrono::milliseconds(50));
+      const cbee::TimerHandler handler(cbee::Timestamp::now(), 0, [this](){callback();});
+      queue.addHandler(handler);
+   };
+   std::thread testThread(test);
+
+   loop(1);
+
+   testThread.join();
+
+   EXPECT_EQ(1, invokeTimes);
 }
 
 TEST_F(EventTimerHandlerQueueEventTest, addHandler_withInterval_expectCallbackTimes)
 {
    const int numberOfHandlers = 3;
 
-   std::thread pollThread(&EventTimerHandlerQueueEventTest::poll, this, numberOfHandlers);
-   // Delay for the connection to make sure poll is started.
+   std::thread loopThread(&EventTimerHandlerQueueEventTest::loop, this, numberOfHandlers);
+   // Delay for the connection to make sure loop is started.
    std::this_thread::sleep_for(std::chrono::milliseconds(50));
 
    const cbee::TimerHandler handler(cbee::Timestamp::now(), 0.01, [this](){callback();});
    queue.addHandler(handler);
 
-   pollThread.join();
+   loopThread.join();
 
    EXPECT_EQ(numberOfHandlers, invokeTimes);
 }
