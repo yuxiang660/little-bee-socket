@@ -1,8 +1,9 @@
 <map id="src/internal/EventTimerHandlerQueue.cpp" name="src/internal/EventTimerHandlerQueue.cpp">
-<area shape="rect" id="node2" href="$d3/dbb/EventTimerHandlerQueue_8h.html" title="EventTimerHandlerQueue.h" alt="" coords="302,95,485,121"/>
-<area shape="rect" id="node3" href="$d3/d37/EventModifierInterface_8h.html" title="internal/system/EventModifier\lInterface.h" alt="" coords="25,169,220,211"/>
-<area shape="rect" id="node4" href="$d6/d8d/Event_8h.html" title="Event.h" alt="" coords="89,259,156,285"/>
-<area shape="rect" id="node7" href="$d8/dac/EventTimerFd_8h.html" title="internal/system/EventTimerFd.h" alt="" coords="431,177,639,203"/>
-<area shape="rect" id="node8" href="$d7/d66/Timestamp_8h.html" title="Timestamp.h" alt="" coords="353,259,452,285"/>
-<area shape="rect" id="node11" href="$d4/dbc/TimerHandler_8h.html" title="TimerHandler.h" alt="" coords="245,177,355,203"/>
+<area shape="rect" id="node2" href="$d3/dbb/EventTimerHandlerQueue_8h.html" title="EventTimerHandlerQueue.h" alt="" coords="394,95,577,121"/>
+<area shape="rect" id="node15" href="$df/d0a/Macros_8h.html" title="internal/system/Macros.h" alt="" coords="794,95,963,121"/>
+<area shape="rect" id="node3" href="$d3/d37/EventModifierInterface_8h.html" title="internal/system/EventModifier\lInterface.h" alt="" coords="577,169,772,211"/>
+<area shape="rect" id="node4" href="$d6/d8d/Event_8h.html" title="Event.h" alt="" coords="641,259,708,285"/>
+<area shape="rect" id="node7" href="$d8/dac/EventTimerFd_8h.html" title="internal/system/EventTimerFd.h" alt="" coords="5,177,213,203"/>
+<area shape="rect" id="node8" href="$d7/d66/Timestamp_8h.html" title="Timestamp.h" alt="" coords="196,259,295,285"/>
+<area shape="rect" id="node11" href="$d4/dbc/TimerHandler_8h.html" title="TimerHandler.h" alt="" coords="289,177,399,203"/>
 </map>
