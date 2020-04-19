@@ -57,7 +57,10 @@ void EPoller::updateEvent(int fd, EventHandler event) const
    memset(&e, 0, sizeof(epoll_event));
    e.events = event->getAllEvents();
    e.data.ptr = event;
-   if (::epoll_ctl(epollFd, EPOLL_CTL_ADD, fd, &e) < 0) HANDLE_ERROR("EPoller::updateEvent failure");
+   if (::epoll_ctl(epollFd, EPOLL_CTL_ADD, fd, &e) < 0)
+   {
+      if (::epoll_ctl(epollFd, EPOLL_CTL_MOD, fd, &e) < 0) HANDLE_ERROR("EPoller::updateEvent failure");
+   }
 }
 
 void EPoller::deleteEvent(int fd) const
