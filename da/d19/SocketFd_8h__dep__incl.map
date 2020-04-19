@@ -1,3 +1,5 @@
 <map id="src/internal/system/SocketFd.h" name="src/internal/system/SocketFd.h">
-<area shape="rect" id="node2" href="$d6/dc7/SocketFd_8cpp.html" title="src/internal/system\l/SocketFd.cpp" alt="" coords="5,95,139,136"/>
+<area shape="rect" id="node2" href="$d2/d86/Acceptor_8h.html" title="src/internal/Acceptor.h" alt="" coords="12,102,165,129"/>
+<area shape="rect" id="node4" href="$d6/dc7/SocketFd_8cpp.html" title="src/internal/system\l/SocketFd.cpp" alt="" coords="190,95,323,136"/>
+<area shape="rect" id="node3" href="$d3/d9e/Acceptor_8cpp.html" title="src/internal/Acceptor.cpp" alt="" coords="5,184,172,211"/>
 </map>

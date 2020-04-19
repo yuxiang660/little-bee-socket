@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ostream_5ft',['ostream_t',['../da/d71/namespaceel_1_1base_1_1type.html#a74ea109bf34d1c44926837fb0830f445',1,'el::base::type']]]
+  ['newconnectionfunc',['NewConnectionFunc',['../d2/d81/classcbee_1_1Acceptor.html#a59df8c9fd636ff499587a5c43f7a5738',1,'cbee::Acceptor']]]
 ];

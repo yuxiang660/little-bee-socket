@@ -20,5 +20,5 @@ var searchData=
   ['vlog_5fis_5fon',['VLOG_IS_ON',['../d8/d1b/easylogging_09_09_8h.html#a38ad5c4c2d876138a58d941db60e6893',1,'easylogging++.h']]],
   ['vlog_5fn_5ftimes',['VLOG_N_TIMES',['../d8/d1b/easylogging_09_09_8h.html#a67a981cfd8ffd5e145689d999819ebd0',1,'easylogging++.h']]],
   ['vmodulesenabled',['vModulesEnabled',['../de/d00/classel_1_1base_1_1VRegistry.html#ad7a8e939daf6b3d6b949def0a9f65a1f',1,'el::base::VRegistry']]],
-  ['vregistry',['VRegistry',['../de/d00/classel_1_1base_1_1VRegistry.html',1,'el::base::VRegistry'],['../d0/da4/classel_1_1base_1_1Storage.html#a7fd4cf506308fa85c4b0559daa89555d',1,'el::base::Storage::vRegistry()'],['../de/d00/classel_1_1base_1_1VRegistry.html#ac4b36d32d3722238024480ce66c52ad0',1,'el::base::VRegistry::VRegistry()']]]
+  ['vregistry',['VRegistry',['../de/d00/classel_1_1base_1_1VRegistry.html',1,'el::base::VRegistry'],['../de/d00/classel_1_1base_1_1VRegistry.html#ac4b36d32d3722238024480ce66c52ad0',1,'el::base::VRegistry::VRegistry()'],['../d0/da4/classel_1_1base_1_1Storage.html#a7fd4cf506308fa85c4b0559daa89555d',1,'el::base::Storage::vRegistry()']]]
 ];

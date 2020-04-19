@@ -1,5 +1,7 @@
 <map id="src/internal/system/EPoller.h" name="src/internal/system/EPoller.h">
-<area shape="rect" id="node2" href="$d2/d76/IoManager_8h.html" title="src/internal/IoManager.h" alt="" coords="12,102,175,129"/>
-<area shape="rect" id="node4" href="$d9/dc5/EPoller_8cpp.html" title="src/internal/system\l/EPoller.cpp" alt="" coords="199,95,332,136"/>
-<area shape="rect" id="node3" href="$de/db3/IoManager_8cpp.html" title="src/internal/IoManager.cpp" alt="" coords="5,184,181,211"/>
+<area shape="rect" id="node2" href="$d2/d76/IoManager_8h.html" title="src/internal/IoManager.h" alt="" coords="102,102,265,129"/>
+<area shape="rect" id="node6" href="$d9/dc5/EPoller_8cpp.html" title="src/internal/system\l/EPoller.cpp" alt="" coords="289,95,422,136"/>
+<area shape="rect" id="node3" href="$d2/d86/Acceptor_8h.html" title="src/internal/Acceptor.h" alt="" coords="12,184,165,211"/>
+<area shape="rect" id="node5" href="$de/db3/IoManager_8cpp.html" title="src/internal/IoManager.cpp" alt="" coords="190,184,366,211"/>
+<area shape="rect" id="node4" href="$d3/d9e/Acceptor_8cpp.html" title="src/internal/Acceptor.cpp" alt="" coords="5,259,172,285"/>
 </map>

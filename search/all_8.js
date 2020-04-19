@@ -22,7 +22,7 @@ var searchData=
   ['installloggerregistrationcallback',['installLoggerRegistrationCallback',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#a62000b4c52b2383ec7f480ee0fd12586',1,'el::base::RegisteredLoggers::installLoggerRegistrationCallback()'],['../d7/d00/classel_1_1Loggers.html#a8df040fad4898c2682be34ba5128b61d',1,'el::Loggers::installLoggerRegistrationCallback()']]],
   ['installprerolloutcallback',['installPreRollOutCallback',['../d0/df2/classel_1_1Helpers.html#a5fd7ad6d636c28d2e706203d0c43cf8c',1,'el::Helpers']]],
   ['intervalseconds',['intervalSeconds',['../de/ddd/classcbee_1_1TimerHandler.html#aea4756af4ba18682c4d134b344929407',1,'cbee::TimerHandler']]],
-  ['iomanager',['IoManager',['../dc/daf/classcbee_1_1IoManager.html',1,'cbee::IoManager'],['../dc/daf/classcbee_1_1IoManager.html#a973fcb6fdc6d97e98a6f48463bfe99c6',1,'cbee::IoManager::IoManager()'],['../dc/daf/classcbee_1_1IoManager.html#ab37b9195f8cf48ffa817d4ebe9c5f492',1,'cbee::IoManager::IoManager(const IoManager &amp;)=delete']]],
+  ['iomanager',['IoManager',['../dc/daf/classcbee_1_1IoManager.html',1,'cbee::IoManager'],['../d2/d81/classcbee_1_1Acceptor.html#a2371bb730f411af6194a237eae4f37e0',1,'cbee::Acceptor::ioManager()'],['../dc/daf/classcbee_1_1IoManager.html#a973fcb6fdc6d97e98a6f48463bfe99c6',1,'cbee::IoManager::IoManager()'],['../dc/daf/classcbee_1_1IoManager.html#ab37b9195f8cf48ffa817d4ebe9c5f492',1,'cbee::IoManager::IoManager(const IoManager &amp;)=delete']]],
   ['iomanager_2ecpp',['IoManager.cpp',['../de/db3/IoManager_8cpp.html',1,'']]],
   ['iomanager_2eh',['IoManager.h',['../d2/d76/IoManager_8h.html',1,'']]],
   ['iothreadid',['ioThreadId',['../dc/daf/classcbee_1_1IoManager.html#afd25fdb77d51e76b88da09720229d867',1,'cbee::IoManager']]],

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['performancetrackerptr',['PerformanceTrackerPtr',['../da/d71/namespaceel_1_1base_1_1type.html#a095751e8dd68ae28d07a548f47d31d31',1,'el::base::type']]],
-  ['performancetrackingcallbackptr',['PerformanceTrackingCallbackPtr',['../da/d71/namespaceel_1_1base_1_1type.html#a01a715419060d65c31b71fd8d067abdd',1,'el::base::type']]],
-  ['prerolloutcallback',['PreRollOutCallback',['../da/d7e/namespaceel.html#aeb764b890a6f3cd41d2726bcd4e9c0cf',1,'el']]]
+  ['ostream_5ft',['ostream_t',['../da/d71/namespaceel_1_1base_1_1type.html#a74ea109bf34d1c44926837fb0830f445',1,'el::base::type']]]
 ];

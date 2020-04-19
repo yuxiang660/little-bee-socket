@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['scopedlock',['ScopedLock',['../dd/d24/namespaceel_1_1base_1_1threading.html#a84bb1940fe98386c8907c1f4ceac5718',1,'el::base::threading']]],
-  ['storagepointer',['StoragePointer',['../da/d71/namespaceel_1_1base_1_1type.html#a3c34822c3825018aca1526f2289b7976',1,'el::base::type']]],
-  ['string_5ft',['string_t',['../da/d71/namespaceel_1_1base_1_1type.html#a67e406cd213c231f1d135b5a4eda64b5',1,'el::base::type']]],
-  ['stringstream_5ft',['stringstream_t',['../da/d71/namespaceel_1_1base_1_1type.html#a3492908c4b80f97b6c4b346d394f1302',1,'el::base::type']]]
+  ['readdonefunc',['ReadDoneFunc',['../d1/dd4/namespacecbee.html#aaef7f8a8da09103614fa16099749ff40',1,'cbee']]],
+  ['readfunc',['ReadFunc',['../d8/d36/classcbee_1_1Event.html#a9956357026efa1ef81e221ea9bc9fc57',1,'cbee::Event']]],
+  ['removefunc',['RemoveFunc',['../d8/d36/classcbee_1_1Event.html#a8a448496f263b3e6918e0174f9c4dde9',1,'cbee::Event']]]
 ];

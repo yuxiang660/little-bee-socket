@@ -63,7 +63,7 @@ var searchData=
   ['startswith',['startsWith',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a87b8a192300657c907b0678a8d715da2',1,'el::base::utils::Str']]],
   ['staticclass',['StaticClass',['../d6/d99/classel_1_1base_1_1StaticClass.html',1,'el::base::StaticClass'],['../d6/d99/classel_1_1base_1_1StaticClass.html#a8394b09c1ed81a3c1b9cb7fec8736115',1,'el::base::StaticClass::StaticClass(void)'],['../d6/d99/classel_1_1base_1_1StaticClass.html#adb18da8c79e19391d61c101a43d7eabe',1,'el::base::StaticClass::StaticClass(const StaticClass &amp;)']]],
   ['std',['std',['../d8/dcc/namespacestd.html',1,'']]],
-  ['storage',['Storage',['../d0/da4/classel_1_1base_1_1Storage.html',1,'el::base::Storage'],['../d0/df2/classel_1_1Helpers.html#a13a5365de36b3af27660cf9b358829d3',1,'el::Helpers::storage()'],['../d0/da4/classel_1_1base_1_1Storage.html#a4932a8f8a55c3b00467cf2feed6acf59',1,'el::base::Storage::Storage()']]],
+  ['storage',['Storage',['../d0/da4/classel_1_1base_1_1Storage.html',1,'el::base::Storage'],['../d0/da4/classel_1_1base_1_1Storage.html#a4932a8f8a55c3b00467cf2feed6acf59',1,'el::base::Storage::Storage()'],['../d0/df2/classel_1_1Helpers.html#a13a5365de36b3af27660cf9b358829d3',1,'el::Helpers::storage()']]],
   ['storagepointer',['StoragePointer',['../da/d71/namespaceel_1_1base_1_1type.html#a3c34822c3825018aca1526f2289b7976',1,'el::base::type']]],
   ['str',['Str',['../da/df8/classel_1_1base_1_1utils_1_1Str.html',1,'el::base::utils']]],
   ['strcat',['STRCAT',['../d8/d1b/easylogging_09_09_8h.html#a705b55dd0ca41ce80b2073b3701d1fb3',1,'easylogging++.h']]],
