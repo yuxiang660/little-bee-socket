@@ -7,7 +7,7 @@ namespace cbee
 {
 
 IoManager::IoManager() :
-   loopThreadId(0),
+   ioThreadId(std::this_thread::get_id()),
    quitFlag(false),
    poller(),
    eventTrigger(poller),
@@ -17,7 +17,8 @@ IoManager::IoManager() :
 
 void IoManager::loop()
 {
-   loopThreadId = std::this_thread::get_id();
+   assert(isInIoThread() == true);
+
    quitFlag = false;
    const int kPollTimeoutMs = 10000;
 
@@ -38,28 +39,26 @@ void IoManager::quit()
    eventTrigger.triggerOnce();
 }
 
-void IoManager::updatePollEvent(int fd, EventHandler event) const
+void IoManager::updatePollerEvent(int fd, EventHandler event) const
 {
    poller.updateEvent(fd, event);
 }
 
-void IoManager::deletePollEvent(int fd) const
+void IoManager::deletePollerEvent(int fd) const
 {
    poller.deleteEvent(fd);
 }
 
-bool IoManager::isInLoopThread()
+bool IoManager::isInIoThread() const
 {
-   if (loopThreadId == std::thread::id(0)) HANDLE_ERROR("IoManager::isInLoopThread failure");
-
-   return std::this_thread::get_id() == loopThreadId;
+   return std::this_thread::get_id() == ioThreadId;
 }
 
-void IoManager::runInLoopThread(Functor cb)
+void IoManager::runInIoThread(Functor cb)
 {
    assert(cb != nullptr);
 
-   if (isInLoopThread())
+   if (isInIoThread())
    {
       cb();
       return;
@@ -93,7 +92,7 @@ int IoManager::runAfter(double delay, TimerHandler::TimerFunc cb)
 
    Timestamp time = Timestamp::now().addSeconds(delay);
    TimerHandler handler(time, 0, cb);
-   runInLoopThread([this, handler](){timerHandlers.addHandler(handler);});
+   runInIoThread([this, handler](){timerHandlers.addHandler(handler);});
    return handler.getId();
 }
 
@@ -103,13 +102,13 @@ int IoManager::runEvery(double interval, TimerHandler::TimerFunc cb)
 
    Timestamp time = Timestamp::now().addSeconds(interval);
    TimerHandler handler(time, interval, cb);
-   runInLoopThread([this, handler](){timerHandlers.addHandler(handler);});
+   runInIoThread([this, handler](){timerHandlers.addHandler(handler);});
    return handler.getId();
 }
 
 void IoManager::cancelTimerHandler(int handlerId)
 {
-   runInLoopThread([this, handlerId](){timerHandlers.cancelHandler(handlerId);});
+   runInIoThread([this, handlerId](){timerHandlers.cancelHandler(handlerId);});
 }
 
 }

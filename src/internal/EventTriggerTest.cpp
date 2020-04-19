@@ -44,8 +44,6 @@ TEST_F(EventTriggerTest, triggerOnce_invokeSeveralTimes_triggerEPollExpected)
    const int triggerTimes = 5;
 
    std::thread pollThread(&EventTriggerTest::poll, this, triggerTimes);
-   // Delay for the connection to make sure poll is started.
-   std::this_thread::sleep_for(std::chrono::milliseconds(50));
 
    int times = 0;
    while(1)

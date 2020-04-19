@@ -11,25 +11,22 @@ namespace
 class SocketFdTest : public testing::Test
 {
 public:
+   SocketFdTest() :
+      serverAddr(8080)
+   {}
+
    void serve()
    {
-      serverAddr.setInetFamily();
-      serverAddr.setIp(false);
-      serverAddr.setPort(8080);
-
       serverSocket.bind(serverAddr);
       serverSocket.listen();
       cbee::Sockaddr connectAddr;
       cbee::SocketFd connectionSocket (serverSocket.accept(&connectAddr));
       
       EXPECT_STREQ("127.0.0.1", connectionSocket.getLocalAddr().getIp().c_str());
-      EXPECT_EQ(serverSocket.getLocalAddr().getPort(), connectionSocket.getLocalAddr().getPort());
+      EXPECT_STREQ("127.0.0.1:8080", connectionSocket.getLocalAddr().getIpPort().c_str());
 
-      EXPECT_STREQ(connectAddr.getIp().c_str(), connectionSocket.getPeerAddr().getIp().c_str());
-      EXPECT_EQ(connectAddr.getPort(), connectionSocket.getPeerAddr().getPort());
-
-      EXPECT_STREQ(clientSocket.getLocalAddr().getIp().c_str(), connectionSocket.getPeerAddr().getIp().c_str());
-      EXPECT_EQ(clientSocket.getLocalAddr().getPort(), connectionSocket.getPeerAddr().getPort());
+      EXPECT_STREQ("127.0.0.1", connectionSocket.getPeerAddr().getIp().c_str());
+      EXPECT_STREQ(connectAddr.getIpPort().c_str(), connectionSocket.getPeerAddr().getIpPort().c_str());
    }
 
    void connect()

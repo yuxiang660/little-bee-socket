@@ -20,6 +20,7 @@ public:
    void shutdown() const;
 
    void setNonBlock() const;
+   void setReuseAddr() const;
    void bind(const Sockaddr& serverAddr) const;
    void listen() const;
    int accept(Sockaddr* connectAddr) const;

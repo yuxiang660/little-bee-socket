@@ -51,6 +51,13 @@ void SocketFd::setNonBlock() const
    if(::fcntl(fd, F_SETFD, flags)) HANDLE_ERROR("SocketFd::setNonBlock FD_CLOEXEC failure");
 }
 
+void SocketFd::setReuseAddr() const
+{
+   int optval = 1;
+   if(::setsockopt(fd, SOL_SOCKET, SO_REUSEADDR, &optval, static_cast<socklen_t>(sizeof optval)) < 0)
+      HANDLE_ERROR("SocketFd::setReuseAddr");
+}
+
 void SocketFd::bind(const Sockaddr& serverAddr) const
 {
    if (::bind(fd, sockaddrCast(&serverAddr), sizeof(Sockaddr)) < 0) HANDLE_ERROR("SocketFd::bind failure");

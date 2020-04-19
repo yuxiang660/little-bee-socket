@@ -10,13 +10,16 @@ class Sockaddr
 {
 public:
    Sockaddr();
+   Sockaddr(uint16_t port, bool loopbackOnly = false);
+   Sockaddr(const char* ip, uint16_t port);
+   std::string getIp() const;
+   std::string getIpPort() const;
+
+private:
    void setInetFamily();
    void setIp(const char* ip);
    void setIp(bool loopbackOnly);
-   std::string getIp() const;
-
    void setPort(uint16_t port);
-   uint16_t getPort() const;
 
 private:
    struct sockaddr_in address;

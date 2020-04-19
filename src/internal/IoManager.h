@@ -26,11 +26,11 @@ public:
    void loop();
    void quit();
 
-   bool isInLoopThread();
-   void runInLoopThread(Functor cb);
+   bool isInIoThread() const;
+   void runInIoThread(Functor cb);
 
-   void updatePollEvent(int fd, EventHandler event) const;
-   void deletePollEvent(int fd) const;
+   void updatePollerEvent(int fd, EventHandler event) const;
+   void deletePollerEvent(int fd) const;
 
    int runAfter(double delay, TimerHandler::TimerFunc cb);
    int runEvery(double interval, TimerHandler::TimerFunc cb);
@@ -43,7 +43,7 @@ private:
    void runPendingFunctors();
 
 private:
-   std::thread::id loopThreadId;
+   const std::thread::id ioThreadId;
    std::atomic<bool> quitFlag;
    EPoller poller;
    EventTrigger eventTrigger;

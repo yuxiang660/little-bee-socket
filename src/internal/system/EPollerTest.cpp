@@ -88,7 +88,8 @@ public:
          nullptr,
          nullptr,
          nullptr
-      )
+      ),
+      serverAddr(8181)
    {
       serverSocket.setNonBlock();
       serverEvent.enableReadEvent();
@@ -96,10 +97,6 @@ public:
 
    void serve()
    {
-      serverAddr.setInetFamily();
-      serverAddr.setIp(false);
-      serverAddr.setPort(8181);
-
       serverSocket.bind(serverAddr);
       serverSocket.listen();
       epoll.updateEvent(serverSocket.getFd(), &serverEvent);

@@ -6,29 +6,24 @@
 namespace
 {
 
-TEST(IoManagerTest, isInIoThread_loopNotStarted_exception)
+TEST(IoManagerTest, isInIoThread_inSameThread_returnTrue)
 {
    cbee::IoManager io;
 
-   EXPECT_DEATH(io.isInLoopThread(), "IoManager::isInLoopThread failure");
+   EXPECT_EQ(io.isInIoThread(), true);
 }
 
-TEST(IoManagerTest, isInIoThread_inDifferentThreadAfterLoopStarted_returnFalse)
+TEST(IoManagerTest, isInIoThread_inDifferentThread_returnFalse)
 {
    cbee::IoManager io;
 
-   auto startLoop = [&]()
+   auto test = [&]()
    {
-      io.loop();
+      EXPECT_EQ(io.isInIoThread(), false);
    };
 
-   std::thread loopThread(startLoop);
-
-   std::this_thread::sleep_for(std::chrono::milliseconds(50));
-   EXPECT_EQ(false, io.isInLoopThread());
-   io.quit();
-
-   loopThread.join();
+   std::thread testThread(test);
+   testThread.join();
 }
 
 struct IoManagerLoopTest : public ::testing::Test
@@ -40,7 +35,7 @@ struct IoManagerLoopTest : public ::testing::Test
 
    void callback()
    {
-      EXPECT_EQ(true, io.isInLoopThread());
+      EXPECT_EQ(true, io.isInIoThread());
       invokeTimes++;
    }
 
@@ -51,7 +46,7 @@ struct IoManagerLoopTest : public ::testing::Test
 TEST_F(IoManagerLoopTest, runAfter_inDifferentThread_expectedLoopIterationTimes)
 {
    auto addHandlers = [this](){
-      EXPECT_EQ(false, io.isInLoopThread());
+      EXPECT_EQ(false, io.isInIoThread());
 
       io.runAfter(0, [this](){callback();});
       io.runAfter(0.01, [this](){callback();});
