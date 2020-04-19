@@ -12,7 +12,7 @@ var searchData=
   ['activeevents',['activeEvents',['../d8/d36/classcbee_1_1Event.html#ab3e749113173812fe85b15ba4114977c',1,'cbee::Event']]],
   ['addflag',['addFlag',['../db/df7/classel_1_1base_1_1LogFormat.html#ae55910f533a6eb3b41eb75b131e522bf',1,'el::base::LogFormat::addFlag()'],['../d0/da4/classel_1_1base_1_1Storage.html#a3e17c61961f3b2f45e8ec77e3320bed5',1,'el::base::Storage::addFlag()'],['../d7/d00/classel_1_1Loggers.html#aedd2de02dd701b0f20ddaa10f1f728f1',1,'el::Loggers::addFlag()'],['../d2/da4/namespaceel_1_1base_1_1utils.html#ac6bb2e40dbcb0751dc9fa4a8d9d1df9d',1,'el::base::utils::addFlag()']]],
   ['addhandler',['addHandler',['../d7/d2a/classcbee_1_1EventTimerHandlerQueue.html#afa38009162e929af01f66ce1c4568901',1,'cbee::EventTimerHandlerQueue']]],
-  ['address',['address',['../d9/da3/classcbee_1_1InetAddress.html#aae993a76a3970350b0cb4261c2beb14e',1,'cbee::InetAddress::address()'],['../d0/da4/classcbee_1_1Sockaddr.html#a1f3efc4d93d789a560af7609e2168fca',1,'cbee::Sockaddr::address()']]],
+  ['address',['address',['../d0/da4/classcbee_1_1Sockaddr.html#a1f3efc4d93d789a560af7609e2168fca',1,'cbee::Sockaddr']]],
   ['addseconds',['addSeconds',['../d0/db3/classcbee_1_1Timestamp.html#ac744a52873987efbd4efd2694295f671',1,'cbee::Timestamp']]],
   ['addtobuff',['addToBuff',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#aa327f63f50daa9058b9c26b949725044',1,'el::base::utils::Str']]],
   ['allevents',['allEvents',['../d8/d36/classcbee_1_1Event.html#a4072782f29a8009a9d6fdd52ba181b05',1,'cbee::Event']]],

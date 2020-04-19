@@ -6,7 +6,7 @@ var searchData=
   ['defaultprerolloutcallback',['defaultPreRollOutCallback',['../d4/d7f/namespaceel_1_1base.html#ac727cc7769b50f434890d370614baf25',1,'el::base']]],
   ['defaulttypedconfigurations',['defaultTypedConfigurations',['../d7/d00/classel_1_1Loggers.html#a592324bd539ea075101031c14cd9fd41',1,'el::Loggers']]],
   ['deleteevent',['deleteEvent',['../da/db8/classcbee_1_1EPoller.html#afda63bc9c1d70fbde01beaf055f9c771',1,'cbee::EPoller::deleteEvent()'],['../d9/df8/classcbee_1_1EventModifierInterface.html#a5f0f6d48ab19bf1754f24652cab7629d',1,'cbee::EventModifierInterface::deleteEvent()']]],
-  ['deletepollevent',['deletePollEvent',['../dc/daf/classcbee_1_1IoManager.html#a2f975df75c7e37fcf5144ae1ddd5de80',1,'cbee::IoManager']]],
+  ['deletepollerevent',['deletePollerEvent',['../dc/daf/classcbee_1_1IoManager.html#a32dc423cb6a844782c332825115ad5e7',1,'cbee::IoManager']]],
   ['disableallevents',['disableAllEvents',['../d8/d36/classcbee_1_1Event.html#a4aa95dcf6b24762bae631d66a64bfc95',1,'cbee::Event']]],
   ['disablereadevent',['disableReadEvent',['../d8/d36/classcbee_1_1Event.html#a14b98e10a17712f2253a3fcc278dbfe8',1,'cbee::Event']]],
   ['disablewriteevent',['disableWriteEvent',['../d8/d36/classcbee_1_1Event.html#af77eef626310859951eba1ef431f4b52',1,'cbee::Event']]],

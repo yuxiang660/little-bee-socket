@@ -1,7 +1,5 @@
 <map id="src/internal/system/Sockaddr.h" name="src/internal/system/Sockaddr.h">
-<area shape="rect" id="node2" href="$d3/d6b/InetAddress_8h.html" title="src/InetAddress.h" alt="" coords="12,102,137,129"/>
-<area shape="rect" id="node4" href="$d9/def/Sockaddr_8cpp.html" title="src/internal/system\l/Sockaddr.cpp" alt="" coords="161,95,295,136"/>
-<area shape="rect" id="node5" href="$dd/d2e/SocketFd_8h.html" title="src/internal/system\l/SocketFd.h" alt="" coords="319,95,452,136"/>
-<area shape="rect" id="node3" href="$d4/d7c/InetAddress_8cpp.html" title="src/InetAddress.cpp" alt="" coords="5,191,144,218"/>
-<area shape="rect" id="node6" href="$d6/dc7/SocketFd_8cpp.html" title="src/internal/system\l/SocketFd.cpp" alt="" coords="319,184,452,225"/>
+<area shape="rect" id="node2" href="$d9/def/Sockaddr_8cpp.html" title="src/internal/system\l/Sockaddr.cpp" alt="" coords="5,95,139,136"/>
+<area shape="rect" id="node3" href="$dd/d2e/SocketFd_8h.html" title="src/internal/system\l/SocketFd.h" alt="" coords="163,95,296,136"/>
+<area shape="rect" id="node4" href="$d6/dc7/SocketFd_8cpp.html" title="src/internal/system\l/SocketFd.cpp" alt="" coords="163,184,296,225"/>
 </map>

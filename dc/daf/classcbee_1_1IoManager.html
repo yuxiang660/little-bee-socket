@@ -102,14 +102,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0e4f739087461ad3c15afa3fb50350d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8334369d4392aa9e2acc8ac4536873a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ad8334369d4392aa9e2acc8ac4536873a">quit</a> ()</td></tr>
 <tr class="separator:ad8334369d4392aa9e2acc8ac4536873a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13eca2975fda5f9821d71fed932dc1c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a13eca2975fda5f9821d71fed932dc1c6">isInLoopThread</a> ()</td></tr>
-<tr class="separator:a13eca2975fda5f9821d71fed932dc1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb92bd3dcc36081b55af316800e26407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afb92bd3dcc36081b55af316800e26407">runInLoopThread</a> (<a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a024d7d234bf97524a951cd3789867e94">Functor</a> cb)</td></tr>
-<tr class="separator:afb92bd3dcc36081b55af316800e26407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e07717d0285e094826dfeebb48b15ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a7e07717d0285e094826dfeebb48b15ac">updatePollEvent</a> (int fd, <a class="el" href="../../d1/dd4/namespacecbee.html#a54baa1950c9febfba7bd2a0ae7759892">EventHandler</a> event) const</td></tr>
-<tr class="separator:a7e07717d0285e094826dfeebb48b15ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f975df75c7e37fcf5144ae1ddd5de80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a2f975df75c7e37fcf5144ae1ddd5de80">deletePollEvent</a> (int fd) const</td></tr>
-<tr class="separator:a2f975df75c7e37fcf5144ae1ddd5de80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63bb41452c7802f60cf3e693392e03a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#aa63bb41452c7802f60cf3e693392e03a">isInIoThread</a> () const</td></tr>
+<tr class="separator:aa63bb41452c7802f60cf3e693392e03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa74f77664010bd6a4a9cc40c583f88c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afa74f77664010bd6a4a9cc40c583f88c">runInIoThread</a> (<a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a024d7d234bf97524a951cd3789867e94">Functor</a> cb)</td></tr>
+<tr class="separator:afa74f77664010bd6a4a9cc40c583f88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275ce9bdca1494e5c829cb168ae012e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a275ce9bdca1494e5c829cb168ae012e1">updatePollerEvent</a> (int fd, <a class="el" href="../../d1/dd4/namespacecbee.html#a54baa1950c9febfba7bd2a0ae7759892">EventHandler</a> event) const</td></tr>
+<tr class="separator:a275ce9bdca1494e5c829cb168ae012e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32dc423cb6a844782c332825115ad5e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a32dc423cb6a844782c332825115ad5e7">deletePollerEvent</a> (int fd) const</td></tr>
+<tr class="separator:a32dc423cb6a844782c332825115ad5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e0e747d7a05af3d01dd216347543be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ab2e0e747d7a05af3d01dd216347543be">runAfter</a> (double delay, <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#af69d6642f54baf89a00b2978ee220b0a">TimerHandler::TimerFunc</a> cb)</td></tr>
 <tr class="separator:ab2e0e747d7a05af3d01dd216347543be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad91696d0f25d8acb86e42b40ce65cef6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ad91696d0f25d8acb86e42b40ce65cef6">runEvery</a> (double interval, <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#af69d6642f54baf89a00b2978ee220b0a">TimerHandler::TimerFunc</a> cb)</td></tr>
@@ -128,8 +128,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1ff2c44c4eba9a6df9c900464a5d0c26"><td class="memItemLeft" align="right" valign="top">std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a1ff2c44c4eba9a6df9c900464a5d0c26">loopThreadId</a></td></tr>
-<tr class="separator:a1ff2c44c4eba9a6df9c900464a5d0c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd25fdb77d51e76b88da09720229d867"><td class="memItemLeft" align="right" valign="top">const std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afd25fdb77d51e76b88da09720229d867">ioThreadId</a></td></tr>
+<tr class="separator:afd25fdb77d51e76b88da09720229d867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefc2244e22e7c7e242c351df876f9802"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#aefc2244e22e7c7e242c351df876f9802">quitFlag</a></td></tr>
 <tr class="separator:aefc2244e22e7c7e242c351df876f9802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5399f2f7484e1388f9c05e2fdc77acc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/db8/classcbee_1_1EPoller.html">EPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ac5399f2f7484e1388f9c05e2fdc77acc">poller</a></td></tr>
@@ -219,18 +219,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../d7/d2a/classcbee_1_1EventTimerHandlerQueue.html#ab0661ecd47742827b60e916c84dee645">cbee::EventTimerHandlerQueue::cancelHandler()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afb92bd3dcc36081b55af316800e26407">runInLoopThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ab53fbb01b029ef79d5d138fef03ae955">timerHandlers</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d2a/classcbee_1_1EventTimerHandlerQueue.html#ab0661ecd47742827b60e916c84dee645">cbee::EventTimerHandlerQueue::cancelHandler()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afa74f77664010bd6a4a9cc40c583f88c">runInIoThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ab53fbb01b029ef79d5d138fef03ae955">timerHandlers</a>.</p>
 
 </div>
 </div>
-<a id="a2f975df75c7e37fcf5144ae1ddd5de80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f975df75c7e37fcf5144ae1ddd5de80">&#9670;&nbsp;</a></span>deletePollEvent()</h2>
+<a id="a32dc423cb6a844782c332825115ad5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32dc423cb6a844782c332825115ad5e7">&#9670;&nbsp;</a></span>deletePollerEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cbee::IoManager::deletePollEvent </td>
+          <td class="memname">void cbee::IoManager::deletePollerEvent </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>fd</em></td><td>)</td>
@@ -243,24 +243,24 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a13eca2975fda5f9821d71fed932dc1c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13eca2975fda5f9821d71fed932dc1c6">&#9670;&nbsp;</a></span>isInLoopThread()</h2>
+<a id="aa63bb41452c7802f60cf3e693392e03a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63bb41452c7802f60cf3e693392e03a">&#9670;&nbsp;</a></span>isInIoThread()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool cbee::IoManager::isInLoopThread </td>
+          <td class="memname">bool cbee::IoManager::isInIoThread </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../df/d0a/Macros_8h.html#a7ae9713e5bdb204b1554308906fcc55d">HANDLE_ERROR</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a1ff2c44c4eba9a6df9c900464a5d0c26">loopThreadId</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afd25fdb77d51e76b88da09720229d867">ioThreadId</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afb92bd3dcc36081b55af316800e26407">runInLoopThread()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a0e4f739087461ad3c15afa3fb50350d4">loop()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afa74f77664010bd6a4a9cc40c583f88c">runInIoThread()</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a1ff2c44c4eba9a6df9c900464a5d0c26">loopThreadId</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a2779640fe29ce04611cdeed4769023fd">cbee::EPoller::poll()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ac5399f2f7484e1388f9c05e2fdc77acc">poller</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#aefc2244e22e7c7e242c351df876f9802">quitFlag</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a119758572fed1200d34416a4e54c4f71">runPendingFunctors()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#aa63bb41452c7802f60cf3e693392e03a">isInIoThread()</a>, <a class="el" href="../../da/db8/classcbee_1_1EPoller.html#a2779640fe29ce04611cdeed4769023fd">cbee::EPoller::poll()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ac5399f2f7484e1388f9c05e2fdc77acc">poller</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#aefc2244e22e7c7e242c351df876f9802">quitFlag</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a119758572fed1200d34416a4e54c4f71">runPendingFunctors()</a>.</p>
 
 </div>
 </div>
@@ -354,7 +354,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../d7/d2a/classcbee_1_1EventTimerHandlerQueue.html#afa38009162e929af01f66ce1c4568901">cbee::EventTimerHandlerQueue::addHandler()</a>, <a class="el" href="../../d0/db3/classcbee_1_1Timestamp.html#ac744a52873987efbd4efd2694295f671">cbee::Timestamp::addSeconds()</a>, <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#ac4b3aa08f8772c502d01532fff0a9cb9">cbee::TimerHandler::getId()</a>, <a class="el" href="../../d0/db3/classcbee_1_1Timestamp.html#a15cad5024175b15bc2cb305d93644566">cbee::Timestamp::now()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afb92bd3dcc36081b55af316800e26407">runInLoopThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ab53fbb01b029ef79d5d138fef03ae955">timerHandlers</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d2a/classcbee_1_1EventTimerHandlerQueue.html#afa38009162e929af01f66ce1c4568901">cbee::EventTimerHandlerQueue::addHandler()</a>, <a class="el" href="../../d0/db3/classcbee_1_1Timestamp.html#ac744a52873987efbd4efd2694295f671">cbee::Timestamp::addSeconds()</a>, <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#ac4b3aa08f8772c502d01532fff0a9cb9">cbee::TimerHandler::getId()</a>, <a class="el" href="../../d0/db3/classcbee_1_1Timestamp.html#a15cad5024175b15bc2cb305d93644566">cbee::Timestamp::now()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afa74f77664010bd6a4a9cc40c583f88c">runInIoThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ab53fbb01b029ef79d5d138fef03ae955">timerHandlers</a>.</p>
 
 </div>
 </div>
@@ -384,18 +384,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../d7/d2a/classcbee_1_1EventTimerHandlerQueue.html#afa38009162e929af01f66ce1c4568901">cbee::EventTimerHandlerQueue::addHandler()</a>, <a class="el" href="../../d0/db3/classcbee_1_1Timestamp.html#ac744a52873987efbd4efd2694295f671">cbee::Timestamp::addSeconds()</a>, <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#ac4b3aa08f8772c502d01532fff0a9cb9">cbee::TimerHandler::getId()</a>, <a class="el" href="../../d0/db3/classcbee_1_1Timestamp.html#a15cad5024175b15bc2cb305d93644566">cbee::Timestamp::now()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afb92bd3dcc36081b55af316800e26407">runInLoopThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ab53fbb01b029ef79d5d138fef03ae955">timerHandlers</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d2a/classcbee_1_1EventTimerHandlerQueue.html#afa38009162e929af01f66ce1c4568901">cbee::EventTimerHandlerQueue::addHandler()</a>, <a class="el" href="../../d0/db3/classcbee_1_1Timestamp.html#ac744a52873987efbd4efd2694295f671">cbee::Timestamp::addSeconds()</a>, <a class="el" href="../../de/ddd/classcbee_1_1TimerHandler.html#ac4b3aa08f8772c502d01532fff0a9cb9">cbee::TimerHandler::getId()</a>, <a class="el" href="../../d0/db3/classcbee_1_1Timestamp.html#a15cad5024175b15bc2cb305d93644566">cbee::Timestamp::now()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afa74f77664010bd6a4a9cc40c583f88c">runInIoThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ab53fbb01b029ef79d5d138fef03ae955">timerHandlers</a>.</p>
 
 </div>
 </div>
-<a id="afb92bd3dcc36081b55af316800e26407"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb92bd3dcc36081b55af316800e26407">&#9670;&nbsp;</a></span>runInLoopThread()</h2>
+<a id="afa74f77664010bd6a4a9cc40c583f88c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa74f77664010bd6a4a9cc40c583f88c">&#9670;&nbsp;</a></span>runInIoThread()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cbee::IoManager::runInLoopThread </td>
+          <td class="memname">void cbee::IoManager::runInIoThread </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a024d7d234bf97524a951cd3789867e94">Functor</a>&#160;</td>
           <td class="paramname"><em>cb</em></td><td>)</td>
@@ -404,7 +404,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a46f5c5d705170b19224317c3d96d4d90">eventTrigger</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a13eca2975fda5f9821d71fed932dc1c6">isInLoopThread()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#aedd6476d7e991d041c146060796dda6a">mtx</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a72dc1babfa816ed64fb0bf161b60b426">pendingFunctors</a>, and <a class="el" href="../../d1/d00/classcbee_1_1EventTrigger.html#a3355c8b294034d99791f513af2b80759">cbee::EventTrigger::triggerOnce()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a46f5c5d705170b19224317c3d96d4d90">eventTrigger</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#aa63bb41452c7802f60cf3e693392e03a">isInIoThread()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#aedd6476d7e991d041c146060796dda6a">mtx</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a72dc1babfa816ed64fb0bf161b60b426">pendingFunctors</a>, and <a class="el" href="../../d1/d00/classcbee_1_1EventTrigger.html#a3355c8b294034d99791f513af2b80759">cbee::EventTrigger::triggerOnce()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a152a683cddc598cd1551775b3c9eda8b">cancelTimerHandler()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ab2e0e747d7a05af3d01dd216347543be">runAfter()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ad91696d0f25d8acb86e42b40ce65cef6">runEvery()</a>.</p>
 
@@ -439,14 +439,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e07717d0285e094826dfeebb48b15ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e07717d0285e094826dfeebb48b15ac">&#9670;&nbsp;</a></span>updatePollEvent()</h2>
+<a id="a275ce9bdca1494e5c829cb168ae012e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a275ce9bdca1494e5c829cb168ae012e1">&#9670;&nbsp;</a></span>updatePollerEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cbee::IoManager::updatePollEvent </td>
+          <td class="memname">void cbee::IoManager::updatePollerEvent </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>fd</em>, </td>
@@ -490,12 +490,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ad8334369d4392aa9e2acc8ac4536873a">quit()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afb92bd3dcc36081b55af316800e26407">runInLoopThread()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#ad8334369d4392aa9e2acc8ac4536873a">quit()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afa74f77664010bd6a4a9cc40c583f88c">runInIoThread()</a>.</p>
 
 </div>
 </div>
-<a id="a1ff2c44c4eba9a6df9c900464a5d0c26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ff2c44c4eba9a6df9c900464a5d0c26">&#9670;&nbsp;</a></span>loopThreadId</h2>
+<a id="afd25fdb77d51e76b88da09720229d867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd25fdb77d51e76b88da09720229d867">&#9670;&nbsp;</a></span>ioThreadId</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,7 +504,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::thread::id cbee::IoManager::loopThreadId</td>
+          <td class="memname">const std::thread::id cbee::IoManager::ioThreadId</td>
         </tr>
       </table>
   </td>
@@ -514,7 +514,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a13eca2975fda5f9821d71fed932dc1c6">isInLoopThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a0e4f739087461ad3c15afa3fb50350d4">loop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#aa63bb41452c7802f60cf3e693392e03a">isInIoThread()</a>.</p>
 
 </div>
 </div>
@@ -538,7 +538,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afb92bd3dcc36081b55af316800e26407">runInLoopThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a119758572fed1200d34416a4e54c4f71">runPendingFunctors()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afa74f77664010bd6a4a9cc40c583f88c">runInIoThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a119758572fed1200d34416a4e54c4f71">runPendingFunctors()</a>.</p>
 
 </div>
 </div>
@@ -562,7 +562,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afb92bd3dcc36081b55af316800e26407">runInLoopThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a119758572fed1200d34416a4e54c4f71">runPendingFunctors()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#afa74f77664010bd6a4a9cc40c583f88c">runInIoThread()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a119758572fed1200d34416a4e54c4f71">runPendingFunctors()</a>.</p>
 
 </div>
 </div>
@@ -586,7 +586,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a2f975df75c7e37fcf5144ae1ddd5de80">deletePollEvent()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a0e4f739087461ad3c15afa3fb50350d4">loop()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a7e07717d0285e094826dfeebb48b15ac">updatePollEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a32dc423cb6a844782c332825115ad5e7">deletePollerEvent()</a>, <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a0e4f739087461ad3c15afa3fb50350d4">loop()</a>, and <a class="el" href="../../dc/daf/classcbee_1_1IoManager.html#a275ce9bdca1494e5c829cb168ae012e1">updatePollerEvent()</a>.</p>
 
 </div>
 </div>

@@ -3,7 +3,6 @@ var searchData=
   ['id',['id',['../d3/d2c/classel_1_1Logger.html#a8583bfdeea4cb781396fd635addd64e9',1,'el::Logger']]],
   ['ignorecomments',['ignoreComments',['../df/de1/classel_1_1Configurations_1_1Parser.html#abe21625425296ecefde02d43f3ed69b5',1,'el::Configurations::Parser']]],
   ['increment',['increment',['../dd/dbd/classel_1_1base_1_1HitCounter.html#ae2d7709a89362019195761416d510911',1,'el::base::HitCounter']]],
-  ['inetaddress',['InetAddress',['../d9/da3/classcbee_1_1InetAddress.html#a10a78122a8402576484fbbf691f72ba8',1,'cbee::InetAddress::InetAddress(uint16_t port, bool loopbackOnly=false)'],['../d9/da3/classcbee_1_1InetAddress.html#a4c8212c3abbe2ae70399b4952e41ee50',1,'cbee::InetAddress::InetAddress(const char *ip, uint16_t port)'],['../d9/da3/classcbee_1_1InetAddress.html#a6c24f6aff04fb0aec68dc7ece73c0892',1,'cbee::InetAddress::InetAddress(const InetAddress &amp;)=delete']]],
   ['init',['init',['../d8/dfb/classel_1_1base_1_1SubsecondPrecision.html#ab2e9048637a535b0589e79a279045ad5',1,'el::base::SubsecondPrecision']]],
   ['initialize',['initialize',['../df/d67/classel_1_1base_1_1MessageBuilder.html#a61729d9b620eb7b3e6ac1af69364553c',1,'el::base::MessageBuilder']]],
   ['initializelogger',['initializeLogger',['../d8/dea/classel_1_1base_1_1Writer.html#ae687ebbee62b086f318ee4c8d1a655c4',1,'el::base::Writer']]],
@@ -20,7 +19,7 @@ var searchData=
   ['isconfig',['isConfig',['../df/de1/classel_1_1Configurations_1_1Parser.html#a6d55cc5727c054922d479bda6624c7d3',1,'el::Configurations::Parser']]],
   ['isdigit',['isDigit',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#a4caae91dfe0310d9f182bd9b7e99103c',1,'el::base::utils::Str']]],
   ['isflushneeded',['isFlushNeeded',['../d3/d2c/classel_1_1Logger.html#abdf56c00388c71d1cbaa7e2df4449202',1,'el::Logger']]],
-  ['isinloopthread',['isInLoopThread',['../dc/daf/classcbee_1_1IoManager.html#a13eca2975fda5f9821d71fed932dc1c6',1,'cbee::IoManager']]],
+  ['isiniothread',['isInIoThread',['../dc/daf/classcbee_1_1IoManager.html#aa63bb41452c7802f60cf3e693392e03a',1,'cbee::IoManager']]],
   ['islevel',['isLevel',['../df/de1/classel_1_1Configurations_1_1Parser.html#ade3578dee6378620c6281b090433ce72',1,'el::Configurations::Parser']]],
   ['isvalidid',['isValidId',['../d3/d2c/classel_1_1Logger.html#ab134ceead9e69cab71380af41e3ee5d3',1,'el::Logger']]]
 ];

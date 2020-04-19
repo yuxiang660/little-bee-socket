@@ -33,6 +33,6 @@ var searchData=
   ['run',['run',['../de/ddd/classcbee_1_1TimerHandler.html#a5456035f952b7143910a168a99aeaa30',1,'cbee::TimerHandler']]],
   ['runafter',['runAfter',['../dc/daf/classcbee_1_1IoManager.html#ab2e0e747d7a05af3d01dd216347543be',1,'cbee::IoManager']]],
   ['runevery',['runEvery',['../dc/daf/classcbee_1_1IoManager.html#ad91696d0f25d8acb86e42b40ce65cef6',1,'cbee::IoManager']]],
-  ['runinloopthread',['runInLoopThread',['../dc/daf/classcbee_1_1IoManager.html#afb92bd3dcc36081b55af316800e26407',1,'cbee::IoManager']]],
+  ['runiniothread',['runInIoThread',['../dc/daf/classcbee_1_1IoManager.html#afa74f77664010bd6a4a9cc40c583f88c',1,'cbee::IoManager']]],
   ['runpendingfunctors',['runPendingFunctors',['../dc/daf/classcbee_1_1IoManager.html#a119758572fed1200d34416a4e54c4f71',1,'cbee::IoManager']]]
 ];
