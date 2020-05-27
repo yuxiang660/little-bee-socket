@@ -8,7 +8,7 @@ var searchData=
   ['abstractregistry_3c_20t_5fptr_2c_20std_3a_3aunordered_5fmap_3c_20t_5fkey_2c_20t_5fptr_20_2a_3e_20_3e',['AbstractRegistry&lt; T_Ptr, std::unordered_map&lt; T_Key, T_Ptr *&gt; &gt;',['../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html',1,'el::base::utils']]],
   ['abstractregistry_3c_20t_5fptr_2c_20std_3a_3avector_3c_20t_5fptr_20_2a_3e_20_3e',['AbstractRegistry&lt; T_Ptr, std::vector&lt; T_Ptr *&gt; &gt;',['../df/d45/classel_1_1base_1_1utils_1_1AbstractRegistry.html',1,'el::base::utils']]],
   ['accept',['accept',['../dd/ddc/classcbee_1_1SocketFd.html#ac67bdfd2756d95afc6978afcf0668dce',1,'cbee::SocketFd']]],
-  ['acceptor',['Acceptor',['../d2/d81/classcbee_1_1Acceptor.html',1,'cbee::Acceptor'],['../d2/d81/classcbee_1_1Acceptor.html#a4942ed92f9b78c3151df3d89ee12f7c3',1,'cbee::Acceptor::Acceptor()']]],
+  ['acceptor',['Acceptor',['../d2/d81/classcbee_1_1Acceptor.html',1,'cbee::Acceptor'],['../d2/d81/classcbee_1_1Acceptor.html#a4942ed92f9b78c3151df3d89ee12f7c3',1,'cbee::Acceptor::Acceptor(const IoManager &amp;io, const NewConnectionFunc &amp;newConn, const Sockaddr &amp;listenAddr)'],['../d2/d81/classcbee_1_1Acceptor.html#a6dd70fef285fda58d636e1281fafe32f',1,'cbee::Acceptor::Acceptor(const Acceptor &amp;)=delete']]],
   ['acceptor_2ecpp',['Acceptor.cpp',['../d3/d9e/Acceptor_8cpp.html',1,'']]],
   ['acceptor_2eh',['Acceptor.h',['../d2/d86/Acceptor_8h.html',1,'']]],
   ['acquirelock',['acquireLock',['../d9/d2e/classel_1_1base_1_1threading_1_1ThreadSafe.html#a59db719b214f7118f0919846a85077bf',1,'el::base::threading::ThreadSafe']]],
