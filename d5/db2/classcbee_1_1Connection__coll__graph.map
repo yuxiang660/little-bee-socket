@@ -1,0 +1,11 @@
+<map id="cbee::Connection" name="cbee::Connection">
+<area shape="rect" id="node2" href="$dd/ddc/classcbee_1_1SocketFd.html" title="cbee::SocketFd" alt="" coords="5,184,120,211"/>
+<area shape="rect" id="node3" href="$d8/d36/classcbee_1_1Event.html" title="cbee::Event" alt="" coords="111,5,203,32"/>
+<area shape="rect" id="node5" href="$d1/d00/classcbee_1_1EventTrigger.html" title="cbee::EventTrigger" alt="" coords="551,95,683,121"/>
+<area shape="rect" id="node9" href="$d7/d2a/classcbee_1_1EventTimerHandlerQueue.html" title="cbee::EventTimerHandlerQueue" alt="" coords="195,95,403,121"/>
+<area shape="rect" id="node4" href="$dc/daf/classcbee_1_1IoManager.html" title="cbee::IoManager" alt="" coords="334,184,453,211"/>
+<area shape="rect" id="node6" href="$d9/df8/classcbee_1_1EventModifierInterface.html" title="cbee::EventModifierInterface" alt="" coords="405,5,595,32"/>
+<area shape="rect" id="node8" href="$da/db8/classcbee_1_1EPoller.html" title="cbee::EPoller" alt="" coords="427,95,527,121"/>
+<area shape="rect" id="node7" href="$df/d7d/classcbee_1_1EventTriggerFd.html" title="cbee::EventTriggerFd" alt="" coords="619,5,765,32"/>
+<area shape="rect" id="node10" href="$df/d5c/classcbee_1_1EventTimerFd.html" title="cbee::EventTimerFd" alt="" coords="227,5,367,32"/>
+</map>

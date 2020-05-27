@@ -2,6 +2,7 @@ var searchData=
 [
   ['kam',['kAm',['../d3/deb/namespaceel_1_1base_1_1consts.html#a5b154399fc1adf1c0d2ded31fc30385e',1,'el::base::consts']]],
   ['kappnameformatspecifier',['kAppNameFormatSpecifier',['../d3/deb/namespaceel_1_1base_1_1consts.html#a7e76fad397243ee0152251917afa1264',1,'el::base::consts']]],
+  ['kcheapprepend',['kCheapPrepend',['../d6/dfd/classcbee_1_1Buffer.html#a6e8e9094cc7256123a560c26c041c1a9',1,'cbee::Buffer']]],
   ['kconfigurationcomment',['kConfigurationComment',['../d3/deb/namespaceel_1_1base_1_1consts.html#a0306da9f3504920fb0f58f61339c9b7c',1,'el::base::consts']]],
   ['kconfigurationlevel',['kConfigurationLevel',['../d3/deb/namespaceel_1_1base_1_1consts.html#ad78ac6586a2b49cde4b8a51bf33f783a',1,'el::base::consts']]],
   ['kconfigurationloggerid',['kConfigurationLoggerId',['../d3/deb/namespaceel_1_1base_1_1consts.html#ad22316f3af849732f54dcd6ee86953ce',1,'el::base::consts']]],
@@ -32,6 +33,7 @@ var searchData=
   ['kinfolevellogvalue',['kInfoLevelLogValue',['../d3/deb/namespaceel_1_1base_1_1consts.html#a314b3efc61b98a9b9d85eaf83a24571d',1,'el::base::consts']]],
   ['kinfolevelshortlogvalue',['kInfoLevelShortLogValue',['../d3/deb/namespaceel_1_1base_1_1consts.html#a5ad6c474c374d4179f8c876eaaefd54c',1,'el::base::consts']]],
   ['kinitialactiveeventssize',['kInitialActiveEventsSize',['../d1/dd4/namespacecbee.html#a7ba066bfb72d1a29b76e24235e153016',1,'cbee']]],
+  ['kinitialsize',['kInitialSize',['../d6/dfd/classcbee_1_1Buffer.html#aaf12b1e0ddec8e5a7e4e4de77d53543c',1,'cbee::Buffer']]],
   ['klogfilebaseformatspecifier',['kLogFileBaseFormatSpecifier',['../d3/deb/namespaceel_1_1base_1_1consts.html#a5c45f3a8951c5b5100ebd3c1da8d6bec',1,'el::base::consts']]],
   ['klogfileformatspecifier',['kLogFileFormatSpecifier',['../d3/deb/namespaceel_1_1base_1_1consts.html#ad29ca3ff3d494dfd1e673b314fefb120',1,'el::base::consts']]],
   ['klogfunctionformatspecifier',['kLogFunctionFormatSpecifier',['../d3/deb/namespaceel_1_1base_1_1consts.html#a1802fd4b09eb01cac853e7cf6990e41a',1,'el::base::consts']]],

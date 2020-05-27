@@ -4,6 +4,7 @@ var searchData=
   ['filehandle',['fileHandle',['../d2/d17/classel_1_1LogDispatchCallback.html#a6d501ca4bc6082c4c021a929d72badb7',1,'el::LogDispatchCallback']]],
   ['filename',['filename',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#a6e989a8496b9e08e6e8c9ac4d3fe5b1e',1,'el::base::TypedConfigurations::filename()'],['../dd/dbd/classel_1_1base_1_1HitCounter.html#a47876995665d4f6389ac150ac8a80b89',1,'el::base::HitCounter::filename()']]],
   ['filestream',['fileStream',['../d7/d20/classel_1_1base_1_1TypedConfigurations.html#af39c020c90e67b5f817f318fcb11e611',1,'el::base::TypedConfigurations']]],
+  ['find',['find',['../d6/dfd/classcbee_1_1Buffer.html#a953081627d6aeff66d71a7e759337a7b',1,'cbee::Buffer']]],
   ['flags',['flags',['../db/df7/classel_1_1base_1_1LogFormat.html#ae4fc4ce8c79267d8e50161e0f5f27e46',1,'el::base::LogFormat::flags()'],['../d0/da4/classel_1_1base_1_1Storage.html#aef58f703540d1cd21942d487ba56a686',1,'el::base::Storage::flags()']]],
   ['flush',['flush',['../d3/d2c/classel_1_1Logger.html#a9a89d454008b1ee1a197eec4b92ce22a',1,'el::Logger::flush(void)'],['../d3/d2c/classel_1_1Logger.html#a83c85278ebeeef6a24cc112e56c344dd',1,'el::Logger::flush(Level level, base::type::fstream_t *fs)']]],
   ['flushall',['flushAll',['../de/d7c/classel_1_1base_1_1RegisteredLoggers.html#abe6fdac67d9d4c35fb48c9fd88a49c2e',1,'el::base::RegisteredLoggers::flushAll()'],['../d7/d00/classel_1_1Loggers.html#a47e5eca4ee2f6cfbdccb2efabd2c4f12',1,'el::Loggers::flushAll()']]],

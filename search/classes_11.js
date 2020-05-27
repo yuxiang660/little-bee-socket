@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['writer',['Writer',['../d8/dea/classel_1_1base_1_1Writer.html',1,'el::base']]]
+  ['versioninfo',['VersionInfo',['../db/d60/classel_1_1VersionInfo.html',1,'el']]],
+  ['vregistry',['VRegistry',['../de/d00/classel_1_1base_1_1VRegistry.html',1,'el::base']]]
 ];

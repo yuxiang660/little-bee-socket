@@ -5,6 +5,7 @@ var searchData=
   ['_7ecommandlineargs',['~CommandLineArgs',['../dc/d6e/classel_1_1base_1_1utils_1_1CommandLineArgs.html#a41c4aafeffaef7ab6320feb709d6a0d6',1,'el::base::utils::CommandLineArgs']]],
   ['_7econfiguration',['~Configuration',['../d0/d6b/classel_1_1Configuration.html#abaf0a9e1a96bd40800174982c983a4ac',1,'el::Configuration']]],
   ['_7econfigurations',['~Configurations',['../d0/d64/classel_1_1Configurations.html#aed56020af78d32cb4d3e4ac73abf3349',1,'el::Configurations']]],
+  ['_7econnection',['~Connection',['../d3/ddf/classcbee_1_1Connection.html#a9f7e3f22439f01faa37990a16adf929d',1,'cbee::Connection']]],
   ['_7eepoller',['~EPoller',['../da/db8/classcbee_1_1EPoller.html#afada10c028cdf8fb564894d9dadec955',1,'cbee::EPoller']]],
   ['_7eeventmodifierinterface',['~EventModifierInterface',['../d9/df8/classcbee_1_1EventModifierInterface.html#ab011fb3e359b10ae703b911004a35fa4',1,'cbee::EventModifierInterface']]],
   ['_7eeventtimerfd',['~EventTimerFd',['../df/d5c/classcbee_1_1EventTimerFd.html#aa4ee956172fadada1192ee9902e86033',1,'cbee::EventTimerFd']]],

@@ -22,6 +22,7 @@ var searchData=
   ['allowed',['allowed',['../de/d00/classel_1_1base_1_1VRegistry.html#a13b725e3da8935fce5cf3c16fd3a2ff9',1,'el::base::VRegistry']]],
   ['allowverboseifmodulenotspecified',['AllowVerboseIfModuleNotSpecified',['../da/d7e/namespaceel.html#a2784aacd04cb7816ac1c0b20fcbf83cbac80d746c4296fe8e99ed032f5ffef31e',1,'el']]],
   ['and',['And',['../df/d2e/namespaceel_1_1base_1_1utils_1_1bitwise.html#a8edf6ff6bbfeb66f3b0071f443462e74',1,'el::base::utils::bitwise']]],
+  ['append',['append',['../d6/dfd/classcbee_1_1Buffer.html#ab96b591cede746e6eb788b9a5587be94',1,'cbee::Buffer']]],
   ['appname',['AppName',['../d4/d7f/namespaceel_1_1base.html#a28939c5a884e67fcf12259f4b8848e00aa6d1acde6e20d49a9d81f90622732227',1,'el::base']]],
   ['autospacing',['AutoSpacing',['../da/d7e/namespaceel.html#a2784aacd04cb7816ac1c0b20fcbf83cba34620f140246d3c3b68c17fdf7b8ada7',1,'el']]]
 ];

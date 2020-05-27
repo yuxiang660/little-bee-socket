@@ -9,6 +9,7 @@ var searchData=
   ['parser',['Parser',['../df/de1/classel_1_1Configurations_1_1Parser.html',1,'el::Configurations']]],
   ['pathexists',['pathExists',['../dc/d5c/classel_1_1base_1_1utils_1_1File.html#a43ffda98fdd01d23af20459fa1a65cac',1,'el::base::utils::File']]],
   ['pcheck',['PCHECK',['../d8/d1b/easylogging_09_09_8h.html#acd390a47656c861c03f4f4cdf1dbfb81',1,'easylogging++.h']]],
+  ['peek',['peek',['../d6/dfd/classcbee_1_1Buffer.html#ae4998fab13eab37fdf124de89c20d910',1,'cbee::Buffer']]],
   ['pendingfunctors',['pendingFunctors',['../dc/daf/classcbee_1_1IoManager.html#a72dc1babfa816ed64fb0bf161b60b426',1,'cbee::IoManager']]],
   ['performance_5fcheckpoint',['PERFORMANCE_CHECKPOINT',['../d8/d1b/easylogging_09_09_8h.html#ae321bca6e39c34e05e2daf14b641a68c',1,'easylogging++.h']]],
   ['performance_5fcheckpoint_5fwith_5fid',['PERFORMANCE_CHECKPOINT_WITH_ID',['../d8/d1b/easylogging_09_09_8h.html#a03be37bfa5670a220075d766989b0113',1,'easylogging++.h']]],
@@ -24,6 +25,11 @@ var searchData=
   ['poller',['poller',['../dc/daf/classcbee_1_1IoManager.html#ac5399f2f7484e1388f9c05e2fdc77acc',1,'cbee::IoManager']]],
   ['populateallloggerids',['populateAllLoggerIds',['../d7/d00/classel_1_1Loggers.html#a607481b21f03f499ce89d2ce443ff08f',1,'el::Loggers']]],
   ['predicate',['Predicate',['../d5/d63/classel_1_1Configuration_1_1Predicate.html',1,'el::Configuration::Predicate'],['../dc/d65/classel_1_1base_1_1HitCounter_1_1Predicate.html',1,'el::base::HitCounter::Predicate'],['../d5/d63/classel_1_1Configuration_1_1Predicate.html#ab0a4580d6c2d1aaf36a62913fdc38447',1,'el::Configuration::Predicate::Predicate()'],['../dc/d65/classel_1_1base_1_1HitCounter_1_1Predicate.html#a466afee32aca2403bd2113151f930063',1,'el::base::HitCounter::Predicate::Predicate()']]],
+  ['prependablebytes',['prependableBytes',['../d6/dfd/classcbee_1_1Buffer.html#a599d344d4f7f77e1494c55fe72791e46',1,'cbee::Buffer']]],
+  ['prependint16',['prependInt16',['../d6/dfd/classcbee_1_1Buffer.html#a2c7e8de7218f69d6d36b05dc5723784a',1,'cbee::Buffer']]],
+  ['prependint32',['prependInt32',['../d6/dfd/classcbee_1_1Buffer.html#a0c813206f7cc61398bf349e1078bf50b',1,'cbee::Buffer']]],
+  ['prependint64',['prependInt64',['../d6/dfd/classcbee_1_1Buffer.html#a7376666050a4071a4d59f258e97e6d4a',1,'cbee::Buffer']]],
+  ['prependint8',['prependInt8',['../d6/dfd/classcbee_1_1Buffer.html#a96c2babb8d854050ad5238e65dc06527',1,'cbee::Buffer']]],
   ['prerolloutcallback',['preRollOutCallback',['../d0/da4/classel_1_1base_1_1Storage.html#a90a3a886437746acae51cacbd5731572',1,'el::base::Storage::preRollOutCallback()'],['../da/d7e/namespaceel.html#aeb764b890a6f3cd41d2726bcd4e9c0cf',1,'el::PreRollOutCallback()']]],
   ['processdispatch',['processDispatch',['../d8/dea/classel_1_1base_1_1Writer.html#a692d05d209840d6ae8c2c8e0bea21d29',1,'el::base::Writer']]]
 ];

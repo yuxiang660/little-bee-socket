@@ -10,5 +10,6 @@ var searchData=
   ['addseconds',['addSeconds',['../d0/db3/classcbee_1_1Timestamp.html#ac744a52873987efbd4efd2694295f671',1,'cbee::Timestamp']]],
   ['addtobuff',['addToBuff',['../da/df8/classel_1_1base_1_1utils_1_1Str.html#aa327f63f50daa9058b9c26b949725044',1,'el::base::utils::Str']]],
   ['allowed',['allowed',['../de/d00/classel_1_1base_1_1VRegistry.html#a13b725e3da8935fce5cf3c16fd3a2ff9',1,'el::base::VRegistry']]],
-  ['and',['And',['../df/d2e/namespaceel_1_1base_1_1utils_1_1bitwise.html#a8edf6ff6bbfeb66f3b0071f443462e74',1,'el::base::utils::bitwise']]]
+  ['and',['And',['../df/d2e/namespaceel_1_1base_1_1utils_1_1bitwise.html#a8edf6ff6bbfeb66f3b0071f443462e74',1,'el::base::utils::bitwise']]],
+  ['append',['append',['../d6/dfd/classcbee_1_1Buffer.html#ab96b591cede746e6eb788b9a5587be94',1,'cbee::Buffer']]]
 ];
