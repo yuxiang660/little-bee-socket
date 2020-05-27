@@ -24,6 +24,9 @@ public:
    ~Acceptor();
 
 private:
+   Acceptor(const Acceptor&) = delete;
+   Acceptor& operator=(const Acceptor&) = delete;
+
    void handleRead();
 
 private:
